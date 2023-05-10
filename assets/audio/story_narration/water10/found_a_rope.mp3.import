@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/found_a_rope.mp3-3b8ca62efc3c917ddf77e0849266f725.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/water10/found_a_rope.mp3"
+dest_files=[ "res://.import/found_a_rope.mp3-3b8ca62efc3c917ddf77e0849266f725.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

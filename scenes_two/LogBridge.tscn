@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://assets/game_objects/log_bridge.png" type="Texture" id=1]
+[ext_resource path="res://scenes_two/LogBridge.gd" type="Script" id=2]
+[ext_resource path="res://assets/audio/log_descend_mech_sound.mp3" type="AudioStream" id=3]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 274, 51.5 )
+
+[node name="LogBridge" type="TextureButton"]
+margin_left = 325.0
+margin_top = 348.0
+margin_right = 885.0
+margin_bottom = 460.0
+rect_rotation = -90.0
+texture_normal = ExtResource( 1 )
+script = ExtResource( 2 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 279, 54.5 )
+shape = SubResource( 1 )
+
+[node name="LogDescendSound" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = ExtResource( 3 )

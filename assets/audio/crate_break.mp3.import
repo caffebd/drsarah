@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/crate_break.mp3-7eacbc06f95d6e2f3c2f4dc2dc597768.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/crate_break.mp3"
+dest_files=[ "res://.import/crate_break.mp3-7eacbc06f95d6e2f3c2f4dc2dc597768.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

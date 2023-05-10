@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/found_green_crystal.mp3-1fdb20f41bc6fc8ad58fc3401eee0c17.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/lower3/found_green_crystal.mp3"
+dest_files=[ "res://.import/found_green_crystal.mp3-1fdb20f41bc6fc8ad58fc3401eee0c17.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

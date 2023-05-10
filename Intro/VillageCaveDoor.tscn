@@ -1,0 +1,46 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://animations/cave_door_anim.tres" type="SpriteFrames" id=1]
+[ext_resource path="res://Intro/VillageCaveDoor.gd" type="Script" id=2]
+[ext_resource path="res://assets/ui/up_arrow.png" type="Texture" id=3]
+[ext_resource path="res://assets/audio/exit_door_open.mp3" type="AudioStream" id=4]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 182.5, 217.5 )
+
+[node name="VillageCaveDoor" type="TextureButton"]
+margin_right = 340.0
+margin_bottom = 410.0
+rect_min_size = Vector2( 340, 410 )
+script = ExtResource( 2 )
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( 167.5, 192.5 )
+shape = SubResource( 1 )
+
+[node name="UpArrow" type="Sprite" parent="."]
+position = Vector2( 165, -121 )
+scale = Vector2( 0.49151, 0.49151 )
+z_index = 110
+texture = ExtResource( 3 )
+
+[node name="ArrowTimer" type="Timer" parent="."]
+wait_time = 1.6
+one_shot = true
+
+[node name="doorOpen" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = ExtResource( 4 )
+volume_db = -21.048
+
+[node name="DoorAnim" type="AnimatedSprite" parent="."]
+unique_name_in_owner = true
+position = Vector2( 170, 200 )
+frames = ExtResource( 1 )
+animation = "closed"
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_Area2D_body_exited"]
+[connection signal="timeout" from="ArrowTimer" to="." method="_on_ArrowTimer_timeout"]

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/yes_boomerang_ansewer.mp3-5d39188da3406f846560557f7bb7ca05.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/lower4/yes_boomerang_ansewer.mp3"
+dest_files=[ "res://.import/yes_boomerang_ansewer.mp3-5d39188da3406f846560557f7bb7ca05.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

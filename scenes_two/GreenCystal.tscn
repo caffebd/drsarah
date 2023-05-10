@@ -1,0 +1,38 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://assets/platformer/Green Crystal.png" type="Texture" id=1]
+[ext_resource path="res://scenes_two/GreenCystal.gd" type="Script" id=2]
+[ext_resource path="res://UI_Scenes/ObjectLabel.tscn" type="PackedScene" id=3]
+[ext_resource path="res://assets/fonts/Comfortaa/Comfortaa-VariableFont_wght.ttf" type="DynamicFontData" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+size = 40
+outline_size = 1
+font_data = ExtResource( 4 )
+
+[node name="GreenCystal" type="TextureButton"]
+margin_right = 112.0
+margin_bottom = 112.0
+rect_pivot_offset = Vector2( 56, 112 )
+texture_normal = ExtResource( 1 )
+script = ExtResource( 2 )
+
+[node name="ObjectInfo" parent="." instance=ExtResource( 3 )]
+unique_name_in_owner = true
+visible = false
+margin_left = -48.0
+margin_top = -40.0
+margin_right = -8.0
+margin_bottom = 0.0
+
+[node name="count" type="Label" parent="."]
+unique_name_in_owner = true
+visible = false
+margin_left = 15.0
+margin_top = 17.0
+margin_right = 51.0
+margin_bottom = 63.0
+custom_fonts/font = SubResource( 1 )
+text = "2"
+align = 1
+valign = 1

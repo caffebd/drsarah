@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/cant_take_woman.mp3-aff12403d64967993782cca50a890239.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/cant_take_woman.mp3"
+dest_files=[ "res://.import/cant_take_woman.mp3-aff12403d64967993782cca50a890239.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

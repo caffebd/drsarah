@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/wheel_find_around.mp3-e8855d50a3a4db550e3cfe546f9324f1.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/riddles/wheel_find_around.mp3"
+dest_files=[ "res://.import/wheel_find_around.mp3-e8855d50a3a4db550e3cfe546f9324f1.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

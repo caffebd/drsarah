@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/magnet_attract.mp3-a0eb6d9032b083b72568103bd2703925.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/riddles/magnet_attract.mp3"
+dest_files=[ "res://.import/magnet_attract.mp3-a0eb6d9032b083b72568103bd2703925.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

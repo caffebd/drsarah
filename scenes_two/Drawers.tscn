@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://assets/temp_room/drawers_open.png" type="Texture" id=1]
+[ext_resource path="res://assets/temp_room/drawers.png" type="Texture" id=2]
+[ext_resource path="res://scenes_two/Drawers.gd" type="Script" id=3]
+
+[node name="Drawers" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="drawers_closed" type="TextureButton" parent="."]
+margin_right = 563.0
+margin_bottom = 594.0
+texture_normal = ExtResource( 2 )
+
+[node name="drawers_open" type="TextureButton" parent="."]
+visible = false
+margin_right = 40.0
+margin_bottom = 40.0
+texture_normal = ExtResource( 1 )

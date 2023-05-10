@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/break_ceiling.mp3-a013cddce51f64d1fcc94e6de6b4d033.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/lava7/break_ceiling.mp3"
+dest_files=[ "res://.import/break_ceiling.mp3-a013cddce51f64d1fcc94e6de6b4d033.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

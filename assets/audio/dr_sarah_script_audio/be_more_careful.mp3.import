@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/be_more_careful.mp3-baf576cad0a2cd257d167e575d487dab.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/be_more_careful.mp3"
+dest_files=[ "res://.import/be_more_careful.mp3-baf576cad0a2cd257d167e575d487dab.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

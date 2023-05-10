@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://assets/game_objects/puzzle_objects/Bell.png" type="Texture" id=1]
+[ext_resource path="res://scenes_two/Bell.gd" type="Script" id=2]
+[ext_resource path="res://UI_Scenes/ObjectLabel.tscn" type="PackedScene" id=3]
+
+[node name="Bell" type="TextureButton"]
+margin_right = 40.0
+margin_bottom = 40.0
+texture_normal = ExtResource( 1 )
+script = ExtResource( 2 )
+
+[node name="ObjectInfo" parent="." instance=ExtResource( 3 )]
+unique_name_in_owner = true
+margin_left = -60.0
+margin_top = -63.0
+margin_right = -20.0
+margin_bottom = -23.0

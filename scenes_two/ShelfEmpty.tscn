@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://assets/temp_room/shelf_empty.png" type="Texture" id=1]
+
+[node name="ShelfEmpty" type="Node2D"]
+
+[node name="ShelfBtn" type="Sprite" parent="."]
+position = Vector2( 211.803, 172.5 )
+scale = Vector2( 0.8575, 0.8575 )
+texture = ExtResource( 1 )

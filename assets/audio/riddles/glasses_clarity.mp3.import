@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/glasses_clarity.mp3-2feac55f958cce25da066d16c92a1157.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/riddles/glasses_clarity.mp3"
+dest_files=[ "res://.import/glasses_clarity.mp3-2feac55f958cce25da066d16c92a1157.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

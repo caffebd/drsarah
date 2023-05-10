@@ -1,0 +1,298 @@
+[gd_scene load_steps=58 format=2]
+
+[ext_resource path="res://assets/platformer/Bottom Bar.png" type="Texture" id=1]
+[ext_resource path="res://assets/village/Jungle_tile_01.png" type="Texture" id=2]
+[ext_resource path="res://assets/village/Jungle_tile_05.png" type="Texture" id=3]
+[ext_resource path="res://assets/fonts/Comfortaa/Comfortaa-VariableFont_wght.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://assets/ui/star_animation/Star_animated-1.png" type="Texture" id=5]
+[ext_resource path="res://assets/ui/star_animation/Star_animated-4.png" type="Texture" id=6]
+[ext_resource path="res://assets/ui/star_animation/Star_animated-5.png" type="Texture" id=7]
+[ext_resource path="res://assets/game_objects/medical_box.png" type="Texture" id=8]
+[ext_resource path="res://assets/ui/star_animation/Star_animated-3.png" type="Texture" id=9]
+[ext_resource path="res://assets/ui/star_animation/Star_animated-0.png" type="Texture" id=10]
+[ext_resource path="res://assets/ui/star_animation/Star_animated-2.png" type="Texture" id=11]
+[ext_resource path="res://assets/platformer/Lever On.png" type="Texture" id=12]
+[ext_resource path="res://assets/platformer/Lever Off.png" type="Texture" id=13]
+[ext_resource path="res://UI_Scenes/ClickingTutorial.gd" type="Script" id=14]
+[ext_resource path="res://assets/ui/new_vocab_button.png" type="Texture" id=15]
+[ext_resource path="res://assets/inventory_images/inventory_medicine.png" type="Texture" id=16]
+[ext_resource path="res://assets/game_objects/door_animation/Door9.png" type="Texture" id=17]
+[ext_resource path="res://assets/game_objects/door_animation/Door2.png" type="Texture" id=18]
+[ext_resource path="res://assets/game_objects/door_animation/Door3.png" type="Texture" id=19]
+[ext_resource path="res://assets/game_objects/door_animation/Door27.png" type="Texture" id=20]
+[ext_resource path="res://assets/game_objects/door_animation/Door16.png" type="Texture" id=21]
+[ext_resource path="res://assets/game_objects/door_animation/Door8.png" type="Texture" id=22]
+[ext_resource path="res://assets/game_objects/door_animation/Door7.png" type="Texture" id=23]
+[ext_resource path="res://assets/game_objects/door_animation/Door4.png" type="Texture" id=24]
+[ext_resource path="res://assets/game_objects/door_animation/Door24.png" type="Texture" id=25]
+[ext_resource path="res://assets/game_objects/door_animation/Door26.png" type="Texture" id=26]
+[ext_resource path="res://assets/game_objects/door_animation/Door14.png" type="Texture" id=27]
+[ext_resource path="res://assets/game_objects/door_animation/Door20.png" type="Texture" id=28]
+[ext_resource path="res://assets/game_objects/door_animation/Door19.png" type="Texture" id=29]
+[ext_resource path="res://assets/game_objects/door_animation/Door21.png" type="Texture" id=30]
+[ext_resource path="res://assets/game_objects/door_animation/Door13.png" type="Texture" id=31]
+[ext_resource path="res://assets/game_objects/door_animation/Door5.png" type="Texture" id=32]
+[ext_resource path="res://assets/game_objects/door_animation/Door22.png" type="Texture" id=33]
+[ext_resource path="res://assets/game_objects/door_animation/Door25.png" type="Texture" id=34]
+[ext_resource path="res://assets/game_objects/door_animation/Door12.png" type="Texture" id=35]
+[ext_resource path="res://assets/game_objects/door_animation/Door6.png" type="Texture" id=36]
+[ext_resource path="res://assets/game_objects/door_animation/Door11.png" type="Texture" id=37]
+[ext_resource path="res://assets/game_objects/door_animation/Door1.png" type="Texture" id=38]
+[ext_resource path="res://assets/game_objects/door_animation/Door10.png" type="Texture" id=39]
+[ext_resource path="res://assets/game_objects/door_animation/Door23.png" type="Texture" id=40]
+[ext_resource path="res://assets/game_objects/door_animation/Door15.png" type="Texture" id=41]
+[ext_resource path="res://assets/game_objects/door_animation/Door17.png" type="Texture" id=42]
+[ext_resource path="res://assets/game_objects/door_animation/Door18.png" type="Texture" id=43]
+[ext_resource path="res://assets/ui/Cursor Button.png" type="Texture" id=44]
+[ext_resource path="res://assets/ui/tut_mouse.png" type="Texture" id=45]
+
+[sub_resource type="TileSet" id=2]
+0/name = "Jungle_tile_01.png 0"
+0/texture = ExtResource( 2 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 112, 112 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+1/name = "Jungle_tile_05.png 1"
+1/texture = ExtResource( 3 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 0, 0, 112, 112 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape_one_way = false
+1/shape_one_way_margin = 0.0
+1/shapes = [  ]
+1/z_index = 0
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0.972549, 0.956863, 0.956863, 1 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 40
+font_data = ExtResource( 4 )
+
+[sub_resource type="StyleBoxEmpty" id=5]
+
+[sub_resource type="StyleBoxEmpty" id=6]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.14902, 0.0980392, 0.458824, 1 )
+
+[sub_resource type="SpriteFrames" id=7]
+animations = [ {
+"frames": [ ExtResource( 10 ), ExtResource( 5 ), ExtResource( 11 ), ExtResource( 9 ), ExtResource( 6 ), ExtResource( 7 ) ],
+"loop": true,
+"name": "flash",
+"speed": 6.0
+} ]
+
+[sub_resource type="SpriteFrames" id=9]
+animations = [ {
+"frames": [ ExtResource( 12 ), ExtResource( 13 ) ],
+"loop": false,
+"name": "off",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 13 ), ExtResource( 12 ) ],
+"loop": false,
+"name": "on",
+"speed": 5.0
+} ]
+
+[sub_resource type="DynamicFont" id=10]
+size = 50
+font_data = ExtResource( 4 )
+
+[sub_resource type="StreamTexture" id=11]
+flags = 4
+load_path = "res://.import/new_vocab_button.png-9b6794ad8064d3d491595b782b133824.stex"
+
+[sub_resource type="SpriteFrames" id=12]
+animations = [ {
+"frames": [ ExtResource( 38 ) ],
+"loop": false,
+"name": "closed",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 38 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 24 ), ExtResource( 32 ), ExtResource( 36 ), ExtResource( 23 ), ExtResource( 22 ), ExtResource( 17 ), ExtResource( 39 ), ExtResource( 37 ), ExtResource( 35 ), ExtResource( 31 ), ExtResource( 27 ), ExtResource( 41 ), ExtResource( 21 ), ExtResource( 42 ), ExtResource( 43 ), ExtResource( 29 ), ExtResource( 28 ), ExtResource( 30 ), ExtResource( 33 ), ExtResource( 40 ), ExtResource( 25 ), ExtResource( 34 ), ExtResource( 26 ), ExtResource( 20 ) ],
+"loop": false,
+"name": "open",
+"speed": 10.0
+} ]
+
+[sub_resource type="DynamicFont" id=13]
+size = 45
+font_data = ExtResource( 4 )
+
+[node name="Clicking" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 14 )
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource( 2 )
+cell_size = Vector2( 112, 112 )
+format = 1
+tile_data = PoolIntArray( 262144, 0, 0, 262145, 0, 0, 262146, 0, 0, 262147, 0, 0, 262148, 0, 0, 262149, 0, 0, 262150, 0, 0, 262151, 0, 0, 262152, 0, 0, 262153, 0, 0, 327680, 1, 0, 327681, 1, 0, 327682, 1, 0, 327683, 1, 0, 327684, 1, 0, 327685, 1, 0, 327686, 1, 0, 327687, 1, 0, 327688, 1, 0, 327689, 1, 0 )
+
+[node name="SentencePanel" type="Panel" parent="."]
+margin_left = 1.0
+margin_top = 652.0
+margin_right = 1121.0
+margin_bottom = 738.0
+custom_styles/panel = SubResource( 3 )
+
+[node name="LineEdit" type="LineEdit" parent="SentencePanel"]
+unique_name_in_owner = true
+margin_left = 99.0
+margin_top = 18.0
+margin_right = 641.0
+margin_bottom = 64.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 4 )
+custom_styles/focus = SubResource( 5 )
+custom_styles/normal = SubResource( 6 )
+
+[node name="ColorRect" type="ColorRect" parent="SentencePanel"]
+margin_right = 87.0
+margin_bottom = 82.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="click" type="Sprite" parent="SentencePanel"]
+position = Vector2( 43, 40 )
+scale = Vector2( 0.7, 0.7 )
+z_index = 100
+texture = ExtResource( 44 )
+
+[node name="Inventory" type="TextureRect" parent="."]
+margin_left = 565.0
+margin_top = 733.0
+margin_right = 1121.0
+margin_bottom = 903.0
+texture = ExtResource( 1 )
+expand = true
+
+[node name="Vocab" type="Panel" parent="."]
+margin_left = 2.0
+margin_top = 735.0
+margin_right = 565.0
+margin_bottom = 902.0
+custom_styles/panel = SubResource( 1 )
+
+[node name="Medicine" type="TextureButton" parent="."]
+unique_name_in_owner = true
+margin_left = 271.0
+margin_top = 386.0
+margin_right = 355.0
+margin_bottom = 449.0
+texture_normal = ExtResource( 8 )
+
+[node name="star" type="AnimatedSprite" parent="Medicine"]
+position = Vector2( 43, -21 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 7 )
+animation = "flash"
+frame = 2
+playing = true
+
+[node name="Lever" type="TextureButton" parent="."]
+unique_name_in_owner = true
+margin_left = 512.0
+margin_top = 349.0
+margin_right = 592.0
+margin_bottom = 449.0
+rect_min_size = Vector2( 80, 100 )
+
+[node name="star" type="AnimatedSprite" parent="Lever"]
+position = Vector2( 42, -46 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 7 )
+animation = "flash"
+frame = 1
+playing = true
+
+[node name="lever" type="AnimatedSprite" parent="Lever"]
+unique_name_in_owner = true
+position = Vector2( 38, 41 )
+frames = SubResource( 9 )
+animation = "on"
+
+[node name="GetBtn" type="TextureButton" parent="."]
+margin_left = 24.0
+margin_top = 778.0
+margin_right = 262.0
+margin_bottom = 869.0
+texture_normal = ExtResource( 15 )
+
+[node name="Label" type="Label" parent="GetBtn"]
+margin_left = 66.0
+margin_top = 18.0
+margin_right = 173.0
+margin_bottom = 86.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 10 )
+text = "Get"
+
+[node name="PushBtn" type="TextureButton" parent="."]
+margin_left = 302.0
+margin_top = 778.0
+margin_right = 540.0
+margin_bottom = 869.0
+texture_normal = SubResource( 11 )
+
+[node name="Label" type="Label" parent="PushBtn"]
+margin_left = 59.0
+margin_top = 18.0
+margin_right = 185.0
+margin_bottom = 135.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 10 )
+text = "Push
+"
+
+[node name="MedicineInventory" type="Sprite" parent="."]
+unique_name_in_owner = true
+visible = false
+position = Vector2( 660, 821 )
+scale = Vector2( 0.64, 0.64 )
+texture = ExtResource( 16 )
+
+[node name="door" type="AnimatedSprite" parent="."]
+unique_name_in_owner = true
+position = Vector2( 850, 304 )
+scale = Vector2( 0.7, 0.7 )
+frames = SubResource( 12 )
+animation = "closed"
+
+[node name="Try" type="Label" parent="."]
+margin_left = 23.0
+margin_top = 48.0
+margin_right = 899.0
+margin_bottom = 94.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 13 )
+text = "Try clicking a word followed by an object..."
+
+[node name="mouse" type="Sprite" parent="."]
+modulate = Color( 1, 1, 1, 0.784314 )
+position = Vector2( 56, 733 )
+scale = Vector2( 0.4, 0.4 )
+z_index = 120
+texture = ExtResource( 45 )
+
+[connection signal="pressed" from="Medicine" to="." method="_on_Medicine_pressed"]
+[connection signal="pressed" from="Lever" to="." method="_on_Lever_pressed"]
+[connection signal="pressed" from="GetBtn" to="." method="_on_GetBtn_pressed"]
+[connection signal="pressed" from="PushBtn" to="." method="_on_PushBtn_pressed"]

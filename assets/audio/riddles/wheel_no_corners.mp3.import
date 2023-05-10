@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/wheel_no_corners.mp3-2316a41c544c63aa3038cc5cc1339691.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/riddles/wheel_no_corners.mp3"
+dest_files=[ "res://.import/wheel_no_corners.mp3-2316a41c544c63aa3038cc5cc1339691.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

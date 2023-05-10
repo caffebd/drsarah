@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/swim_underwater.mp3-80ec4e6f032b0c21e7ecce16831a9472.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/swim_underwater.mp3"
+dest_files=[ "res://.import/swim_underwater.mp3-80ec4e6f032b0c21e7ecce16831a9472.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/village_near.mp3-acfa634ffc9e02667268b847e3a92ed3.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/village_near.mp3"
+dest_files=[ "res://.import/village_near.mp3-acfa634ffc9e02667268b847e3a92ed3.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

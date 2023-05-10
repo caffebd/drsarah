@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/ring_in_hole.mp3-5e75d1bc9f388c60e38aa3341123ad92.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/lava7/ring_in_hole.mp3"
+dest_files=[ "res://.import/ring_in_hole.mp3-5e75d1bc9f388c60e38aa3341123ad92.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

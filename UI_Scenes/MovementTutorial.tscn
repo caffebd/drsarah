@@ -1,0 +1,176 @@
+[gd_scene load_steps=18 format=2]
+
+[ext_resource path="res://assets/village/Jungle_tile_01.png" type="Texture" id=1]
+[ext_resource path="res://assets/village/Jungle_tile_05.png" type="Texture" id=2]
+[ext_resource path="res://CharacterScenes/PlayerGirlAnimations.tres" type="SpriteFrames" id=3]
+[ext_resource path="res://UI_Scenes/ThePlayerTutorial.gd" type="Script" id=4]
+[ext_resource path="res://assets/ui/left_arrow.png" type="Texture" id=5]
+[ext_resource path="res://assets/ui/up_arrow_key.png" type="Texture" id=6]
+[ext_resource path="res://assets/ui/right_arrow.png" type="Texture" id=7]
+[ext_resource path="res://assets/ui/down_arrow.png" type="Texture" id=8]
+[ext_resource path="res://assets/ui/WASD.png" type="Texture" id=9]
+[ext_resource path="res://assets/platformer/Ladder.png" type="Texture" id=10]
+
+[sub_resource type="ConvexPolygonShape2D" id=2]
+points = PoolVector2Array( 0, 0, 112, 0, 112, 112, 0, 112 )
+
+[sub_resource type="TileSet" id=1]
+0/name = "Jungle_tile_01.png 0"
+0/texture = ExtResource( 1 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 112, 112 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape = SubResource( 2 )
+0/shape_one_way = false
+0/shape_one_way_margin = 1.0
+0/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 2 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+0/z_index = 0
+1/name = "Jungle_tile_05.png 1"
+1/texture = ExtResource( 2 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 0, 0, 112, 112 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape_one_way = false
+1/shape_one_way_margin = 0.0
+1/shapes = [  ]
+1/z_index = 0
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 10, 165 )
+
+[sub_resource type="StyleBoxFlat" id=5]
+bg_color = Color( 0.756863, 0.337255, 0.298039, 1 )
+
+[sub_resource type="StyleBoxFlat" id=6]
+bg_color = Color( 0.756863, 0.337255, 0.298039, 1 )
+
+[sub_resource type="RectangleShape2D" id=7]
+extents = Vector2( 35, 159.5 )
+
+[sub_resource type="CapsuleShape2D" id=3]
+radius = 26.0
+height = 178.0
+
+[node name="MovementTutorial" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource( 1 )
+cell_size = Vector2( 112, 112 )
+format = 1
+tile_data = PoolIntArray( 589826, 0, 0, 589827, 0, 0, 589828, 0, 0, 589829, 0, 0, 589830, 0, 0, 589831, 0, 0, 589832, 0, 0, 589833, 0, 0, 589834, 0, 0, 589835, 0, 0, 655362, 1, 0, 655363, 1, 0, 655364, 1, 0, 655365, 1, 0, 655366, 1, 0, 655367, 1, 0, 655368, 1, 0, 655369, 1, 0, 655370, 1, 0, 655371, 1, 0 )
+
+[node name="LeftBlock" type="StaticBody2D" parent="."]
+position = Vector2( 231, 844 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LeftBlock"]
+position = Vector2( 0, -1 )
+shape = SubResource( 4 )
+
+[node name="RightBlock" type="StaticBody2D" parent="."]
+position = Vector2( 1336, 846 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RightBlock"]
+position = Vector2( 0, -1 )
+shape = SubResource( 4 )
+
+[node name="ArrowKeysPanel" type="Panel" parent="."]
+margin_left = 213.0
+margin_top = 329.0
+margin_right = 559.0
+margin_bottom = 566.0
+custom_styles/panel = SubResource( 5 )
+
+[node name="ArrowKeys" type="TextureRect" parent="ArrowKeysPanel"]
+margin_left = 122.0
+margin_top = 17.0
+margin_right = 219.0
+margin_bottom = 108.0
+texture = ExtResource( 6 )
+
+[node name="ArrowKeys2" type="TextureRect" parent="ArrowKeysPanel"]
+margin_left = 122.0
+margin_top = 125.0
+margin_right = 219.0
+margin_bottom = 218.0
+texture = ExtResource( 8 )
+
+[node name="ArrowKeys3" type="TextureRect" parent="ArrowKeysPanel"]
+margin_left = 18.0
+margin_top = 125.0
+margin_right = 115.0
+margin_bottom = 216.0
+texture = ExtResource( 5 )
+
+[node name="ArrowKeys4" type="TextureRect" parent="ArrowKeysPanel"]
+margin_left = 236.0
+margin_top = 125.0
+margin_right = 333.0
+margin_bottom = 218.0
+texture = ExtResource( 7 )
+
+[node name="ArrowKeysPanel2" type="Panel" parent="."]
+margin_left = 915.0
+margin_top = 330.0
+margin_right = 1278.0
+margin_bottom = 567.0
+custom_styles/panel = SubResource( 6 )
+
+[node name="ArrowKeys" type="TextureRect" parent="ArrowKeysPanel2"]
+margin_left = 22.0
+margin_top = 15.0
+margin_right = 346.0
+margin_bottom = 215.0
+texture = ExtResource( 9 )
+
+[node name="Ladder" type="Sprite" parent="."]
+position = Vector2( 762, 829 )
+texture = ExtResource( 10 )
+
+[node name="Area2D" type="Area2D" parent="Ladder"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ladder/Area2D"]
+position = Vector2( 1, 7.5 )
+shape = SubResource( 7 )
+
+[node name="ThePlayer" type="KinematicBody2D" parent="."]
+position = Vector2( 587, 859 )
+script = ExtResource( 4 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="ThePlayer"]
+frames = ExtResource( 3 )
+animation = "walk"
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ThePlayer"]
+position = Vector2( 0, 8 )
+shape = SubResource( 3 )
+
+[node name="CoyoteTimer" type="Timer" parent="ThePlayer"]
+wait_time = 0.2
+
+[node name="JumpTimer" type="Timer" parent="ThePlayer"]
+wait_time = 0.1
+one_shot = true
+
+[connection signal="body_entered" from="Ladder/Area2D" to="ThePlayer" method="_on_Area2D_body_entered"]
+[connection signal="body_exited" from="Ladder/Area2D" to="ThePlayer" method="_on_Area2D_body_exited"]
+[connection signal="timeout" from="ThePlayer/CoyoteTimer" to="ThePlayer" method="_on_CoyoteTimer_timeout"]
+[connection signal="timeout" from="ThePlayer/JumpTimer" to="ThePlayer" method="_on_JumpTimer_timeout"]

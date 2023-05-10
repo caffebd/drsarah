@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/fuse_box_off.mp3-44e603a38fc096b89bab31080f7eec5d.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/fuse_box_off.mp3"
+dest_files=[ "res://.import/fuse_box_off.mp3-44e603a38fc096b89bab31080f7eec5d.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

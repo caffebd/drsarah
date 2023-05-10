@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/bell_vanished.mp3-798b1517d80314a0ba84b3cbc6f2a95f.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/bell_vanished.mp3"
+dest_files=[ "res://.import/bell_vanished.mp3-798b1517d80314a0ba84b3cbc6f2a95f.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

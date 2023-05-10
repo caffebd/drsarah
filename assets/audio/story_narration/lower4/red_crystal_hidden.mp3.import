@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/red_crystal_hidden.mp3-40e171c49b2cb85b5544407453c20360.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/lower4/red_crystal_hidden.mp3"
+dest_files=[ "res://.import/red_crystal_hidden.mp3-40e171c49b2cb85b5544407453c20360.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

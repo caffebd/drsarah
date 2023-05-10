@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/intro_4_blood_test.mp3-059a77eee06bae66fc32ef03435ea23b.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/narrator_audio_script/intro_4_blood_test.mp3"
+dest_files=[ "res://.import/intro_4_blood_test.mp3-059a77eee06bae66fc32ef03435ea23b.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

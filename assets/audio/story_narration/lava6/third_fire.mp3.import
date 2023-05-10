@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/third_fire.mp3-1ff1e7eac2870422515e01ffa012a738.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/lava6/third_fire.mp3"
+dest_files=[ "res://.import/third_fire.mp3-1ff1e7eac2870422515e01ffa012a738.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

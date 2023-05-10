@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/can_walk_through_fire.mp3-53a9a5ee03b4c92b0289b5ac3ec5dbf1.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/can_walk_through_fire.mp3"
+dest_files=[ "res://.import/can_walk_through_fire.mp3-53a9a5ee03b4c92b0289b5ac3ec5dbf1.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

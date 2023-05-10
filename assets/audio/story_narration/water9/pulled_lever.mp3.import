@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/pulled_lever.mp3-6ee619f6ddbdb93a38b9b0ac8e596b3c.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/water9/pulled_lever.mp3"
+dest_files=[ "res://.import/pulled_lever.mp3-6ee619f6ddbdb93a38b9b0ac8e596b3c.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

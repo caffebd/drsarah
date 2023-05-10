@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/break_wall.mp3-c70f3203e2bd075f415bc0b236817bb8.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/lava6/break_wall.mp3"
+dest_files=[ "res://.import/break_wall.mp3-c70f3203e2bd075f415bc0b236817bb8.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/second_water.mp3-5f9e1ada303f84afb274a198688adbbc.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/lava6/second_water.mp3"
+dest_files=[ "res://.import/second_water.mp3-5f9e1ada303f84afb274a198688adbbc.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

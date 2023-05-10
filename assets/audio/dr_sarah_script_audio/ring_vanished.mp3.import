@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/ring_vanished.mp3-add70de6c9c4d3463241b9066d6c31e2.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/ring_vanished.mp3"
+dest_files=[ "res://.import/ring_vanished.mp3-add70de6c9c4d3463241b9066d6c31e2.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/yellow_crystal.mp3-bd7901ec49110f620cc34dd38cd491a5.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/lava8/yellow_crystal.mp3"
+dest_files=[ "res://.import/yellow_crystal.mp3-bd7901ec49110f620cc34dd38cd491a5.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

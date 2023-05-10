@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/need_be_quick.mp3-8a82f0a838e58f8ec75d78e26140ebc0.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/need_be_quick.mp3"
+dest_files=[ "res://.import/need_be_quick.mp3-8a82f0a838e58f8ec75d78e26140ebc0.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

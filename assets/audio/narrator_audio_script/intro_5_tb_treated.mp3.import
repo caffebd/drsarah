@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/intro_5_tb_treated.mp3-e0ab19e3ac09a446f23de6ef7719321e.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/narrator_audio_script/intro_5_tb_treated.mp3"
+dest_files=[ "res://.import/intro_5_tb_treated.mp3-e0ab19e3ac09a446f23de6ef7719321e.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

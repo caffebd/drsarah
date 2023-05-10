@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/ride_log_water.mp3-21b355ae6fa0190308e731afe3aea750.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/lava8/ride_log_water.mp3"
+dest_files=[ "res://.import/ride_log_water.mp3-21b355ae6fa0190308e731afe3aea750.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

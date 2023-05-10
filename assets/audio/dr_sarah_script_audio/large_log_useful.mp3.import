@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/large_log_useful.mp3-58f84437caeec942f9fff8e662bede1f.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/large_log_useful.mp3"
+dest_files=[ "res://.import/large_log_useful.mp3-58f84437caeec942f9fff8e662bede1f.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

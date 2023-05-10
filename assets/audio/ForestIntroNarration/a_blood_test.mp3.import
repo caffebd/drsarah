@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/a_blood_test.mp3-8329a66ecfda70ca8db315c0902fcd22.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/ForestIntroNarration/a_blood_test.mp3"
+dest_files=[ "res://.import/a_blood_test.mp3-8329a66ecfda70ca8db315c0902fcd22.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

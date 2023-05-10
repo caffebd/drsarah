@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/found_compass.mp3-9a65162c5639f68f0feca8b17335b3db.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/lower4/found_compass.mp3"
+dest_files=[ "res://.import/found_compass.mp3-9a65162c5639f68f0feca8b17335b3db.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/lever_roof.mp3-8b778fbbe359b4d48f68007cf3d2cb52.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/lava8/lever_roof.mp3"
+dest_files=[ "res://.import/lever_roof.mp3-8b778fbbe359b4d48f68007cf3d2cb52.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

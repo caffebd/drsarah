@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/very_dark.mp3-62a0eb49a28cfa3b632cbc236f80dbef.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/village_intro/very_dark.mp3"
+dest_files=[ "res://.import/very_dark.mp3-62a0eb49a28cfa3b632cbc236f80dbef.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

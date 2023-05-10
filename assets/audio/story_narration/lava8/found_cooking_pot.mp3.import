@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/found_cooking_pot.mp3-c026f0ac1e353c12148299224a94bf83.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/lava8/found_cooking_pot.mp3"
+dest_files=[ "res://.import/found_cooking_pot.mp3-c026f0ac1e353c12148299224a94bf83.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

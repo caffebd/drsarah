@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/door_locked.mp3-04dbb8948eaa7660b4ee857caf7de8bd.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/door_locked.mp3"
+dest_files=[ "res://.import/door_locked.mp3-04dbb8948eaa7660b4ee857caf7de8bd.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

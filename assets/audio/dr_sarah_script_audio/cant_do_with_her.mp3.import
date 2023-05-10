@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/cant_do_with_her.mp3-0455df8a1fbe7a5c9361bdb891a6fed0.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/cant_do_with_her.mp3"
+dest_files=[ "res://.import/cant_do_with_her.mp3-0455df8a1fbe7a5c9361bdb891a6fed0.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

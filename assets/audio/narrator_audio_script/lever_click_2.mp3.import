@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/lever_click_2.mp3-bcde4797614694bb5c6a0e2b79c0d433.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/narrator_audio_script/lever_click_2.mp3"
+dest_files=[ "res://.import/lever_click_2.mp3-bcde4797614694bb5c6a0e2b79c0d433.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/click_again_hole.mp3-c75d6f526356b16376e3c15a4f261e2f.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/narrator_audio_script/click_again_hole.mp3"
+dest_files=[ "res://.import/click_again_hole.mp3-c75d6f526356b16376e3c15a4f261e2f.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

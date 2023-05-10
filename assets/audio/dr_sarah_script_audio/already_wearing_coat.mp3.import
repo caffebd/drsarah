@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/already_wearing_coat.mp3-06188e3d02c9dbe9f8a92ea8e971f13f.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/already_wearing_coat.mp3"
+dest_files=[ "res://.import/already_wearing_coat.mp3-06188e3d02c9dbe9f8a92ea8e971f13f.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

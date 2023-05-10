@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/its_boomerang.mp3-a3bc78399c31a9ad6d52a725b4e7aa1c.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/its_boomerang.mp3"
+dest_files=[ "res://.import/its_boomerang.mp3-a3bc78399c31a9ad6d52a725b4e7aa1c.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

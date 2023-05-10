@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/remind_look_sign.mp3-e194db649440e7ec9e362048eb5e2f4b.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/remind_look_sign.mp3"
+dest_files=[ "res://.import/remind_look_sign.mp3-e194db649440e7ec9e362048eb5e2f4b.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

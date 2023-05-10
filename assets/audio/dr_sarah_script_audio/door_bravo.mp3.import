@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/door_bravo.mp3-fdb40fe2c5e0fd88230eb91692619f9d.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/door_bravo.mp3"
+dest_files=[ "res://.import/door_bravo.mp3-fdb40fe2c5e0fd88230eb91692619f9d.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

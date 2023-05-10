@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/look_sign_moon.mp3-b9591b8baa8fc07dcad7af8992bc2d4d.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/lava6/look_sign_moon.mp3"
+dest_files=[ "res://.import/look_sign_moon.mp3-b9591b8baa8fc07dcad7af8992bc2d4d.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

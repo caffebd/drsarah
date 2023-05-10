@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/medicine_for_tb.mp3-ec7100978a20f84a54c2e20f81d6ce2f.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/medicine_for_tb.mp3"
+dest_files=[ "res://.import/medicine_for_tb.mp3-ec7100978a20f84a54c2e20f81d6ce2f.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

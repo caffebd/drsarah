@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/found_lamp.mp3-0e481ed8a59831d68751a7d93d7ed67a.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/lava8/found_lamp.mp3"
+dest_files=[ "res://.import/found_lamp.mp3-0e481ed8a59831d68751a7d93d7ed67a.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

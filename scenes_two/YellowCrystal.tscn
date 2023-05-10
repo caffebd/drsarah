@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://scenes_two/YellowCrystal.gd" type="Script" id=1]
+[ext_resource path="res://assets/platformer/Yellow Crystal.png" type="Texture" id=2]
+[ext_resource path="res://UI_Scenes/ObjectLabel.tscn" type="PackedScene" id=3]
+[ext_resource path="res://assets/fonts/Comfortaa/Comfortaa-VariableFont_wght.ttf" type="DynamicFontData" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+size = 40
+outline_size = 1
+font_data = ExtResource( 4 )
+
+[node name="YellowCrystal" type="TextureButton"]
+margin_right = 105.0
+margin_bottom = 105.0
+texture_normal = ExtResource( 2 )
+script = ExtResource( 1 )
+
+[node name="ObjectInfo" parent="." instance=ExtResource( 3 )]
+unique_name_in_owner = true
+visible = false
+margin_left = -72.0
+margin_top = -72.0
+margin_right = -32.0
+margin_bottom = -32.0
+
+[node name="count" type="Label" parent="."]
+unique_name_in_owner = true
+visible = false
+margin_left = 15.0
+margin_top = 16.0
+margin_right = 55.0
+margin_bottom = 62.0
+custom_fonts/font = SubResource( 1 )
+text = "2"
+align = 1
+valign = 1

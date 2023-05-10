@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/door_opened.mp3-32ef30c66fdabae3ff010eca6ac1098c.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/lower1/door_opened.mp3"
+dest_files=[ "res://.import/door_opened.mp3-32ef30c66fdabae3ff010eca6ac1098c.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

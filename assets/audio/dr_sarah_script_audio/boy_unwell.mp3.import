@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/boy_unwell.mp3-229bbc1723671436da3677208b486ba1.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/boy_unwell.mp3"
+dest_files=[ "res://.import/boy_unwell.mp3-229bbc1723671436da3677208b486ba1.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

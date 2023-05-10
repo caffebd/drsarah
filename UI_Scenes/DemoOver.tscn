@@ -1,0 +1,57 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://assets/fonts/Comfortaa/Comfortaa-VariableFont_wght.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://assets/ui/comic_book_ui/compic_book_wider.png" type="Texture" id=2]
+[ext_resource path="res://assets/ui/comic_book_ui/Button.png" type="Texture" id=3]
+[ext_resource path="res://UI_Scenes/DemoOver.gd" type="Script" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+size = 60
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 60
+font_data = ExtResource( 1 )
+
+[node name="DemoOver" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 4 )
+
+[node name="Book" type="TextureRect" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+texture = ExtResource( 2 )
+
+[node name="Welldone" type="RichTextLabel" parent="Book"]
+margin_left = 738.0
+margin_top = 74.0
+margin_right = 1653.0
+margin_bottom = 1021.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 1 )
+text = "CONGRATULATIONS!
+
+You have completed the demo of Dr. Sarah and the Village of Mystery.
+
+The full game features many more levels and more magical items for Sarah to use.
+
+Will you solve the mystery tormenting the village?"
+
+[node name="MenuBtn" type="TextureButton" parent="."]
+margin_left = 49.0
+margin_top = 147.0
+margin_right = 427.0
+margin_bottom = 273.0
+texture_normal = ExtResource( 3 )
+
+[node name="Label" type="Label" parent="MenuBtn"]
+margin_left = 98.0
+margin_top = 19.0
+margin_right = 276.0
+margin_bottom = 87.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "Menu"
+
+[connection signal="pressed" from="MenuBtn" to="." method="_on_MenuBtn_pressed"]

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/not_open_key.mp3-06371081b63789dea2e2c1d00a732182.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/not_open_key.mp3"
+dest_files=[ "res://.import/not_open_key.mp3-06371081b63789dea2e2c1d00a732182.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

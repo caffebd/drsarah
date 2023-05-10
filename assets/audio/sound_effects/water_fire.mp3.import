@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/water_fire.mp3-740bc67c300788db0a723d74d5ac583a.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sound_effects/water_fire.mp3"
+dest_files=[ "res://.import/water_fire.mp3-740bc67c300788db0a723d74d5ac583a.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

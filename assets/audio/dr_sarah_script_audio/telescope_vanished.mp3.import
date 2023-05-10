@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/telescope_vanished.mp3-588fd49cb6d7a5772755ca90747df9ed.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/telescope_vanished.mp3"
+dest_files=[ "res://.import/telescope_vanished.mp3-588fd49cb6d7a5772755ca90747df9ed.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

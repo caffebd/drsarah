@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/button_logs.mp3-4a639644d0ac3282cc59dcd754b4fc58.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/lower5/button_logs.mp3"
+dest_files=[ "res://.import/button_logs.mp3-4a639644d0ac3282cc59dcd754b4fc58.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

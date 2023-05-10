@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/not_sure.mp3-2c6e6b2923c0c76e3d08bb092a46b6b5.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/not_sure.mp3"
+dest_files=[ "res://.import/not_sure.mp3-2c6e6b2923c0c76e3d08bb092a46b6b5.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

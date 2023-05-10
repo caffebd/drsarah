@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/diving_mask_swim_underwater.mp3-debb54e7169b5ef575283236ca77bdfd.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/diving_mask_swim_underwater.mp3"
+dest_files=[ "res://.import/diving_mask_swim_underwater.mp3-debb54e7169b5ef575283236ca77bdfd.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

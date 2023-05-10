@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/can_climb_rope.mp3-98221111e1f75488992c3be0dca7f250.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/can_climb_rope.mp3"
+dest_files=[ "res://.import/can_climb_rope.mp3-98221111e1f75488992c3be0dca7f250.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

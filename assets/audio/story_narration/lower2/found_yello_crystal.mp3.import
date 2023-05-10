@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/found_yello_crystal.mp3-5bf5cadd9ce9af7e383d9fb2169d43b7.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/lower2/found_yello_crystal.mp3"
+dest_files=[ "res://.import/found_yello_crystal.mp3-5bf5cadd9ce9af7e383d9fb2169d43b7.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

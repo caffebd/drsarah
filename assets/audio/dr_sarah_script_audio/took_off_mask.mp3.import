@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/took_off_mask.mp3-06cdafd8ea8633e602d62299702c6ae0.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/took_off_mask.mp3"
+dest_files=[ "res://.import/took_off_mask.mp3-06cdafd8ea8633e602d62299702c6ae0.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

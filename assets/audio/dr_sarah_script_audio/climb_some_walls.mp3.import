@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/climb_some_walls.mp3-4c5dcfa059cd7e2399ee3195666cbc07.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/climb_some_walls.mp3"
+dest_files=[ "res://.import/climb_some_walls.mp3-4c5dcfa059cd7e2399ee3195666cbc07.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

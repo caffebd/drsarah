@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/yes_sound_of_bell_warning.mp3-f7ff2fbe879ae849d8da08e78aafbab8.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/yes_sound_of_bell_warning.mp3"
+dest_files=[ "res://.import/yes_sound_of_bell_warning.mp3-f7ff2fbe879ae849d8da08e78aafbab8.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

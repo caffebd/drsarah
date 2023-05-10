@@ -1,0 +1,374 @@
+[gd_scene load_steps=27 format=2]
+
+[ext_resource path="res://CharacterScenes/PlayerGirlAnimations.tres" type="SpriteFrames" id=1]
+[ext_resource path="res://CharacterScenes/PlayerGirl.gd" type="Script" id=2]
+[ext_resource path="res://UI_Scenes/TouchController.tscn" type="PackedScene" id=3]
+[ext_resource path="res://UI_Scenes/InventoryPanel.tscn" type="PackedScene" id=7]
+[ext_resource path="res://scenes_two/SpeakBG.tscn" type="PackedScene" id=8]
+[ext_resource path="res://UI_Scenes/SentencePanel.tscn" type="PackedScene" id=10]
+[ext_resource path="res://UI_Scenes/SavingBook.tscn" type="PackedScene" id=14]
+[ext_resource path="res://UI_Scenes/VocabPanel.tscn" type="PackedScene" id=15]
+[ext_resource path="res://assets/fonts/Comfortaa/Comfortaa-VariableFont_wght.ttf" type="DynamicFontData" id=16]
+[ext_resource path="res://assets/ui/tut_mouse.png" type="Texture" id=21]
+[ext_resource path="res://assets/characters/sarah/Sarah_sml.png" type="Texture" id=22]
+[ext_resource path="res://UI_Scenes/ArrowKeys.tscn" type="PackedScene" id=23]
+[ext_resource path="res://CharacterScenes/SarahTextBox.gd" type="Script" id=24]
+[ext_resource path="res://assets/ui/dialogue_box.png" type="Texture" id=26]
+[ext_resource path="res://assets/ui/Clock.png" type="Texture" id=31]
+[ext_resource path="res://assets/ui/in_game_exit.png" type="Texture" id=34]
+
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 30.0
+height = 160.0
+
+[sub_resource type="DynamicFont" id=3]
+size = 32
+font_data = ExtResource( 16 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 32
+font_data = ExtResource( 16 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 42
+font_data = ExtResource( 16 )
+
+[sub_resource type="DynamicFont" id=7]
+size = 35
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 16 )
+
+[sub_resource type="DynamicFont" id=8]
+size = 40
+font_data = ExtResource( 16 )
+
+[sub_resource type="DynamicFont" id=9]
+size = 27
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 16 )
+
+[sub_resource type="DynamicFont" id=10]
+size = 30
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 16 )
+
+[sub_resource type="DynamicFont" id=11]
+size = 40
+font_data = ExtResource( 16 )
+
+[sub_resource type="DynamicFont" id=12]
+size = 27
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 16 )
+
+[node name="PlayerGirl" type="KinematicBody2D"]
+unique_name_in_owner = true
+script = ExtResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="."]
+visible = false
+position = Vector2( 9.4487, -9.95304 )
+scale = Vector2( 0.68731, 0.68731 )
+texture = ExtResource( 22 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = ExtResource( 1 )
+animation = "idle"
+frame = 3
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 3, 12 )
+shape = SubResource( 1 )
+
+[node name="JumpTimer" type="Timer" parent="."]
+wait_time = 0.1
+one_shot = true
+
+[node name="CoyoteTimer" type="Timer" parent="."]
+wait_time = 0.2
+
+[node name="PlayerCam" type="Camera2D" parent="."]
+unique_name_in_owner = true
+position = Vector2( 0, 109 )
+zoom = Vector2( 1.25, 1.25 )
+
+[node name="GirlAudio" type="AudioStreamPlayer" parent="."]
+
+[node name="TickTimer" type="Timer" parent="."]
+unique_name_in_owner = true
+
+[node name="Conversation" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+
+[node name="SaveBtn" type="Button" parent="."]
+visible = false
+margin_left = 921.0
+margin_top = -524.0
+margin_right = 1022.0
+margin_bottom = -481.0
+custom_fonts/font = SubResource( 3 )
+text = "SAVE"
+
+[node name="LoadBtn" type="Button" parent="."]
+visible = false
+margin_left = 1054.0
+margin_top = -531.0
+margin_right = 1163.0
+margin_bottom = -488.0
+custom_fonts/font = SubResource( 4 )
+text = "LOAD"
+
+[node name="CountDown" type="ColorRect" parent="."]
+unique_name_in_owner = true
+visible = false
+margin_left = -77.0
+margin_top = -221.0
+margin_right = 75.0
+margin_bottom = -151.0
+color = Color( 0.992157, 0, 0, 1 )
+
+[node name="ColorRect" type="ColorRect" parent="CountDown"]
+margin_left = 78.0
+margin_top = 4.0
+margin_right = 149.0
+margin_bottom = 66.0
+
+[node name="ColorRect2" type="ColorRect" parent="CountDown"]
+margin_left = 4.0
+margin_top = 4.0
+margin_right = 75.0
+margin_bottom = 66.0
+
+[node name="counter" type="Label" parent="CountDown"]
+unique_name_in_owner = true
+margin_left = 91.0
+margin_top = 13.0
+margin_right = 136.0
+margin_bottom = 60.0
+grow_horizontal = 2
+grow_vertical = 2
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 5 )
+text = "10"
+align = 1
+valign = 1
+
+[node name="timer_image" type="TextureRect" parent="CountDown"]
+unique_name_in_owner = true
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -67.0
+margin_top = -35.0
+margin_right = 13.0
+margin_bottom = 45.0
+texture = ExtResource( 31 )
+
+[node name="UIControl" type="CanvasLayer" parent="."]
+unique_name_in_owner = true
+
+[node name="InventoryPanel" parent="UIControl" instance=ExtResource( 7 )]
+unique_name_in_owner = true
+
+[node name="VocabPanel" parent="UIControl" instance=ExtResource( 15 )]
+unique_name_in_owner = true
+
+[node name="SentencePanel" parent="UIControl" instance=ExtResource( 10 )]
+margin_top = -282.0
+margin_bottom = -176.0
+
+[node name="ExitLevel" type="TextureButton" parent="UIControl"]
+modulate = Color( 1, 1, 1, 0.705882 )
+margin_left = 19.0
+margin_top = 16.0
+margin_right = 194.0
+margin_bottom = 170.0
+rect_scale = Vector2( 0.8, 0.8 )
+texture_normal = ExtResource( 34 )
+
+[node name="SavingBook" parent="UIControl" instance=ExtResource( 14 )]
+visible = false
+position = Vector2( 1796, 105 )
+
+[node name="SpeakBG" parent="UIControl" instance=ExtResource( 8 )]
+visible = false
+margin_left = -560.0
+margin_top = 100.0
+margin_right = 647.0
+margin_bottom = 229.0
+color = Color( 0.223529, 0.129412, 0.113725, 1 )
+
+[node name="SpeakFill" parent="UIControl/SpeakBG" index="0"]
+margin_left = 9.0
+margin_top = 6.0
+margin_right = -9.0
+margin_bottom = -7.0
+
+[node name="Margin" parent="UIControl/SpeakBG/SpeakFill" index="0"]
+margin_left = -589.5
+margin_top = -52.0
+margin_right = 584.5
+margin_bottom = 52.0
+
+[node name="Speak" parent="UIControl/SpeakBG/SpeakFill/Margin" index="0"]
+margin_top = 29.0
+margin_right = 1174.0
+margin_bottom = 75.0
+
+[node name="ColorRect" type="ColorRect" parent="UIControl/SpeakBG"]
+visible = false
+margin_left = 13.0
+margin_top = 11.0
+margin_right = 1330.0
+margin_bottom = 109.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="SarahTextBox" type="TextureRect" parent="UIControl"]
+unique_name_in_owner = true
+visible = false
+margin_left = 1123.0
+margin_top = 95.0
+margin_right = 1842.0
+margin_bottom = 508.0
+texture = ExtResource( 26 )
+script = ExtResource( 24 )
+
+[node name="Speaker" type="Label" parent="UIControl/SarahTextBox"]
+unique_name_in_owner = true
+margin_left = 16.0
+margin_top = 16.0
+margin_right = 202.0
+margin_bottom = 51.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 7 )
+text = "Dr Sarah"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="UIControl/SarahTextBox"]
+unique_name_in_owner = true
+margin_left = 20.0
+margin_top = 85.0
+margin_right = 634.0
+margin_bottom = 351.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 8 )
+text = "I am sarah. I am speaking here"
+
+[node name="SpacebarPanel" type="ColorRect" parent="UIControl/SarahTextBox"]
+unique_name_in_owner = true
+margin_left = 478.0
+margin_top = 368.0
+margin_right = 642.0
+margin_bottom = 401.0
+color = Color( 0.227451, 0.133333, 0.117647, 1 )
+
+[node name="SpacebarText" type="Label" parent="UIControl/SarahTextBox/SpacebarPanel"]
+margin_left = 14.0
+margin_right = 162.0
+margin_bottom = 35.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 9 )
+text = "spacebar"
+
+[node name="OtherTextBox" type="TextureRect" parent="UIControl"]
+unique_name_in_owner = true
+visible = false
+margin_left = 65.0
+margin_top = 95.0
+margin_right = 784.0
+margin_bottom = 508.0
+texture = ExtResource( 26 )
+
+[node name="OtherSpeaker" type="Label" parent="UIControl/OtherTextBox"]
+unique_name_in_owner = true
+margin_left = 13.0
+margin_top = 16.0
+margin_right = 238.0
+margin_bottom = 51.0
+grow_horizontal = 2
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 10 )
+text = "Other speaker"
+align = 1
+valign = 1
+
+[node name="OtherRichTextLabel" type="RichTextLabel" parent="UIControl/OtherTextBox"]
+unique_name_in_owner = true
+margin_left = 14.0
+margin_top = 80.0
+margin_right = 644.0
+margin_bottom = 352.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 11 )
+text = "Other speaker here"
+
+[node name="OtherSpacebarPanel" type="ColorRect" parent="UIControl/OtherTextBox"]
+unique_name_in_owner = true
+margin_left = 479.0
+margin_top = 367.0
+margin_right = 641.0
+margin_bottom = 401.0
+color = Color( 0.176471, 0.156863, 0.156863, 1 )
+
+[node name="OtherSpacebar" type="Label" parent="UIControl/OtherTextBox/OtherSpacebarPanel"]
+margin_left = 10.0
+margin_top = 1.0
+margin_right = 158.0
+margin_bottom = 36.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 12 )
+text = "spacebar"
+
+[node name="ArrowKeys" parent="UIControl" instance=ExtResource( 23 )]
+unique_name_in_owner = true
+visible = false
+position = Vector2( 1561, 148 )
+
+[node name="TutMouse" type="TextureRect" parent="UIControl"]
+unique_name_in_owner = true
+visible = false
+margin_left = 225.0
+margin_top = 754.0
+margin_right = 325.0
+margin_bottom = 881.0
+mouse_filter = 2
+texture = ExtResource( 21 )
+
+[node name="TouchController" parent="UIControl" instance=ExtResource( 3 )]
+visible = false
+
+[node name="CoverScreen" type="ColorRect" parent="UIControl"]
+unique_name_in_owner = true
+visible = false
+margin_left = -376.0
+margin_top = -172.0
+margin_right = 2111.0
+margin_bottom = 1240.0
+mouse_filter = 2
+color = Color( 0, 0, 0, 1 )
+
+[node name="StopCover" type="Panel" parent="UIControl"]
+unique_name_in_owner = true
+visible = false
+modulate = Color( 1, 1, 1, 0.858824 )
+margin_left = -13.0
+margin_top = 800.0
+margin_right = 1935.0
+margin_bottom = 1088.0
+
+[connection signal="timeout" from="JumpTimer" to="." method="_on_JumpTimer_timeout"]
+[connection signal="timeout" from="CoyoteTimer" to="." method="_on_CoyoteTimer_timeout"]
+[connection signal="finished" from="GirlAudio" to="." method="_on_GirlAudio_finished"]
+[connection signal="timeout" from="TickTimer" to="." method="_on_TickTimer_timeout"]
+[connection signal="pressed" from="SaveBtn" to="." method="_on_SaveBtn_pressed"]
+[connection signal="pressed" from="LoadBtn" to="." method="_on_LoadBtn_pressed"]
+[connection signal="toggled" from="UIControl/SentencePanel/ZoomBtn" to="." method="_on_ZoomBtn_toggled"]
+[connection signal="pressed" from="UIControl/ExitLevel" to="." method="_on_TextureButton_pressed"]
+
+[editable path="UIControl/SentencePanel"]
+[editable path="UIControl/SpeakBG"]

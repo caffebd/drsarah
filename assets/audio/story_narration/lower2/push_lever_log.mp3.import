@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/push_lever_log.mp3-30f8d32b90425c550bfa974a41bceb5e.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/lower2/push_lever_log.mp3"
+dest_files=[ "res://.import/push_lever_log.mp3-30f8d32b90425c550bfa974a41bceb5e.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/play_level_create_story.mp3-484cce2bcb3a88dddc4b463f0a114a8e.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/play_level_create_story.mp3"
+dest_files=[ "res://.import/play_level_create_story.mp3-484cce2bcb3a88dddc4b463f0a114a8e.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

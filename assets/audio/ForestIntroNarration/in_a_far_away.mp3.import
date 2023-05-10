@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/in_a_far_away.mp3-08cada2a36f6358a15925fe7d0d1aca8.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/ForestIntroNarration/in_a_far_away.mp3"
+dest_files=[ "res://.import/in_a_far_away.mp3-08cada2a36f6358a15925fe7d0d1aca8.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

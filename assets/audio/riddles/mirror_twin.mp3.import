@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/mirror_twin.mp3-ea5c6ba9c7f9f98042f0be3a906cc950.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/riddles/mirror_twin.mp3"
+dest_files=[ "res://.import/mirror_twin.mp3-ea5c6ba9c7f9f98042f0be3a906cc950.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

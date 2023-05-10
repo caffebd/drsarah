@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/wow_opened_door.mp3-66d3a38cc52ab0ba19acf7d12733ed78.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/wow_opened_door.mp3"
+dest_files=[ "res://.import/wow_opened_door.mp3-66d3a38cc52ab0ba19acf7d12733ed78.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

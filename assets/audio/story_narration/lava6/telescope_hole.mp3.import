@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/telescope_hole.mp3-96178128abd236560b789cc5e8e85521.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/lava6/telescope_hole.mp3"
+dest_files=[ "res://.import/telescope_hole.mp3-96178128abd236560b789cc5e8e85521.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

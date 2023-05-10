@@ -1,0 +1,305 @@
+[gd_scene load_steps=27 format=2]
+
+[ext_resource path="res://CharacterScenes/Drone.tscn" type="PackedScene" id=1]
+[ext_resource path="res://CharacterScenes/PlayerGirl.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/tilemaps/caves_maps.tres" type="TileSet" id=3]
+[ext_resource path="res://scenes_two/ExitDoor.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes_two/EntryDoor.tscn" type="PackedScene" id=5]
+[ext_resource path="res://scenes_two/Shelf.tscn" type="PackedScene" id=6]
+[ext_resource path="res://scenes_two/Sign.tscn" type="PackedScene" id=7]
+[ext_resource path="res://scenes_two/Ladder.tscn" type="PackedScene" id=8]
+[ext_resource path="res://assets/audio/music/dreamy music.mp3" type="AudioStream" id=9]
+[ext_resource path="res://assets/audio/sound_effects/to_inventory.mp3" type="AudioStream" id=10]
+[ext_resource path="res://assets/audio/sound_effects/single_click_deep.mp3" type="AudioStream" id=11]
+[ext_resource path="res://assets/audio/success_drop_ladder.wav" type="AudioStream" id=12]
+[ext_resource path="res://cave_scenes/Lava7.gd" type="Script" id=13]
+[ext_resource path="res://scenes_two/BreakableWall1.tscn" type="PackedScene" id=14]
+[ext_resource path="res://scenes_two/BreakableFloor.tscn" type="PackedScene" id=15]
+[ext_resource path="res://scenes_two/LogPlatform.tscn" type="PackedScene" id=16]
+[ext_resource path="res://scenes_two/Lever.tscn" type="PackedScene" id=17]
+[ext_resource path="res://scenes_two/Fire.tscn" type="PackedScene" id=18]
+[ext_resource path="res://scenes_two/YellowCrystal.tscn" type="PackedScene" id=19]
+[ext_resource path="res://scenes_two/PushBtn.tscn" type="PackedScene" id=20]
+[ext_resource path="res://scenes_two/Glass.tscn" type="PackedScene" id=21]
+[ext_resource path="res://puzzle_object_scenes/Ring.tscn" type="PackedScene" id=22]
+[ext_resource path="res://puzzle_object_scenes/PuzzleLock.tscn" type="PackedScene" id=23]
+[ext_resource path="res://scenes_two/GreenCystal.tscn" type="PackedScene" id=24]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 3405, 220 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 267.75, 79 )
+
+[node name="Lava7" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 13 )
+this_level = "Lava7"
+save_level = "res://cave_scenes/Lava7.tscn"
+
+[node name="Mid7MapA" type="TileMap" parent="."]
+unique_name_in_owner = true
+tile_set = ExtResource( 3 )
+cell_size = Vector2( 112, 112 )
+format = 1
+tile_data = PoolIntArray( -851971, 2, 0, -851970, 2, 1, -851969, 2, 1, -917504, 2, 1, -917503, 2, 1, -917502, 2, 1, -917501, 2, 1, -917500, 2, 1, -917499, 2, 1, -917498, 2, 1, -917497, 2, 1, -917496, 2, 1, -917495, 2, 1, -917494, 2, 1, -917493, 2, 1, -917492, 2, 1, -917491, 2, 1, -917490, 2, 1, -917489, 2, 1, -917488, 2, 1, -917487, 2, 1, -917486, 2, 1, -917485, 2, 1, -917484, 2, 1, -917483, 2, 1, -917482, 2, 1, -917481, 2, 1, -917480, 2, 1, -917479, 2, 1, -917478, 2, 1, -917477, 2, 1, -917476, 2, 1, -917475, 2, 1, -917474, 2, 1, -917473, 2, 1, -917472, 2, 1, -917471, 2, 1, -917470, 2, 1, -917469, 2, 1, -917468, 2, 1, -917467, 2, 1, -917466, 2, 1, -917465, 2, 1, -917464, 2, 1, -917463, 2, 1, -917462, 2, 1, -917461, 2, 1, -917460, 2, 1, -917459, 2, 1, -917458, 2, 1, -917457, 2, 1, -917456, 2, 1, -917455, 2, 1, -917454, 2, 1, -917453, 2, 2, -786435, 2, 65536, -786434, 2, 4, -786433, 2, 131073, -851968, 2, 131073, -851967, 2, 131073, -851966, 2, 131073, -851965, 2, 131073, -851964, 2, 131073, -851963, 2, 131073, -851962, 2, 131073, -851961, 2, 131073, -851960, 2, 131073, -851959, 2, 131073, -851958, 2, 131073, -851957, 2, 131073, -851956, 2, 131073, -851955, 2, 131073, -851954, 2, 131073, -851953, 2, 131073, -851952, 2, 131073, -851951, 2, 131073, -851950, 2, 131073, -851949, 2, 131073, -851948, 2, 131073, -851947, 2, 131073, -851946, 2, 131073, -851945, 2, 131073, -851944, 2, 131073, -851943, 2, 131073, -851942, 2, 131073, -851941, 2, 131073, -851940, 2, 131073, -851939, 2, 131073, -851938, 2, 131073, -851937, 2, 131073, -851936, 2, 131073, -851935, 2, 131073, -851934, 2, 131073, -851933, 2, 131073, -851932, 2, 131073, -851931, 2, 131073, -851930, 2, 131073, -851929, 2, 131073, -851928, 2, 131073, -851927, 2, 131073, -851926, 2, 131073, -851925, 2, 131073, -851924, 2, 131073, -851923, 2, 131073, -851922, 2, 131073, -851921, 2, 131073, -851920, 2, 131073, -851919, 2, 131073, -851918, 2, 5, -851917, 2, 65538, -720899, 2, 65536, -720898, 2, 65538, -786382, 2, 65536, -786381, 2, 65538, -655363, 2, 65536, -655362, 2, 65538, -720846, 2, 65536, -720845, 2, 65538, -589827, 2, 65536, -589826, 2, 65538, -655310, 2, 65536, -655309, 2, 65538, -524291, 2, 65536, -524290, 2, 65538, -589774, 2, 65536, -589773, 2, 65538, -458755, 2, 65536, -458754, 2, 65540, -458753, 2, 1, -524288, 2, 1, -524287, 2, 1, -524286, 2, 1, -524285, 2, 1, -524284, 2, 1, -524283, 2, 1, -524282, 2, 1, -524281, 2, 1, -524280, 2, 1, -524279, 2, 2, -524274, 2, 0, -524273, 2, 1, -524272, 2, 1, -524271, 2, 1, -524270, 2, 1, -524269, 2, 1, -524268, 2, 1, -524267, 2, 1, -524266, 2, 1, -524265, 2, 1, -524264, 2, 1, -524263, 2, 1, -524262, 2, 1, -524261, 2, 1, -524260, 2, 1, -524259, 2, 1, -524258, 2, 1, -524257, 2, 1, -524256, 2, 1, -524255, 2, 1, -524254, 2, 1, -524253, 2, 1, -524252, 2, 1, -524251, 2, 1, -524250, 2, 1, -524249, 2, 1, -524248, 2, 1, -524247, 2, 1, -524246, 2, 1, -524245, 2, 1, -524244, 2, 1, -524243, 2, 1, -524242, 2, 2, -524238, 2, 65536, -524237, 2, 65538, -393219, 2, 65536, -393218, 2, 4, -393217, 2, 131073, -458752, 2, 131073, -458751, 2, 131073, -458750, 2, 131073, -458749, 2, 131073, -458748, 2, 131073, -458747, 2, 131073, -458746, 2, 131073, -458745, 2, 131073, -458744, 2, 131073, -458743, 2, 131074, -458739, 2, 196608, -458738, 2, 327683, -458737, 2, 131073, -458736, 2, 131073, -458735, 2, 131073, -458734, 2, 131073, -458733, 2, 131073, -458732, 2, 131073, -458731, 2, 131073, -458730, 2, 131073, -458729, 2, 5, -458728, 2, 4, -458727, 2, 131073, -458726, 2, 131073, -458725, 2, 131073, -458724, 2, 131073, -458723, 2, 131073, -458722, 2, 131073, -458721, 2, 131073, -458720, 2, 131073, -458719, 2, 131073, -458718, 2, 131073, -458717, 2, 131073, -458716, 2, 131073, -458715, 2, 131073, -458714, 2, 131073, -458713, 2, 131073, -458712, 2, 131073, -458711, 2, 131073, -458710, 2, 131073, -458709, 2, 131073, -458708, 2, 131073, -458707, 2, 131073, -458706, 2, 131074, -458702, 2, 65536, -458701, 2, 65538, -327683, 2, 65536, -327682, 2, 65538, -393193, 2, 65536, -393192, 2, 65538, -393166, 2, 65536, -393165, 2, 65538, -262147, 2, 65536, -262146, 2, 65538, -327657, 2, 65536, -327656, 2, 65538, -327630, 2, 65536, -327629, 2, 65538, -196611, 2, 65536, -196610, 2, 65538, -262121, 2, 65536, -262120, 2, 65538, -262094, 2, 65536, -262093, 2, 65538, -131075, 2, 65536, -131074, 2, 65540, -131073, 2, 1, -196608, 2, 1, -196607, 2, 1, -196606, 2, 1, -196605, 2, 1, -196604, 2, 2, -196598, 2, 0, -196597, 2, 1, -196596, 2, 1, -196595, 2, 1, -196594, 2, 1, -196593, 2, 1, -196592, 2, 1, -196591, 2, 1, -196590, 2, 1, -196589, 2, 1, -196588, 2, 1, -196587, 2, 1, -196586, 2, 1, -196585, 2, 65541, -196584, 2, 65540, -196583, 2, 1, -196582, 2, 1, -196581, 2, 1, -196580, 2, 1, -196579, 2, 1, -196578, 2, 1, -196577, 2, 1, -196576, 2, 1, -196575, 2, 1, -196574, 2, 1, -196573, 2, 1, -196572, 2, 1, -196571, 2, 2, -196558, 2, 65536, -196557, 2, 65538, -65539, 2, 65536, -65538, 2, 4, -65537, 2, 131073, -131072, 2, 131073, -131071, 2, 131073, -131070, 2, 131073, -131069, 2, 131073, -131068, 2, 131074, -131062, 2, 131072, -131061, 2, 131073, -131060, 2, 131073, -131059, 2, 131073, -131058, 2, 131073, -131057, 2, 131073, -131056, 2, 131073, -131055, 2, 131073, -131054, 2, 131073, -131053, 2, 131073, -131052, 2, 131073, -131051, 2, 131073, -131050, 2, 131073, -131049, 2, 131073, -131048, 2, 131073, -131047, 2, 131073, -131046, 2, 131073, -131045, 2, 131073, -131044, 2, 131073, -131043, 2, 131073, -131042, 2, 131073, -131041, 2, 131073, -131040, 2, 131073, -131039, 2, 131073, -131038, 2, 131073, -131037, 2, 131073, -131036, 2, 5, -131035, 2, 65538, -131031, 2, 0, -131030, 2, 1, -131029, 2, 2, -131022, 2, 65536, -131021, 2, 65538, -3, 2, 65536, -2, 2, 65538, -65500, 2, 65536, -65499, 2, 65538, -65495, 2, 131072, -65494, 2, 131073, -65493, 2, 131074, -65486, 2, 65536, -65485, 2, 65538, 65533, 2, 65536, 65534, 2, 65538, 36, 2, 65536, 37, 2, 65538, 50, 2, 65536, 51, 2, 65538, 131069, 2, 65536, 131070, 2, 65538, 65572, 2, 65536, 65573, 2, 65538, 65586, 2, 65536, 65587, 2, 65538, 196605, 2, 65536, 196606, 2, 65540, 196607, 2, 1, 131072, 2, 1, 131073, 2, 1, 131074, 2, 1, 131075, 2, 1, 131076, 2, 2, 131108, 2, 65536, 131109, 2, 65538, 131112, 2, 0, 131113, 2, 1, 131114, 2, 1, 131115, 2, 2, 131122, 2, 65536, 131123, 2, 65538, 262141, 2, 65536, 262142, 2, 4, 262143, 2, 131073, 196608, 2, 131073, 196609, 2, 131073, 196610, 2, 131073, 196611, 2, 131073, 196612, 2, 131074, 196620, 2, 0, 196621, 2, 1, 196622, 2, 1, 196623, 2, 1, 196624, 2, 1, 196625, 2, 1, 196626, 2, 1, 196627, 2, 1, 196628, 2, 1, 196629, 2, 1, 196630, 2, 1, 196631, 2, 1, 196632, 2, 1, 196633, 2, 1, 196634, 2, 1, 196635, 2, 1, 196636, 2, 2, 196644, 2, 131072, 196645, 2, 131074, 196648, 2, 131072, 196649, 2, 131073, 196650, 2, 131073, 196651, 2, 131074, 196658, 2, 65536, 196659, 2, 65538, 327677, 2, 65536, 327678, 2, 65538, 262156, 2, 131072, 262157, 2, 131073, 262158, 2, 131073, 262159, 2, 131073, 262160, 2, 131073, 262161, 2, 131073, 262162, 2, 131073, 262163, 2, 131073, 262164, 2, 131073, 262165, 2, 131073, 262166, 2, 131073, 262167, 2, 131073, 262168, 2, 131073, 262169, 2, 131073, 262170, 2, 131073, 262171, 2, 131073, 262172, 2, 131074, 262194, 2, 65536, 262195, 2, 65538, 393213, 2, 65536, 393214, 2, 65538, 327730, 2, 65536, 327731, 2, 65538, 458749, 2, 65536, 458750, 2, 65538, 393266, 2, 65536, 393267, 2, 65538, 524285, 2, 65536, 524286, 2, 65540, 524287, 2, 1, 458752, 2, 1, 458753, 2, 1, 458754, 2, 1, 458755, 2, 1, 458756, 2, 2, 458788, 2, 0, 458789, 2, 1, 458790, 2, 1, 458791, 2, 1, 458792, 2, 1, 458793, 2, 1, 458794, 2, 1, 458795, 2, 1, 458796, 2, 1, 458797, 2, 1, 458798, 2, 1, 458799, 2, 1, 458800, 2, 1, 458801, 2, 1, 458802, 2, 65541, 458803, 2, 65538, 589821, 2, 131072, 589822, 2, 131073, 589823, 2, 131073, 524288, 2, 131073, 524289, 2, 131073, 524290, 2, 131073, 524291, 2, 131073, 524292, 2, 131074, 524324, 2, 65536, 524325, 2, 4, 524326, 2, 131073, 524327, 2, 131073, 524328, 2, 131073, 524329, 2, 131073, 524330, 2, 131073, 524331, 2, 131073, 524332, 2, 131073, 524333, 2, 131073, 524334, 2, 131073, 524335, 2, 131073, 524336, 2, 131073, 524337, 2, 5, 524338, 2, 65537, 524339, 2, 65538, 589858, 2, 0, 589859, 2, 1, 589860, 2, 65541, 589861, 2, 65538, 589873, 2, 65536, 589874, 2, 65537, 589875, 2, 65538, 655393, 2, 0, 655394, 2, 65541, 655395, 2, 65537, 655396, 2, 65537, 655397, 2, 65538, 655409, 2, 65536, 655410, 2, 65537, 655411, 2, 65538, 720929, 2, 131072, 720930, 2, 5, 720931, 2, 65537, 720932, 2, 65537, 720933, 2, 65538, 720945, 2, 65536, 720946, 2, 65537, 720947, 2, 65538, 851965, 2, 0, 851966, 2, 1, 851967, 2, 1, 786432, 2, 1, 786433, 2, 1, 786434, 2, 1, 786435, 2, 1, 786436, 2, 1, 786437, 2, 1, 786438, 2, 1, 786439, 2, 1, 786440, 2, 1, 786441, 2, 1, 786442, 2, 1, 786443, 2, 1, 786444, 2, 1, 786445, 2, 1, 786446, 2, 1, 786447, 2, 1, 786448, 2, 1, 786449, 2, 1, 786450, 2, 2, 786466, 2, 131072, 786467, 2, 131073, 786468, 2, 5, 786469, 2, 65538, 786476, 2, 0, 786477, 2, 1, 786478, 2, 1, 786479, 2, 1, 786480, 2, 1, 786481, 2, 65541, 786482, 2, 65537, 786483, 2, 65538, 917501, 2, 65536, 917502, 2, 65537, 917503, 2, 65537, 851968, 2, 4, 851969, 2, 131073, 851970, 2, 131073, 851971, 2, 131073, 851972, 2, 131073, 851973, 2, 131073, 851974, 2, 131073, 851975, 2, 131073, 851976, 2, 131073, 851977, 2, 131073, 851978, 2, 131073, 851979, 2, 131073, 851980, 2, 131073, 851981, 2, 131073, 851982, 2, 131073, 851983, 2, 131073, 851984, 2, 131073, 851985, 2, 131073, 851986, 2, 131074, 852004, 2, 131072, 852005, 2, 131074, 852012, 2, 131072, 852013, 2, 131073, 852014, 2, 131073, 852015, 2, 131073, 852016, 2, 131073, 852017, 2, 5, 852018, 2, 65537, 852019, 2, 65538, 983037, 2, 65536, 983038, 2, 65537, 983039, 2, 65537, 917504, 2, 65538, 917553, 2, 65536, 917554, 2, 65537, 917555, 2, 65538, 1048573, 2, 65536, 1048574, 2, 65537, 1048575, 2, 65537, 983040, 2, 65538, 983089, 2, 65536, 983090, 2, 65537, 983091, 2, 65538, 1114109, 2, 65536, 1114110, 2, 65537, 1114111, 2, 65537, 1048576, 2, 65538, 1048625, 2, 65536, 1048626, 2, 65537, 1048627, 2, 65538, 1179645, 2, 65536, 1179646, 2, 65537, 1179647, 2, 65537, 1114112, 2, 65538, 1114161, 2, 65536, 1114162, 2, 65537, 1114163, 2, 65538, 1245176, 2, 0, 1245177, 2, 1, 1245178, 2, 1, 1245179, 2, 1, 1245180, 2, 1, 1245181, 2, 65541, 1245182, 2, 65537, 1245183, 2, 65537, 1179648, 2, 65540, 1179649, 2, 1, 1179650, 2, 1, 1179651, 2, 1, 1179652, 2, 1, 1179653, 2, 1, 1179654, 2, 1, 1179655, 2, 1, 1179656, 2, 1, 1179657, 2, 1, 1179658, 2, 1, 1179659, 2, 1, 1179660, 2, 1, 1179661, 2, 1, 1179662, 2, 1, 1179663, 2, 1, 1179664, 2, 1, 1179665, 2, 1, 1179666, 2, 1, 1179667, 2, 1, 1179668, 2, 1, 1179669, 2, 1, 1179670, 2, 1, 1179671, 2, 1, 1179672, 2, 1, 1179673, 2, 1, 1179674, 2, 1, 1179675, 2, 1, 1179676, 2, 1, 1179677, 2, 1, 1179678, 2, 1, 1179679, 2, 1, 1179680, 2, 1, 1179681, 2, 1, 1179682, 2, 1, 1179683, 2, 2, 1179692, 2, 0, 1179693, 2, 1, 1179694, 2, 1, 1179695, 2, 1, 1179696, 2, 1, 1179697, 2, 65541, 1179698, 2, 65537, 1179699, 2, 65538, 1310712, 2, 131072, 1310713, 2, 131073, 1310714, 2, 131073, 1310715, 2, 131073, 1310716, 2, 131073, 1310717, 2, 131073, 1310718, 2, 131073, 1310719, 2, 131073, 1245184, 2, 131073, 1245185, 2, 131073, 1245186, 2, 131073, 1245187, 2, 131073, 1245188, 2, 131073, 1245189, 2, 131073, 1245190, 2, 131073, 1245191, 2, 131073, 1245192, 2, 131073, 1245193, 2, 131073, 1245194, 2, 131073, 1245195, 2, 131073, 1245196, 2, 131073, 1245197, 2, 131073, 1245198, 2, 131073, 1245199, 2, 131073, 1245200, 2, 131073, 1245201, 2, 131073, 1245202, 2, 131073, 1245203, 2, 131073, 1245204, 2, 131073, 1245205, 2, 131073, 1245206, 2, 131073, 1245207, 2, 131073, 1245208, 2, 131073, 1245209, 2, 131073, 1245210, 2, 131073, 1245211, 2, 131073, 1245212, 2, 131073, 1245213, 2, 131073, 1245214, 2, 131073, 1245215, 2, 131073, 1245216, 2, 131073, 1245217, 2, 131073, 1245218, 2, 131073, 1245219, 2, 131074, 1245228, 2, 131072, 1245229, 2, 131073, 1245230, 2, 131073, 1245231, 2, 131073, 1245232, 2, 131073, 1245233, 2, 131073, 1245234, 2, 131073, 1245235, 2, 131074 )
+
+[node name="ExitDoor" parent="Mid7MapA" instance=ExtResource( 4 )]
+unique_name_in_owner = true
+position = Vector2( 273, -1297 )
+
+[node name="EntryDoor" parent="Mid7MapA" instance=ExtResource( 5 )]
+unique_name_in_owner = true
+position = Vector2( 2582, 1811 )
+
+[node name="Spawn1" type="Position2D" parent="Mid7MapA"]
+unique_name_in_owner = true
+position = Vector2( 3633, 1849 )
+
+[node name="Spawn2" type="Position2D" parent="Mid7MapA"]
+unique_name_in_owner = true
+position = Vector2( -472, 1800 )
+
+[node name="Ladder" parent="Mid7MapA" instance=ExtResource( 8 )]
+unique_name_in_owner = true
+margin_left = -6157.0
+margin_top = 263.0
+margin_right = -6040.0
+margin_bottom = 583.0
+
+[node name="Shelf" parent="Mid7MapA" instance=ExtResource( 6 )]
+unique_name_in_owner = true
+margin_left = 3200.0
+margin_top = -1205.0
+margin_right = 3430.0
+margin_bottom = -985.0
+shelf_item = "the padlock"
+
+[node name="Sign" parent="Mid7MapA" instance=ExtResource( 7 )]
+unique_name_in_owner = true
+margin_left = 3235.0
+margin_top = -1308.0
+margin_right = 3396.0
+margin_bottom = -1238.0
+sign_text = "I keep your most precious things safe."
+
+[node name="side_wall" parent="Mid7MapA" instance=ExtResource( 14 )]
+unique_name_in_owner = true
+margin_left = -333.0
+margin_top = 1012.0
+margin_right = -221.0
+margin_bottom = 1348.0
+object_text = "the side wall"
+
+[node name="ObjectInfo" parent="Mid7MapA/side_wall" index="2"]
+margin_left = 120.0
+margin_top = 22.0
+margin_right = 160.0
+margin_bottom = 62.0
+
+[node name="BreakableFloor" parent="Mid7MapA" instance=ExtResource( 15 )]
+unique_name_in_owner = true
+margin_left = 1122.0
+margin_top = -784.0
+margin_right = 1458.0
+margin_bottom = -672.0
+
+[node name="ObjectInfo" parent="Mid7MapA/BreakableFloor" index="2"]
+margin_left = 71.0
+margin_top = -70.0
+margin_right = 111.0
+margin_bottom = -30.0
+
+[node name="Log" parent="Mid7MapA" instance=ExtResource( 16 )]
+unique_name_in_owner = true
+margin_left = 4299.0
+margin_top = 804.0
+margin_right = 4859.0
+margin_bottom = 1609.0
+y_pos_change = 535.0
+
+[node name="FireBtn" parent="Mid7MapA" instance=ExtResource( 18 )]
+unique_name_in_owner = true
+margin_left = 1070.0
+margin_top = 1955.0
+margin_right = 1150.0
+margin_bottom = 2020.0
+
+[node name="Lever" parent="Mid7MapA" instance=ExtResource( 17 )]
+unique_name_in_owner = true
+margin_left = 553.0
+margin_top = 1908.0
+margin_right = 673.0
+margin_bottom = 2020.0
+activate_object_path = NodePath("../Log")
+
+[node name="YellowCrystal" parent="Mid7MapA" instance=ExtResource( 19 )]
+unique_name_in_owner = true
+margin_left = -589.0
+margin_top = 1950.0
+margin_right = -484.0
+margin_bottom = 2055.0
+
+[node name="Log2" parent="Mid7MapA" instance=ExtResource( 16 )]
+margin_left = 559.0
+margin_top = -914.0
+margin_right = 1119.0
+margin_bottom = -109.0
+y_pos_change = 1005.0
+
+[node name="PushBtn" parent="Mid7MapA" instance=ExtResource( 20 )]
+unique_name_in_owner = true
+margin_left = -83.0
+margin_top = 654.0
+margin_right = 45.0
+margin_bottom = 766.0
+activate_object_path = NodePath("../Log2")
+
+[node name="FireBtn2" parent="Mid7MapA" instance=ExtResource( 18 )]
+unique_name_in_owner = true
+margin_left = 2196.0
+margin_top = -962.0
+margin_right = 2276.0
+margin_bottom = -897.0
+object_text = "the top fire"
+
+[node name="Glass" parent="Mid7MapA" instance=ExtResource( 21 )]
+unique_name_in_owner = true
+margin_left = 2891.0
+margin_top = -421.0
+margin_right = 2940.0
+margin_bottom = -341.0
+object_text = "the glass"
+
+[node name="Glass2" parent="Mid7MapA" instance=ExtResource( 21 )]
+unique_name_in_owner = true
+margin_left = -80.0
+margin_top = 137.0
+margin_right = -31.0
+margin_bottom = 217.0
+object_text = "the second glass"
+
+[node name="BreakableWall1" parent="Mid7MapA" instance=ExtResource( 14 )]
+unique_name_in_owner = true
+margin_left = 4035.0
+margin_top = 447.0
+margin_right = 4147.0
+margin_bottom = 783.0
+object_text = "another weak wall"
+
+[node name="ObjectInfo" parent="Mid7MapA/BreakableWall1" index="2"]
+margin_left = 115.0
+margin_top = 18.0
+margin_right = 155.0
+margin_bottom = 58.0
+
+[node name="Ring" parent="Mid7MapA" instance=ExtResource( 22 )]
+unique_name_in_owner = true
+margin_left = -53.0
+margin_top = -441.0
+margin_right = 59.0
+margin_bottom = -329.0
+
+[node name="PuzzleLock" parent="Mid7MapA" instance=ExtResource( 23 )]
+unique_name_in_owner = true
+margin_left = 5257.0
+margin_top = 1911.0
+margin_right = 5369.0
+margin_bottom = 2023.0
+
+[node name="PushBtn2" parent="Mid7MapA" instance=ExtResource( 20 )]
+unique_name_in_owner = true
+margin_left = 2168.0
+margin_top = -524.0
+margin_right = 2296.0
+margin_bottom = -412.0
+object_text = "the second button"
+activate_object_path = NodePath("../Log2")
+
+[node name="GreenCystal" parent="Mid7MapA" instance=ExtResource( 24 )]
+unique_name_in_owner = true
+margin_left = 5371.0
+margin_top = 1235.0
+margin_right = 5483.0
+margin_bottom = 1347.0
+
+[node name="PlayerGirl" parent="." instance=ExtResource( 2 )]
+unique_name_in_owner = true
+position = Vector2( 3073, 1868 )
+z_index = 105
+
+[node name="AnimatedSprite" parent="PlayerGirl" index="1"]
+frame = 0
+
+[node name="PlayerCam" parent="PlayerGirl" index="5"]
+current = true
+
+[node name="Drone" parent="." instance=ExtResource( 1 )]
+unique_name_in_owner = true
+visible = false
+position = Vector2( -3934, -1679 )
+
+[node name="music" type="AudioStreamPlayer2D" parent="."]
+unique_name_in_owner = true
+position = Vector2( 2701, 152 )
+stream = ExtResource( 9 )
+volume_db = -20.0
+autoplay = true
+max_distance = 5000.0
+
+[node name="clicker" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = ExtResource( 11 )
+volume_db = -10.0
+
+[node name="collector" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = ExtResource( 10 )
+volume_db = -10.0
+
+[node name="LadderDrop" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = ExtResource( 12 )
+volume_db = -10.0
+
+[node name="speak_player" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+
+[node name="SpeakRemove" type="Timer" parent="."]
+unique_name_in_owner = true
+wait_time = 5.0
+
+[node name="DeathArea" type="Area2D" parent="."]
+position = Vector2( -29, 2297 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DeathArea"]
+position = Vector2( 1709, 210 )
+shape = SubResource( 1 )
+
+[node name="Spawn1Area" type="Area2D" parent="."]
+position = Vector2( 3836, 1862 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Spawn1Area"]
+position = Vector2( 22, -8.5 )
+shape = SubResource( 2 )
+
+[node name="Spawn2Area" type="Area2D" parent="."]
+position = Vector2( -509, 1524 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Spawn2Area"]
+position = Vector2( -119.25, -22 )
+shape = SubResource( 2 )
+
+[connection signal="timeout" from="SpeakRemove" to="." method="_on_SpeakRemove_timeout"]
+[connection signal="body_entered" from="DeathArea" to="." method="_on_DeathArea_body_entered"]
+[connection signal="body_entered" from="Spawn2Area" to="." method="_on_Spawn2Area_body_entered"]
+
+[editable path="Mid7MapA/side_wall"]
+[editable path="Mid7MapA/BreakableFloor"]
+[editable path="Mid7MapA/BreakableWall1"]
+[editable path="PlayerGirl"]
+[editable path="PlayerGirl/PlayerCam/SpeakBG"]
+[editable path="PlayerGirl/PlayerCam/InventoryPanel"]
+[editable path="PlayerGirl/PlayerCam/VocabPanel"]
+[editable path="PlayerGirl/PlayerCam/SentencePanel"]

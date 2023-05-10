@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/give_medicine_boy.mp3-67b8920899f3f8ae2172ef23a9e5e4cf.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/narrator_audio_script/give_medicine_boy.mp3"
+dest_files=[ "res://.import/give_medicine_boy.mp3-67b8920899f3f8ae2172ef23a9e5e4cf.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

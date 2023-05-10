@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/bell_hole_solve.mp3-54be809d9b3226340c5d7c7376ae8cd2.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/lower2/bell_hole_solve.mp3"
+dest_files=[ "res://.import/bell_hole_solve.mp3-54be809d9b3226340c5d7c7376ae8cd2.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

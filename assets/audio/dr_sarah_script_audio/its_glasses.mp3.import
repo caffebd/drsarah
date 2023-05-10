@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/its_glasses.mp3-cbece4a69eaf7d07520b24c14b2e52f3.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/its_glasses.mp3"
+dest_files=[ "res://.import/its_glasses.mp3-cbece4a69eaf7d07520b24c14b2e52f3.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/press_up_door.mp3-e3d6f81436e0663973a5aa4444ef56e7.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/narrator_audio_script/press_up_door.mp3"
+dest_files=[ "res://.import/press_up_door.mp3-e3d6f81436e0663973a5aa4444ef56e7.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/lamp_chase_darkness.mp3-5a63261a89d76d9bb595ec0f7f11e972.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/riddles/lamp_chase_darkness.mp3"
+dest_files=[ "res://.import/lamp_chase_darkness.mp3-5a63261a89d76d9bb595ec0f7f11e972.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

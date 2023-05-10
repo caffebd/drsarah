@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/clock_hands.mp3-ad6712bc255421141ee9a8341e31e80d.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/riddles/clock_hands.mp3"
+dest_files=[ "res://.import/clock_hands.mp3-ad6712bc255421141ee9a8341e31e80d.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/put_item_hole.mp3-276e7631e4239cb1b61c811cad37a3ac.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/put_item_hole.mp3"
+dest_files=[ "res://.import/put_item_hole.mp3-276e7631e4239cb1b61c811cad37a3ac.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

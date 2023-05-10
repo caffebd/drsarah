@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/sign_said.mp3-1d00e3f9dd13e164b095a01b88c5741a.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/lower1/sign_said.mp3"
+dest_files=[ "res://.import/sign_said.mp3-1d00e3f9dd13e164b095a01b88c5741a.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

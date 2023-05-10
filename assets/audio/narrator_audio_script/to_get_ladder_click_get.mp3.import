@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/to_get_ladder_click_get.mp3-5fcbda1ba8d2b2172e04b6b935606a2e.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/narrator_audio_script/to_get_ladder_click_get.mp3"
+dest_files=[ "res://.import/to_get_ladder_click_get.mp3-5fcbda1ba8d2b2172e04b6b935606a2e.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

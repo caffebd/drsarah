@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/click_again_complete_sentence.mp3-a9b05f9e04411bff1861f72a3dfd21c9.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/narrator_audio_script/click_again_complete_sentence.mp3"
+dest_files=[ "res://.import/click_again_complete_sentence.mp3-a9b05f9e04411bff1861f72a3dfd21c9.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

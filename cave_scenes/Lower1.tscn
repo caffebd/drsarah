@@ -1,0 +1,155 @@
+[gd_scene load_steps=17 format=2]
+
+[ext_resource path="res://assets/tilemaps/LavaTilemap.tres" type="TileSet" id=1]
+[ext_resource path="res://scenes_two/LogPlatform.tscn" type="PackedScene" id=2]
+[ext_resource path="res://CharacterScenes/PlayerGirl.tscn" type="PackedScene" id=3]
+[ext_resource path="res://cave_scenes/Lower1.gd" type="Script" id=4]
+[ext_resource path="res://CharacterScenes/Drone.tscn" type="PackedScene" id=5]
+[ext_resource path="res://scenes_two/Shelf.tscn" type="PackedScene" id=6]
+[ext_resource path="res://scenes_two/ExitDoor.tscn" type="PackedScene" id=7]
+[ext_resource path="res://assets/audio/success_drop_ladder.wav" type="AudioStream" id=8]
+[ext_resource path="res://scenes_two/Sign.tscn" type="PackedScene" id=9]
+[ext_resource path="res://puzzle_object_scenes/RiddleItem.tscn" type="PackedScene" id=10]
+[ext_resource path="res://puzzle_object_scenes/TheMirror.tscn" type="PackedScene" id=11]
+[ext_resource path="res://scenes_two/BlueCrystal.tscn" type="PackedScene" id=12]
+[ext_resource path="res://assets/tilemaps/MainSetLowerLevels.tres" type="TileSet" id=13]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 100, 235 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 145, 35 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 90, 45 )
+
+[node name="Lower1" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 4 )
+this_level = "Lower1"
+save_level = "\"res://cave_scenes/Lower1.tscn\""
+
+[node name="cave_bg" type="ColorRect" parent="."]
+visible = false
+margin_left = -2640.0
+margin_top = -3620.0
+margin_right = 5590.0
+margin_bottom = 1510.0
+color = Color( 0.160784, 0.180392, 0.176471, 1 )
+
+[node name="Lower1MapA" type="TileMap" parent="."]
+unique_name_in_owner = true
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 112, 112 )
+format = 1
+tile_data = PoolIntArray( -1638373, 0, 131076, -1638372, 0, 196609, -1638371, 0, 196609, -1638370, 0, 196609, -1638369, 0, 196609, -1638368, 0, 196609, -1638367, 0, 196609, -1638366, 0, 196609, -1638365, 0, 196609, -1638364, 0, 196609, -1638363, 0, 196609, -1638362, 0, 196609, -1638361, 0, 196609, -1638360, 0, 196609, -1638359, 0, 196609, -1638358, 0, 196609, -1638357, 0, 196609, -1638356, 0, 196609, -1638355, 0, 196609, -1638354, 0, 196609, -1638353, 0, 196609, -1638352, 0, 196609, -1638351, 0, 196609, -1638350, 0, 196609, -1638349, 0, 196609, -1638348, 0, 196609, -1638347, 0, 196609, -1638346, 0, 196609, -1638345, 0, 196609, -1638344, 0, 131077, -1572837, 0, 65539, -1572808, 0, 65539, -1507301, 0, 65539, -1507272, 0, 65539, -1376264, 0, 131076, -1376263, 0, 196609, -1376262, 0, 196609, -1376261, 0, 196609, -1376260, 0, 196609, -1376259, 0, 196609, -1376258, 0, 0, -1376257, 0, 196609, -1441792, 0, 196609, -1441791, 0, 196609, -1441790, 0, 196609, -1441789, 0, 196609, -1441788, 0, 196609, -1441787, 0, 196609, -1441786, 0, 196609, -1441785, 0, 196609, -1441784, 0, 196609, -1441783, 0, 196609, -1441782, 0, 196609, -1441781, 0, 196609, -1441780, 0, 196609, -1441779, 0, 196609, -1441778, 0, 196609, -1441777, 0, 196609, -1441776, 0, 196609, -1441775, 0, 196609, -1441774, 0, 196609, -1441773, 0, 196609, -1441772, 0, 196609, -1441771, 0, 196609, -1441770, 0, 196609, -1441769, 0, 196609, -1441768, 0, 196609, -1441767, 0, 196609, -1441766, 0, 196609, -1441765, 0, 0, -1441759, 0, 131076, -1441758, 0, 196609, -1441757, 0, 196609, -1441756, 0, 196609, -1441755, 0, 196609, -1441754, 0, 196609, -1441753, 0, 131077, -1441748, 0, 196608, -1441747, 0, 196609, -1441746, 0, 196609, -1441745, 0, 196609, -1441744, 0, 196609, -1441743, 0, 196609, -1441742, 0, 196609, -1441741, 0, 196609, -1441740, 0, 196609, -1441739, 0, 196609, -1441738, 0, 196609, -1441737, 0, 196609, -1441736, 0, 0, -1310728, 0, 65539, -1310722, 0, 65539, -1376229, 0, 65539, -1376226, 0, 196608, -1376225, 0, 196609, -1376224, 0, 196609, -1376223, 0, 196613, -1376217, 0, 65539, -1376200, 0, 65539, -1245192, 0, 65539, -1245186, 0, 65539, -1310693, 0, 0, -1310692, 0, 196610, -1310681, 0, 0, -1310680, 0, 2, -1310664, 0, 65539, -1179656, 0, 65539, -1179650, 0, 65539, -1245157, 0, 65539, -1245145, 0, 131072, -1245144, 0, 0, -1245143, 0, 196609, -1245142, 0, 196609, -1245141, 0, 196609, -1245140, 0, 196609, -1245139, 0, 196609, -1245138, 0, 196609, -1245137, 0, 196609, -1245136, 0, 196609, -1245135, 0, 131077, -1245128, 0, 65539, -1114120, 0, 65539, -1114114, 0, 65539, -1179645, 0, 131076, -1179644, 0, 196609, -1179643, 0, 196609, -1179642, 0, 196609, -1179641, 0, 196609, -1179640, 0, 196609, -1179639, 0, 196609, -1179638, 0, 196609, -1179637, 0, 196609, -1179636, 0, 196609, -1179635, 0, 196609, -1179634, 0, 196609, -1179633, 0, 196609, -1179632, 0, 196609, -1179631, 0, 196610, -1179627, 0, 196608, -1179626, 0, 196609, -1179625, 0, 196609, -1179624, 0, 196610, -1179621, 0, 0, -1179620, 0, 1, -1179619, 0, 1, -1179618, 0, 1, -1179617, 0, 1, -1179616, 0, 2, -1179599, 0, 65539, -1179592, 0, 65539, -1048584, 0, 65539, -1048578, 0, 65539, -1114110, 0, 196608, -1114109, 0, 0, -1114085, 0, 0, -1114084, 0, 131073, -1114083, 0, 131073, -1114082, 0, 131073, -1114081, 0, 131073, -1114080, 0, 0, -1114079, 0, 196609, -1114078, 0, 196610, -1114063, 0, 0, -1114062, 0, 196610, -1114056, 0, 65539, -983048, 0, 65539, -983042, 0, 65539, -1048573, 0, 65539, -1048550, 0, 196608, -1048549, 0, 0, -1048527, 0, 65539, -1048520, 0, 65539, -917512, 0, 65539, -917506, 0, 65539, -983039, 0, 196608, -983038, 0, 196609, -983037, 0, 0, -983013, 0, 0, -983012, 0, 196609, -983011, 0, 196609, -983010, 0, 196609, -983009, 0, 196609, -983008, 0, 196609, -983007, 0, 196609, -983006, 0, 196609, -983005, 0, 196609, -983004, 0, 196609, -983003, 0, 196609, -983002, 0, 196609, -983001, 0, 196609, -983000, 0, 196609, -982999, 0, 131077, -982991, 0, 0, -982990, 0, 196609, -982989, 0, 196610, -982984, 0, 65539, -851976, 0, 65539, -851970, 0, 65539, -917501, 0, 65539, -917481, 0, 0, -917480, 0, 1, -917479, 0, 1, -917478, 0, 1, -917477, 0, 0, -917463, 0, 0, -917462, 0, 2, -917455, 0, 65539, -917448, 0, 65539, -786440, 0, 65539, -786434, 0, 0, -786433, 0, 196609, -851968, 0, 196609, -851967, 0, 196609, -851966, 0, 196609, -851965, 0, 196613, -851946, 0, 0, -851945, 0, 65541, -851944, 0, 65537, -851943, 0, 65537, -851942, 0, 65537, -851941, 0, 65538, -851927, 0, 65536, -851926, 0, 65540, -851925, 0, 2, -851919, 0, 0, -851918, 0, 196609, -851917, 0, 196609, -851916, 0, 196610, -851912, 0, 65539, -720904, 0, 65539, -720898, 0, 65539, -786411, 0, 0, -786410, 0, 65541, -786409, 0, 65537, -786408, 0, 65537, -786407, 0, 65537, -786406, 0, 65537, -786405, 0, 65538, -786391, 0, 131072, -786390, 0, 5, -786389, 0, 65540, -786388, 0, 2, -786383, 0, 65539, -786376, 0, 65539, -655368, 0, 65539, -655362, 0, 65539, -720889, 0, 196608, -720888, 0, 196609, -720887, 0, 196609, -720886, 0, 196609, -720885, 0, 196609, -720884, 0, 196609, -720883, 0, 196609, -720882, 0, 196610, -720878, 0, 196608, -720877, 0, 196609, -720876, 0, 196609, -720875, 0, 0, -720874, 0, 131073, -720873, 0, 131073, -720872, 0, 131073, -720871, 0, 131073, -720870, 0, 131073, -720869, 0, 131074, -720854, 0, 131072, -720853, 0, 5, -720852, 0, 65538, -720847, 0, 0, -720846, 0, 196609, -720845, 0, 196609, -720844, 0, 196609, -720843, 0, 196610, -720840, 0, 65539, -589832, 0, 65539, -589826, 0, 65539, -655317, 0, 131072, -655316, 0, 0, -655315, 0, 196610, -655311, 0, 65539, -655304, 0, 65539, -524296, 0, 65539, -524290, 0, 196612, -524289, 0, 196609, -589824, 0, 196609, -589823, 0, 196609, -589822, 0, 196609, -589821, 0, 196609, -589820, 0, 196609, -589819, 0, 131077, -589775, 0, 65539, -589769, 0, 0, -589768, 0, 0, -458760, 0, 65539, -458759, 6, 0, -458758, 6, 0, -458757, 6, 0, -458756, 6, 0, -458755, 6, 1, -524283, 0, 196612, -524282, 0, 131077, -524241, 0, 0, -524240, 0, 0, -524239, 0, 0, -524238, 0, 196609, -524237, 0, 196609, -524236, 0, 196609, -524235, 0, 196609, -524234, 0, 196609, -524233, 0, 0, -524232, 0, 131074, -393224, 0, 65539, -393223, 6, 0, -393222, 6, 0, -393221, 6, 0, -393220, 6, 0, -393219, 6, 0, -458746, 0, 196612, -458745, 0, 131077, -458706, 0, 0, -458705, 0, 65541, -458704, 0, 65538, -327688, 0, 65539, -327687, 6, 0, -327686, 6, 0, -327685, 6, 0, -327684, 6, 0, -327683, 6, 0, -393209, 0, 196612, -393208, 0, 196609, -393207, 0, 196609, -393206, 0, 196609, -393205, 0, 196609, -393204, 0, 196609, -393203, 0, 196609, -393202, 0, 196610, -393171, 0, 0, -393170, 0, 65541, -393169, 0, 65537, -393168, 0, 65538, -262153, 5, 0, -262152, 0, 65539, -262151, 6, 65536, -262150, 6, 0, -262149, 6, 0, -262148, 6, 0, -262147, 6, 65537, -327679, 6, 0, -327678, 6, 1, -327663, 0, 131076, -327662, 0, 196609, -327661, 0, 196609, -327660, 0, 196609, -327659, 0, 196609, -327658, 0, 196609, -327657, 0, 196609, -327656, 0, 196609, -327655, 0, 196609, -327654, 0, 196609, -327653, 0, 196609, -327652, 0, 196609, -327651, 0, 196609, -327650, 0, 196609, -327649, 0, 196609, -327648, 0, 196609, -327647, 0, 196609, -327646, 0, 196609, -327645, 0, 196609, -327644, 0, 196609, -327643, 0, 196609, -327642, 0, 196609, -327641, 0, 196609, -327640, 0, 196609, -327639, 0, 196609, -327638, 0, 196609, -327637, 0, 196609, -327636, 0, 196609, -327635, 0, 0, -327634, 0, 131073, -327633, 0, 131073, -327632, 0, 131074, -196616, 0, 65539, -262143, 6, 65536, -262142, 6, 65537, -262139, 6, 0, -262138, 6, 1, -262127, 0, 65539, -131080, 0, 65539, -196603, 6, 65536, -196602, 6, 65537, -196598, 0, 131076, -196597, 0, 196609, -196596, 0, 196609, -196595, 0, 196609, -196594, 0, 196609, -196593, 0, 196609, -196592, 0, 196609, -196591, 0, 196613, -65544, 0, 65539, -131065, 0, 131076, -131064, 0, 196609, -131063, 0, 196609, -131062, 0, 196613, -8, 0, 65539, -65530, 0, 0, -65529, 0, 0, 65528, 0, 65539, 65534, 0, 131076, 65535, 0, 196609, 0, 0, 196609, 1, 0, 196609, 2, 0, 196609, 3, 0, 196609, 4, 0, 196609, 5, 0, 196609, 6, 0, 0, 7, 0, 131074, 131064, 0, 196612, 131065, 0, 196609, 131066, 0, 196609, 131067, 0, 196609, 131068, 0, 196609, 131069, 0, 196609, 131070, 0, 196613 )
+
+[node name="Main Tilesets" type="TileMap" parent="Lower1MapA"]
+tile_set = ExtResource( 13 )
+format = 1
+
+[node name="Log" parent="Lower1MapA" instance=ExtResource( 2 )]
+unique_name_in_owner = true
+margin_left = -790.0
+margin_top = -1700.0
+margin_right = -230.0
+margin_bottom = -895.0
+object_text = "the  log"
+y_pos_change = 1000.0
+log_speed = 4.0
+
+[node name="PlayerGirl" parent="Lower1MapA/Log" instance=ExtResource( 3 )]
+unique_name_in_owner = true
+position = Vector2( 290, 590 )
+z_index = 100
+
+[node name="PlayerCam" parent="Lower1MapA/Log/PlayerGirl" index="5"]
+current = true
+
+[node name="ExitDoor" parent="Lower1MapA" instance=ExtResource( 7 )]
+unique_name_in_owner = true
+position = Vector2( 2760, -970 )
+
+[node name="the_clock" parent="Lower1MapA" instance=ExtResource( 10 )]
+unique_name_in_owner = true
+margin_left = 5790.0
+margin_top = -1030.0
+margin_right = 5916.0
+margin_bottom = -904.0
+
+[node name="Shelf" parent="Lower1MapA" instance=ExtResource( 6 )]
+unique_name_in_owner = true
+margin_left = 3290.0
+margin_top = -830.0
+margin_right = 3520.0
+margin_bottom = -610.0
+object_text = "the hole"
+shelf_item = "the clock"
+
+[node name="Spawn1" type="Position2D" parent="Lower1MapA"]
+unique_name_in_owner = true
+
+[node name="Sign" parent="Lower1MapA" instance=ExtResource( 9 )]
+unique_name_in_owner = true
+margin_left = 3320.0
+margin_top = -910.0
+margin_right = 3481.0
+margin_bottom = -840.0
+sign_text = "My hands will help you stay organised."
+
+[node name="hole_trigger" type="Area2D" parent="Lower1MapA"]
+position = Vector2( 3630, -570 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Lower1MapA/hole_trigger"]
+position = Vector2( 182, -221 )
+shape = SubResource( 1 )
+
+[node name="TheMirror" parent="Lower1MapA" instance=ExtResource( 11 )]
+unique_name_in_owner = true
+margin_left = 4320.0
+margin_top = -690.0
+margin_right = 4397.0
+margin_bottom = -578.0
+
+[node name="ClockTrig" type="Area2D" parent="Lower1MapA"]
+position = Vector2( 6130, -1160 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Lower1MapA/ClockTrig"]
+position = Vector2( 25, -25 )
+shape = SubResource( 2 )
+
+[node name="BlueCrystal" parent="Lower1MapA" instance=ExtResource( 12 )]
+unique_name_in_owner = true
+margin_left = 110.0
+margin_top = -1570.0
+margin_right = 222.0
+margin_bottom = -1458.0
+
+[node name="crystal trigger" type="Area2D" parent="Lower1MapA"]
+position = Vector2( -80, -1600 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Lower1MapA/crystal trigger"]
+position = Vector2( 80, -35 )
+shape = SubResource( 3 )
+
+[node name="Drone" parent="." instance=ExtResource( 5 )]
+unique_name_in_owner = true
+visible = false
+position = Vector2( -3050, 310 )
+
+[node name="LadderDrop" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 8 )
+
+[node name="speak_player" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+
+[connection signal="body_entered" from="Lower1MapA/hole_trigger" to="." method="_on_hole_trigger_body_entered"]
+[connection signal="body_entered" from="Lower1MapA/ClockTrig" to="." method="_on_ClockTrig_body_entered"]
+[connection signal="body_entered" from="Lower1MapA/crystal trigger" to="." method="_on_crystal_trigger_body_entered"]
+
+[editable path="Lower1MapA/Log/PlayerGirl"]
+[editable path="Lower1MapA/Log/PlayerGirl/PlayerCam/SpeakBG"]
+[editable path="Lower1MapA/Log/PlayerGirl/PlayerCam/InventoryPanel"]
+[editable path="Lower1MapA/Log/PlayerGirl/PlayerCam/VocabPanel"]
+[editable path="Lower1MapA/Log/PlayerGirl/PlayerCam/SentencePanel"]

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/intro_7_complicated.mp3-03ea836e297665933b720f7f698efe94.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/narrator_audio_script/intro_7_complicated.mp3"
+dest_files=[ "res://.import/intro_7_complicated.mp3-03ea836e297665933b720f7f698efe94.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

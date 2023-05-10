@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/found_ddor_sideways.mp3-4806374974b1495e9e8ecf18ccfdd9c6.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/lower4/found_ddor_sideways.mp3"
+dest_files=[ "res://.import/found_ddor_sideways.mp3-4806374974b1495e9e8ecf18ccfdd9c6.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

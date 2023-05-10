@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/lamp_hole.mp3-ebe95c7862d97fcb88a71b0d048f7be2.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/water10/lamp_hole.mp3"
+dest_files=[ "res://.import/lamp_hole.mp3-ebe95c7862d97fcb88a71b0d048f7be2.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

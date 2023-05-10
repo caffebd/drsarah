@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/right_arrow.mp3-b3e972a11a650dbced5ff7509a929f81.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/narrator_audio_script/right_arrow.mp3"
+dest_files=[ "res://.import/right_arrow.mp3-b3e972a11a650dbced5ff7509a929f81.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

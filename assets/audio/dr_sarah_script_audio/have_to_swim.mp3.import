@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/have_to_swim.mp3-e4456e4d4ce2696c2caaa8c2a8cd3d52.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/have_to_swim.mp3"
+dest_files=[ "res://.import/have_to_swim.mp3-e4456e4d4ce2696c2caaa8c2a8cd3d52.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

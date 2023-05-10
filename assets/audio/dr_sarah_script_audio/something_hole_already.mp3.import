@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/something_hole_already.mp3-9506dc5bab00b3fedbcc9e51a420942d.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/something_hole_already.mp3"
+dest_files=[ "res://.import/something_hole_already.mp3-9506dc5bab00b3fedbcc9e51a420942d.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/shelf_already_remove_item.mp3-906b6a390ddb29e1ab8acab802644fb2.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/shelf_already_remove_item.mp3"
+dest_files=[ "res://.import/shelf_already_remove_item.mp3-906b6a390ddb29e1ab8acab802644fb2.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

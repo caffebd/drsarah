@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/boomerang_has_vanished.mp3-434eb1f801878f78367e496d179df889.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/boomerang_has_vanished.mp3"
+dest_files=[ "res://.import/boomerang_has_vanished.mp3-434eb1f801878f78367e496d179df889.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

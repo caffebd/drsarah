@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/single_click_deep.mp3-d983041b0331f6c151f7866bcff5232e.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sound_effects/single_click_deep.mp3"
+dest_files=[ "res://.import/single_click_deep.mp3-d983041b0331f6c151f7866bcff5232e.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/at_first_lever.mp3-a7ab99255992867ac68b9236a84e3905.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/lower4/at_first_lever.mp3"
+dest_files=[ "res://.import/at_first_lever.mp3-a7ab99255992867ac68b9236a84e3905.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

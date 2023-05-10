@@ -1,0 +1,51 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://assets/game_objects/medical_box.png" type="Texture" id=1]
+[ext_resource path="res://scenes_two/FirstAid.gd" type="Script" id=2]
+[ext_resource path="res://assets/fonts/Comfortaa/Comfortaa-VariableFont_wght.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://UI_Scenes/ObjectLabel.tscn" type="PackedScene" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+size = 45
+font_data = ExtResource( 3 )
+
+[node name="FirstAid" type="TextureButton"]
+margin_right = 84.0
+margin_bottom = 63.0
+texture_normal = ExtResource( 1 )
+script = ExtResource( 2 )
+
+[node name="ClickCount" type="ColorRect" parent="."]
+unique_name_in_owner = true
+visible = false
+margin_left = -90.0
+margin_top = -170.0
+margin_right = 190.0
+margin_bottom = -60.0
+color = Color( 1, 1, 1, 0.784314 )
+
+[node name="ColorRect" type="ColorRect" parent="ClickCount"]
+margin_left = 8.0
+margin_top = 10.0
+margin_right = 270.0
+margin_bottom = 100.0
+color = Color( 0.0117647, 0.0117647, 0.0117647, 0.862745 )
+
+[node name="clicks" type="Label" parent="ClickCount"]
+unique_name_in_owner = true
+margin_left = 35.0
+margin_top = 20.0
+margin_right = 248.0
+margin_bottom = 90.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "Clicks = 0"
+align = 1
+valign = 1
+
+[node name="ObjectInfo" parent="." instance=ExtResource( 4 )]
+unique_name_in_owner = true
+margin_left = -65.0
+margin_top = -66.0
+margin_right = -25.0
+margin_bottom = -26.0

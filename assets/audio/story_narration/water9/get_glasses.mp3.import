@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/get_glasses.mp3-3b12ee2ddd6cfd25a90aa6a2339bede3.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/water9/get_glasses.mp3"
+dest_files=[ "res://.import/get_glasses.mp3-3b12ee2ddd6cfd25a90aa6a2339bede3.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

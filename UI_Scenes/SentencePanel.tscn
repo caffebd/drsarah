@@ -1,0 +1,116 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://assets/fonts/Comfortaa/Comfortaa-VariableFont_wght.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://UI_Scenes/SentencePanel.gd" type="Script" id=2]
+[ext_resource path="res://assets/ui/Key Button.png" type="Texture" id=3]
+[ext_resource path="res://assets/ui/Cursor Button.png" type="Texture" id=4]
+[ext_resource path="res://assets/ui/zoom_out_icon.png" type="Texture" id=5]
+[ext_resource path="res://assets/ui/zoom_in_icon.png" type="Texture" id=6]
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0.886275, 0.882353, 0.917647, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="DynamicFont" id=1]
+size = 60
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=7]
+bg_color = Color( 0.886275, 0.882353, 0.917647, 1 )
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0.886275, 0.882353, 0.917647, 1 )
+
+[sub_resource type="StyleBoxFlat" id=4]
+bg_color = Color( 0.905882, 0.901961, 0.941176, 1 )
+
+[sub_resource type="StyleBoxFlat" id=5]
+bg_color = Color( 0.894118, 0, 0, 1 )
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[sub_resource type="DynamicFont" id=6]
+size = 41
+font_data = ExtResource( 1 )
+
+[node name="SentencePanel" type="Panel"]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_top = -106.0
+margin_right = 1920.0
+custom_styles/panel = SubResource( 2 )
+script = ExtResource( 2 )
+
+[node name="SentenceLabel" type="LineEdit" parent="."]
+unique_name_in_owner = true
+margin_left = 115.0
+margin_top = 20.0
+margin_right = 1708.0
+margin_bottom = 88.0
+custom_colors/cursor_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+custom_styles/read_only = SubResource( 7 )
+custom_styles/focus = SubResource( 3 )
+custom_styles/normal = SubResource( 4 )
+clear_button_enabled = true
+selecting_enabled = false
+caret_blink = true
+
+[node name="InputType" type="TextureButton" parent="."]
+modulate = Color( 0, 0, 0, 0.705882 )
+margin_left = 22.0
+margin_top = 13.0
+margin_right = 102.0
+margin_bottom = 93.0
+toggle_mode = true
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 3 )
+
+[node name="TextWarn" type="Panel" parent="."]
+unique_name_in_owner = true
+visible = false
+margin_left = 1233.0
+margin_top = 21.0
+margin_right = 1707.0
+margin_bottom = 81.0
+custom_styles/panel = SubResource( 5 )
+
+[node name="Label" type="Label" parent="TextWarn"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -207.0
+margin_top = -23.5
+margin_right = 207.0
+margin_bottom = 23.5
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "TEXT ENTRY MODE"
+
+[node name="ZoomBtn" type="TextureButton" parent="."]
+unique_name_in_owner = true
+margin_left = 1821.0
+margin_top = 12.0
+margin_right = 1901.0
+margin_bottom = 92.0
+toggle_mode = true
+texture_normal = ExtResource( 5 )
+texture_pressed = ExtResource( 6 )
+
+[connection signal="mouse_entered" from="." to="." method="_on_SentencePanel_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_SentencePanel_mouse_exited"]
+[connection signal="toggled" from="InputType" to="." method="_on_InputType_toggled"]

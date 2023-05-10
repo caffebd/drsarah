@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/find_item_solve_riddle.mp3-5c089d0acabafcc5a63ebff32ea485a2.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/find_item_solve_riddle.mp3"
+dest_files=[ "res://.import/find_item_solve_riddle.mp3-5c089d0acabafcc5a63ebff32ea485a2.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

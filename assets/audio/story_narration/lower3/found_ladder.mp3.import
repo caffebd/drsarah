@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/found_ladder.mp3-5dfe767201f91bfe31f376aadc0dea77.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/lower3/found_ladder.mp3"
+dest_files=[ "res://.import/found_ladder.mp3-5dfe767201f91bfe31f376aadc0dea77.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

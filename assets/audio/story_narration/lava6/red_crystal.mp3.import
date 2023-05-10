@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/red_crystal.mp3-97f43fd4296ecd829132dac447feef0b.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/lava6/red_crystal.mp3"
+dest_files=[ "res://.import/red_crystal.mp3-97f43fd4296ecd829132dac447feef0b.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

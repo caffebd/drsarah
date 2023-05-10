@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/need_push_button.mp3-2aaf251c9c5bb62529c8bbd7de1ae2e7.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/need_push_button.mp3"
+dest_files=[ "res://.import/need_push_button.mp3-2aaf251c9c5bb62529c8bbd7de1ae2e7.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/door_alpha.mp3-e9544b22c5cf497be729653807870caa.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/door_alpha.mp3"
+dest_files=[ "res://.import/door_alpha.mp3-e9544b22c5cf497be729653807870caa.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

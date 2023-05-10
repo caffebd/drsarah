@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/lever_log_exit.mp3-2abd8bc42a36a8052050c5b4861b1c41.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/lava8/lever_log_exit.mp3"
+dest_files=[ "res://.import/lever_log_exit.mp3-2abd8bc42a36a8052050c5b4861b1c41.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

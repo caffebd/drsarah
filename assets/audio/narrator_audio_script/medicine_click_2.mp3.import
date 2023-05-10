@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/medicine_click_2.mp3-32f27dd2ff06a19a3e484ccc5d913b6d.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/narrator_audio_script/medicine_click_2.mp3"
+dest_files=[ "res://.import/medicine_click_2.mp3-32f27dd2ff06a19a3e484ccc5d913b6d.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

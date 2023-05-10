@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/its_glass_water.mp3-293ad6a61ed7602dfed5f36b2f68538b.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/its_glass_water.mp3"
+dest_files=[ "res://.import/its_glass_water.mp3-293ad6a61ed7602dfed5f36b2f68538b.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

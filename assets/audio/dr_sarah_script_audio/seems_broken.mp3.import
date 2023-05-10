@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/seems_broken.mp3-e80a0978217ef0814399a72dc6c92fb9.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/seems_broken.mp3"
+dest_files=[ "res://.import/seems_broken.mp3-e80a0978217ef0814399a72dc6c92fb9.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

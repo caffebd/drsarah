@@ -1,0 +1,105 @@
+[gd_scene load_steps=15 format=2]
+
+[ext_resource path="res://assets/audio/sound_effects/hamme_effect.mp3" type="AudioStream" id=1]
+[ext_resource path="res://scenes_two/BreakableWall1.gd" type="Script" id=2]
+[ext_resource path="res://assets/game_objects/Lava Vertical Breaking/Vertical Breaking1.png" type="Texture" id=3]
+[ext_resource path="res://UI_Scenes/ObjectLabel.tscn" type="PackedScene" id=4]
+[ext_resource path="res://assets/game_objects/Lava Vertical Breaking/Vertical Breaking2.png" type="Texture" id=5]
+[ext_resource path="res://assets/game_objects/Lava Vertical Breaking/Vertical Breaking6.png" type="Texture" id=6]
+[ext_resource path="res://assets/game_objects/Lava Vertical Breaking/Vertical Breaking4.png" type="Texture" id=7]
+[ext_resource path="res://assets/game_objects/Lava Vertical Breaking/Vertical Breaking3.png" type="Texture" id=8]
+[ext_resource path="res://assets/game_objects/Lava Vertical Breaking/Vertical Breaking5.png" type="Texture" id=9]
+[ext_resource path="res://assets/game_objects/Lava Vertical Breaking/Vertical Breaking7.png" type="Texture" id=10]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 56, 168 )
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 3 ), ExtResource( 5 ), ExtResource( 8 ), ExtResource( 7 ), ExtResource( 9 ), ExtResource( 6 ), ExtResource( 10 ) ],
+"loop": false,
+"name": "break",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 3 ) ],
+"loop": true,
+"name": "start",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=3]
+animations = [ {
+"frames": [ ExtResource( 3 ), ExtResource( 5 ), ExtResource( 8 ), ExtResource( 7 ), ExtResource( 9 ), ExtResource( 6 ), ExtResource( 10 ) ],
+"loop": false,
+"name": "break",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 3 ) ],
+"loop": true,
+"name": "start",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=4]
+animations = [ {
+"frames": [ ExtResource( 3 ), ExtResource( 5 ), ExtResource( 8 ), ExtResource( 7 ), ExtResource( 9 ), ExtResource( 6 ), ExtResource( 10 ) ],
+"loop": false,
+"name": "break",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 3 ) ],
+"loop": true,
+"name": "start",
+"speed": 5.0
+} ]
+
+[node name="BreakableWall1" type="TextureButton"]
+margin_right = 112.0
+margin_bottom = 336.0
+rect_min_size = Vector2( 112, 336 )
+script = ExtResource( 2 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+collision_layer = 3
+collision_mask = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 56, 168 )
+shape = SubResource( 1 )
+
+[node name="FadeOut" type="Tween" parent="."]
+unique_name_in_owner = true
+
+[node name="ObjectInfo" parent="." instance=ExtResource( 4 )]
+unique_name_in_owner = true
+margin_left = -136.0
+margin_top = 128.0
+margin_right = -96.0
+margin_bottom = 168.0
+
+[node name="WallBroken" type="Timer" parent="."]
+unique_name_in_owner = true
+wait_time = 3.0
+one_shot = true
+
+[node name="wall_break" type="AnimatedSprite" parent="."]
+unique_name_in_owner = true
+position = Vector2( 56, 53 )
+frames = SubResource( 2 )
+animation = "start"
+
+[node name="wall_break2" type="AnimatedSprite" parent="wall_break"]
+position = Vector2( 0, 112 )
+frames = SubResource( 3 )
+animation = "start"
+
+[node name="wall_break3" type="AnimatedSprite" parent="wall_break"]
+position = Vector2( 0, 224 )
+frames = SubResource( 4 )
+animation = "start"
+
+[node name="HammerSound" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = ExtResource( 1 )
+
+[connection signal="timeout" from="WallBroken" to="." method="_on_WallBroken_timeout"]

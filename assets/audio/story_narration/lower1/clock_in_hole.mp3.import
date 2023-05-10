@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/clock_in_hole.mp3-1dadd39c1c76f45112a84b536b83fed2.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/lower1/clock_in_hole.mp3"
+dest_files=[ "res://.import/clock_in_hole.mp3-1dadd39c1c76f45112a84b536b83fed2.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/platformer/force_field_big.png" type="Texture" id=1]
+[ext_resource path="res://End/ForceField.gd" type="Script" id=2]
+
+[node name="ForceField" type="TextureButton"]
+margin_right = 944.0
+margin_bottom = 481.0
+texture_normal = ExtResource( 1 )
+script = ExtResource( 2 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2( -106, -69 )
+
+[node name="solid_body" type="CollisionPolygon2D" parent="StaticBody2D"]
+unique_name_in_owner = true
+position = Vector2( 129, 326 )
+scale = Vector2( 0.999057, 0.986341 )
+polygon = PoolVector2Array( 32, 6, 90, -77, 167, -148, 310, -224, 424, -243, 526, -237, 652, -200, 729, -152, 817, -67, 876, 30, 914, 179, 912, 208, 713.673, -99.3571, 410.387, -204.797, 154.145, -76.0386, -14, 210, -10, 153, 4, 86 )

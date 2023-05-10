@@ -1,0 +1,46 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://assets/game_objects/rope_sml.png" type="Texture" id=1]
+[ext_resource path="res://scenes_two/Rope.gd" type="Script" id=2]
+[ext_resource path="res://assets/audio/fail_drop_ladder.wav" type="AudioStream" id=3]
+[ext_resource path="res://assets/audio/success_drop_ladder.wav" type="AudioStream" id=4]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 14, 28 )
+
+[node name="Rope" type="TextureButton" groups=["rope"]]
+margin_right = 28.0
+margin_bottom = 56.0
+grow_horizontal = 2
+grow_vertical = 0
+rect_min_size = Vector2( 28, 56 )
+rect_pivot_offset = Vector2( 32, 96 )
+texture_normal = ExtResource( 1 )
+expand = true
+stretch_mode = 1
+script = ExtResource( 2 )
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+position = Vector2( 14, 27 )
+enabled = true
+cast_to = Vector2( 0, -10 )
+collision_mask = 3
+
+[node name="Area2D" type="Area2D" parent="."]
+unique_name_in_owner = true
+position = Vector2( 36, 42 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+unique_name_in_owner = true
+position = Vector2( -22, -14 )
+shape = SubResource( 1 )
+
+[node name="DropFail" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+
+[node name="DropSuccess" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_Area2D_body_exited"]
+[connection signal="finished" from="DropFail" to="." method="_on_DropFail_finished"]

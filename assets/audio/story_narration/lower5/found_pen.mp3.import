@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/found_pen.mp3-c844434a4c7a302b337536e6b3875298.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/lower5/found_pen.mp3"
+dest_files=[ "res://.import/found_pen.mp3-c844434a4c7a302b337536e6b3875298.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,46 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://animations/cave_door_anim.tres" type="SpriteFrames" id=1]
+[ext_resource path="res://scenes_two/ExitDoor.gd" type="Script" id=2]
+[ext_resource path="res://assets/ui/up_arrow.png" type="Texture" id=3]
+[ext_resource path="res://assets/audio/exit_door_open.mp3" type="AudioStream" id=4]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 168, 208 )
+
+[node name="ExitDoor" type="Area2D"]
+script = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+unique_name_in_owner = true
+position = Vector2( 168, 184 )
+shape = SubResource( 1 )
+
+[node name="UpArrow" type="Sprite" parent="."]
+unique_name_in_owner = true
+visible = false
+position = Vector2( 160, -104 )
+scale = Vector2( 0.6, 0.6 )
+z_index = 1
+texture = ExtResource( 3 )
+
+[node name="DoorOpenSound" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = ExtResource( 4 )
+volume_db = -20.524
+
+[node name="ArrowTimer" type="Timer" parent="."]
+unique_name_in_owner = true
+wait_time = 1.6
+one_shot = true
+
+[node name="DoorAnim" type="AnimatedSprite" parent="."]
+unique_name_in_owner = true
+position = Vector2( 176, 200 )
+frames = ExtResource( 1 )
+animation = "closed"
+
+[connection signal="body_entered" from="." to="." method="_on_ExitDoor_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_ExitDoor_body_exited"]
+[connection signal="timeout" from="ArrowTimer" to="." method="_on_ArrowTimer_timeout"]
+[connection signal="animation_finished" from="DoorAnim" to="." method="_on_DoorAnim_animation_finished"]

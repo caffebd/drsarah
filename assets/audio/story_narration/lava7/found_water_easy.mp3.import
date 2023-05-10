@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/found_water_easy.mp3-65508a276bdb0c7c0f3d417f36d745b9.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/lava7/found_water_easy.mp3"
+dest_files=[ "res://.import/found_water_easy.mp3-65508a276bdb0c7c0f3d417f36d745b9.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

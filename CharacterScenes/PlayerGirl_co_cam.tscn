@@ -1,0 +1,71 @@
+[gd_scene load_steps=17 format=2]
+
+[ext_resource path="res://assets/medieval/player/character_femalePerson_walk0.png" type="Texture" id=1]
+[ext_resource path="res://PlayerGirl.gd" type="Script" id=2]
+[ext_resource path="res://assets/medieval/player/character_femalePerson_walk2.png" type="Texture" id=3]
+[ext_resource path="res://assets/medieval/player/character_femalePerson_walk1.png" type="Texture" id=4]
+[ext_resource path="res://assets/medieval/player/character_femalePerson_climb1.png" type="Texture" id=5]
+[ext_resource path="res://assets/medieval/player/character_femalePerson_climb0.png" type="Texture" id=6]
+[ext_resource path="res://assets/medieval/player/character_femalePerson_walk7.png" type="Texture" id=9]
+[ext_resource path="res://assets/medieval/player/character_femalePerson_walk6.png" type="Texture" id=11]
+[ext_resource path="res://assets/medieval/player/character_femalePerson_walk4.png" type="Texture" id=12]
+[ext_resource path="res://assets/medieval/player/character_femalePerson_walk5.png" type="Texture" id=13]
+[ext_resource path="res://assets/medieval/player/character_femalePerson_walk3.png" type="Texture" id=14]
+[ext_resource path="res://assets/medieval/player/character_femalePerson_idle2.png" type="Texture" id=18]
+[ext_resource path="res://assets/medieval/player/character_femalePerson_idle.png" type="Texture" id=19]
+[ext_resource path="res://assets/medieval/player/character_femalePerson_jump.png" type="Texture" id=20]
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 6 ) ],
+"loop": true,
+"name": "back",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 6 ), ExtResource( 5 ) ],
+"loop": true,
+"name": "climb",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 19 ), ExtResource( 18 ) ],
+"loop": true,
+"name": "idle",
+"speed": 1.0
+}, {
+"frames": [ ExtResource( 20 ) ],
+"loop": true,
+"name": "jump",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 1 ), ExtResource( 4 ), ExtResource( 3 ), ExtResource( 14 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 11 ), ExtResource( 9 ) ],
+"loop": true,
+"name": "walk",
+"speed": 12.0
+} ]
+
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 27.0
+height = 40.0
+
+[node name="PlayerGirl" type="KinematicBody2D"]
+script = ExtResource( 2 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 2 )
+animation = "idle"
+frame = 1
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0, 18 )
+shape = SubResource( 1 )
+
+[node name="JumpTimer" type="Timer" parent="."]
+wait_time = 0.1
+one_shot = true
+
+[node name="CoyoteTimer" type="Timer" parent="."]
+wait_time = 0.2
+
+[connection signal="timeout" from="JumpTimer" to="." method="_on_JumpTimer_timeout"]
+[connection signal="timeout" from="CoyoteTimer" to="." method="_on_CoyoteTimer_timeout"]

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/get_rope.mp3-ad7ef6acc3c24837c45dfc57effff1b9.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/narrator_audio_script/get_rope.mp3"
+dest_files=[ "res://.import/get_rope.mp3-ad7ef6acc3c24837c45dfc57effff1b9.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

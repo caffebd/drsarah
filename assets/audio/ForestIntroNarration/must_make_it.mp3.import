@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/must_make_it.mp3-d0683107a93549a3b936a663b1dd1b06.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/ForestIntroNarration/must_make_it.mp3"
+dest_files=[ "res://.import/must_make_it.mp3-d0683107a93549a3b936a663b1dd1b06.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

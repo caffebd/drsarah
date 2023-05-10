@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/fav_colour.mp3-9ab0186b24a16befe4fc87a681e0d769.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/fav_colour.mp3"
+dest_files=[ "res://.import/fav_colour.mp3-9ab0186b24a16befe4fc87a681e0d769.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/see_clearly.mp3-45162ecf47abb0b65856c7b57079e9b8.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/riddles/see_clearly.mp3"
+dest_files=[ "res://.import/see_clearly.mp3-45162ecf47abb0b65856c7b57079e9b8.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,123 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://assets/fonts/Comfortaa/Comfortaa-VariableFont_wght.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://UI_Scenes/ComicBook.gd" type="Script" id=2]
+[ext_resource path="res://UI_Scenes/ComicPanel.tscn" type="PackedScene" id=3]
+[ext_resource path="res://assets/ui/comic_book_ui/compic_book_wider.png" type="Texture" id=4]
+[ext_resource path="res://assets/ui/comic_book_ui/Button.png" type="Texture" id=5]
+[ext_resource path="res://assets/ui/arrow_down.png" type="Texture" id=6]
+[ext_resource path="res://assets/ui/arrow_up.png" type="Texture" id=7]
+
+[sub_resource type="DynamicFont" id=6]
+size = 60
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 70
+font_data = ExtResource( 1 )
+
+[node name="ComicBook" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+
+[node name="book" type="TextureRect" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+texture = ExtResource( 4 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.72549, 0.729412, 0, 1 )
+
+[node name="BackBtn" type="TextureButton" parent="."]
+margin_left = 70.0
+margin_top = 890.0
+margin_right = 448.0
+margin_bottom = 1016.0
+texture_normal = ExtResource( 5 )
+
+[node name="Label" type="Label" parent="BackBtn"]
+margin_left = 60.0
+margin_top = 20.0
+margin_right = 287.0
+margin_bottom = 88.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "<- Back"
+
+[node name="ComicMargin" type="MarginContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 580.0
+margin_top = 170.0
+margin_right = -50.0
+margin_bottom = -60.0
+
+[node name="ScrollContainer" type="ScrollContainer" parent="ComicMargin"]
+unique_name_in_owner = true
+margin_right = 1290.0
+margin_bottom = 850.0
+scroll_horizontal_enabled = false
+
+[node name="Panels" type="GridContainer" parent="ComicMargin/ScrollContainer"]
+unique_name_in_owner = true
+margin_right = 600.0
+margin_bottom = 600.0
+custom_constants/vseparation = 30
+custom_constants/hseparation = 15
+columns = 2
+
+[node name="ComicPanel" parent="ComicMargin/ScrollContainer/Panels" instance=ExtResource( 3 )]
+
+[node name="PagesMargin" type="MarginContainer" parent="."]
+margin_left = 60.0
+margin_top = 120.0
+margin_right = 540.0
+margin_bottom = 880.0
+grow_horizontal = 0
+rect_pivot_offset = Vector2( 410, 390 )
+
+[node name="ScrollContainer" type="ScrollContainer" parent="PagesMargin"]
+margin_right = 480.0
+margin_bottom = 760.0
+grow_horizontal = 0
+
+[node name="PagesGrid" type="GridContainer" parent="PagesMargin/ScrollContainer"]
+unique_name_in_owner = true
+grow_horizontal = 0
+
+[node name="PageTitle" type="Label" parent="."]
+unique_name_in_owner = true
+margin_left = 970.0
+margin_top = 70.0
+margin_right = 1328.0
+margin_bottom = 149.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 5 )
+text = "Page Title"
+
+[node name="Read" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+
+[node name="ScrollDown" type="TextureButton" parent="."]
+margin_left = 1625.0
+margin_top = 90.0
+margin_right = 1705.0
+margin_bottom = 137.0
+texture_normal = ExtResource( 6 )
+
+[node name="ScrollUp" type="TextureButton" parent="."]
+margin_left = 1514.0
+margin_top = 90.0
+margin_right = 1594.0
+margin_bottom = 137.0
+texture_normal = ExtResource( 7 )
+
+[connection signal="pressed" from="BackBtn" to="." method="_on_Play_Levels_pressed"]
+[connection signal="button_down" from="ScrollDown" to="." method="_on_ScrollDown_button_down"]
+[connection signal="button_up" from="ScrollDown" to="." method="_on_ScrollDown_button_up"]
+[connection signal="button_down" from="ScrollUp" to="." method="_on_ScrollUp_button_down"]
+[connection signal="button_up" from="ScrollUp" to="." method="_on_ScrollUp_button_up"]

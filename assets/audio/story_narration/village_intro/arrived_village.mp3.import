@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/arrived_village.mp3-46efc3e2bc4880f0a0a6e937baff391b.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/village_intro/arrived_village.mp3"
+dest_files=[ "res://.import/arrived_village.mp3-46efc3e2bc4880f0a0a6e937baff391b.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

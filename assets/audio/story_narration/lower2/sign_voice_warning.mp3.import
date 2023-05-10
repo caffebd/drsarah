@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/sign_voice_warning.mp3-dbbb656d9abecb4b2ed5a661256c2a37.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/lower2/sign_voice_warning.mp3"
+dest_files=[ "res://.import/sign_voice_warning.mp3-dbbb656d9abecb4b2ed5a661256c2a37.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

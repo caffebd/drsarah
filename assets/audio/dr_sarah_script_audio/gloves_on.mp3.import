@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/gloves_on.mp3-f880a374a1c8beee1ebcfbc31c1c7c66.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/gloves_on.mp3"
+dest_files=[ "res://.import/gloves_on.mp3-f880a374a1c8beee1ebcfbc31c1c7c66.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

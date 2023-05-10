@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/pot_warm_belly.mp3-2cded96b39c75fbf2cedfac719bd4d58.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/riddles/pot_warm_belly.mp3"
+dest_files=[ "res://.import/pot_warm_belly.mp3-2cded96b39c75fbf2cedfac719bd4d58.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

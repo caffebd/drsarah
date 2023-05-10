@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/second_glass_log.mp3-37e87c82e9dcbbceeecc02a1f3e51871.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/lava6/second_glass_log.mp3"
+dest_files=[ "res://.import/second_glass_log.mp3-37e87c82e9dcbbceeecc02a1f3e51871.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

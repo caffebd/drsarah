@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/boy_click_2.mp3-75d3818412c23430f13827b09a39db0f.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/narrator_audio_script/boy_click_2.mp3"
+dest_files=[ "res://.import/boy_click_2.mp3-75d3818412c23430f13827b09a39db0f.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

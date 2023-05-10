@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/was_hoping_exit.mp3-3f49546673a3de36e113496e350a51c0.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/was_hoping_exit.mp3"
+dest_files=[ "res://.import/was_hoping_exit.mp3-3f49546673a3de36e113496e350a51c0.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

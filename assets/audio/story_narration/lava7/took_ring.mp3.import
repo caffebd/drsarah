@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/took_ring.mp3-07ba6b739e8c699c1e8d90b6566d4fc3.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/lava7/took_ring.mp3"
+dest_files=[ "res://.import/took_ring.mp3-07ba6b739e8c699c1e8d90b6566d4fc3.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

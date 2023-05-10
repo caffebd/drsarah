@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/cant_do_with-rock.mp3-5d0c9351f30403630e87b7cc829e9dc9.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/cant_do_with-rock.mp3"
+dest_files=[ "res://.import/cant_do_with-rock.mp3-5d0c9351f30403630e87b7cc829e9dc9.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

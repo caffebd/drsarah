@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/need_jump.mp3-44d720ffb73fb610f75d755c4b167298.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/need_jump.mp3"
+dest_files=[ "res://.import/need_jump.mp3-44d720ffb73fb610f75d755c4b167298.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

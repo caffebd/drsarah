@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/long_ladder.mp3-bbb9234c0dc0e17d41f61cd3f25238d3.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/long_ladder.mp3"
+dest_files=[ "res://.import/long_ladder.mp3-bbb9234c0dc0e17d41f61cd3f25238d3.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

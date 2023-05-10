@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/yes_telescope_close_moon.mp3-be6b01ed2af85ec5c66203bab12eac21.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/riddle_solves/yes_telescope_close_moon.mp3"
+dest_files=[ "res://.import/yes_telescope_close_moon.mp3-be6b01ed2af85ec5c66203bab12eac21.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/it_come_back_maybe_magic.mp3-b9e289bab9f875df0cb207e5f5914406.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/narrator_audio_script/it_come_back_maybe_magic.mp3"
+dest_files=[ "res://.import/it_come_back_maybe_magic.mp3-b9e289bab9f875df0cb207e5f5914406.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

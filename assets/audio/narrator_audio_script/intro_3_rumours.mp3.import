@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/intro_3_rumours.mp3-2409b6680440381ab04ac507271d86a1.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/narrator_audio_script/intro_3_rumours.mp3"
+dest_files=[ "res://.import/intro_3_rumours.mp3-2409b6680440381ab04ac507271d86a1.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

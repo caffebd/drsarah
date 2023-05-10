@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/put_out_fire.mp3-74fe015e1bf1d81f2ef6f46fa95f8d32.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/put_out_fire.mp3"
+dest_files=[ "res://.import/put_out_fire.mp3-74fe015e1bf1d81f2ef6f46fa95f8d32.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

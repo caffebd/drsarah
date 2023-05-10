@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/she_heard_rumours.mp3-57191bea2afe376ac2d45e7e5a3b9344.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/ForestIntroNarration/she_heard_rumours.mp3"
+dest_files=[ "res://.import/she_heard_rumours.mp3-57191bea2afe376ac2d45e7e5a3b9344.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

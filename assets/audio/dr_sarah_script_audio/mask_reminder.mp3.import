@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/mask_reminder.mp3-34a09d2bebdd3da55e57e95be49c426e.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/mask_reminder.mp3"
+dest_files=[ "res://.import/mask_reminder.mp3-34a09d2bebdd3da55e57e95be49c426e.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

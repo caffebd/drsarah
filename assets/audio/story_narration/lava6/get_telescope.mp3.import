@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/get_telescope.mp3-bfa640f5a464b58ae924fd2a84352f23.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/lava6/get_telescope.mp3"
+dest_files=[ "res://.import/get_telescope.mp3-bfa640f5a464b58ae924fd2a84352f23.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

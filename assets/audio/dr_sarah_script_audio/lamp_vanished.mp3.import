@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/lamp_vanished.mp3-2843ac9b7b8527e1f68c2c99eb1b7ef5.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/lamp_vanished.mp3"
+dest_files=[ "res://.import/lamp_vanished.mp3-2843ac9b7b8527e1f68c2c99eb1b7ef5.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

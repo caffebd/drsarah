@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/open_just_need_fuse.mp3-5a549d8f02f7a572512f2dba526d83e4.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/open_just_need_fuse.mp3"
+dest_files=[ "res://.import/open_just_need_fuse.mp3-5a549d8f02f7a572512f2dba526d83e4.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

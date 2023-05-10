@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/no.mp3-146414132759d628006932202f629424.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/no.mp3"
+dest_files=[ "res://.import/no.mp3-146414132759d628006932202f629424.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

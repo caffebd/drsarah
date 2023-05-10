@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/intro_1_far_away.mp3-e05b5a297d7652a9fd8399dec6327be5.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/narrator_audio_script/intro_1_far_away.mp3"
+dest_files=[ "res://.import/intro_1_far_away.mp3-e05b5a297d7652a9fd8399dec6327be5.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

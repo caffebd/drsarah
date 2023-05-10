@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/apple_looks_fresh.mp3-201080606ca30b385622b99c01c7c46c.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/apple_looks_fresh.mp3"
+dest_files=[ "res://.import/apple_looks_fresh.mp3-201080606ca30b385622b99c01c7c46c.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

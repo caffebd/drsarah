@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://assets/game_objects/puzzle_objects/Clock.png" type="Texture" id=1]
+[ext_resource path="res://puzzle_object_scenes/RiddleItem.gd" type="Script" id=2]
+[ext_resource path="res://UI_Scenes/ObjectLabel.tscn" type="PackedScene" id=3]
+
+[node name="TheClock" type="TextureButton"]
+margin_right = 126.0
+margin_bottom = 126.0
+rect_pivot_offset = Vector2( 70, 70 )
+texture_normal = ExtResource( 1 )
+script = ExtResource( 2 )
+
+[node name="ObjectInfo" parent="." instance=ExtResource( 3 )]
+unique_name_in_owner = true
+margin_left = -36.0
+margin_top = -60.0
+margin_right = 4.0
+margin_bottom = -20.0

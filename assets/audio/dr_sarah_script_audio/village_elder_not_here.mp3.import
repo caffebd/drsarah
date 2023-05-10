@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/village_elder_not_here.mp3-df5f6126d3d8e4c9b83da680294a4c17.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/village_elder_not_here.mp3"
+dest_files=[ "res://.import/village_elder_not_here.mp3-df5f6126d3d8e4c9b83da680294a4c17.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

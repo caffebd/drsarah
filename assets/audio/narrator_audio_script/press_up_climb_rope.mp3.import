@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/press_up_climb_rope.mp3-d8d9a33493341b32d01f3c8931cb60f0.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/narrator_audio_script/press_up_climb_rope.mp3"
+dest_files=[ "res://.import/press_up_climb_rope.mp3-d8d9a33493341b32d01f3c8931cb60f0.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

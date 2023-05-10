@@ -1,0 +1,117 @@
+[gd_scene load_steps=15 format=2]
+
+[ext_resource path="res://CharacterScenes/Drone.tscn" type="PackedScene" id=1]
+[ext_resource path="res://CharacterScenes/PlayerGirl.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/tilemaps/caves_maps.tres" type="TileSet" id=3]
+[ext_resource path="res://scenes_two/ExitDoor.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes_two/EntryDoor.tscn" type="PackedScene" id=5]
+[ext_resource path="res://scenes_two/Shelf.tscn" type="PackedScene" id=6]
+[ext_resource path="res://scenes_two/Sign.tscn" type="PackedScene" id=7]
+[ext_resource path="res://scenes_two/Ladder.tscn" type="PackedScene" id=8]
+[ext_resource path="res://assets/audio/music/dreamy music.mp3" type="AudioStream" id=9]
+[ext_resource path="res://assets/audio/sound_effects/to_inventory.mp3" type="AudioStream" id=10]
+[ext_resource path="res://assets/audio/sound_effects/single_click_deep.mp3" type="AudioStream" id=11]
+[ext_resource path="res://assets/audio/success_drop_ladder.wav" type="AudioStream" id=12]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 2552, 220 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 32, 148.5 )
+
+[node name="Level" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="LevelMapA" type="TileMap" parent="."]
+unique_name_in_owner = true
+tile_set = ExtResource( 3 )
+cell_size = Vector2( 112, 112 )
+format = 1
+tile_data = PoolIntArray( 589819, 2, 0, 589820, 2, 1, 589821, 2, 1, 589822, 2, 1, 589823, 2, 1, 524288, 2, 2, 655355, 2, 65536, 655356, 2, 65537, 655357, 2, 65537, 655358, 2, 65537, 655359, 2, 65537, 589824, 2, 65538, 720891, 2, 65536, 720892, 2, 65537, 720893, 2, 65537, 720894, 2, 65537, 720895, 2, 65537, 655360, 2, 65538, 786427, 2, 65536, 786428, 2, 65537, 786429, 2, 65537, 786430, 2, 65537, 786431, 2, 65537, 720896, 2, 65538, 851963, 2, 65536, 851964, 2, 65537, 851965, 2, 65537, 851966, 2, 65537, 851967, 2, 65537, 786432, 2, 65538, 917499, 2, 65536, 917500, 2, 65537, 917501, 2, 65537, 917502, 2, 65537, 917503, 2, 65537, 851968, 2, 65538, 983035, 2, 65536, 983036, 2, 65537, 983037, 2, 65537, 983038, 2, 65537, 983039, 2, 65537, 917504, 2, 65538, 1048571, 2, 65536, 1048572, 2, 65537, 1048573, 2, 65537, 1048574, 2, 65537, 1048575, 2, 65537, 983040, 2, 65538, 1114107, 2, 65536, 1114108, 2, 65537, 1114109, 2, 65537, 1114110, 2, 65537, 1114111, 2, 65537, 1048576, 2, 65538, 1179643, 2, 65536, 1179644, 2, 65537, 1179645, 2, 65537, 1179646, 2, 65537, 1179647, 2, 65537, 1114112, 2, 65538, 1245179, 2, 65536, 1245180, 2, 65537, 1245181, 2, 65537, 1245182, 2, 65537, 1245183, 2, 65537, 1179648, 2, 65540, 1179649, 2, 1, 1179650, 2, 1, 1179651, 2, 1, 1179652, 2, 1, 1179653, 2, 1, 1179654, 2, 1, 1179655, 2, 1, 1179656, 2, 1, 1179657, 2, 1, 1179658, 2, 1, 1179659, 2, 1, 1179660, 2, 1, 1179661, 2, 1, 1179662, 2, 1, 1179663, 2, 1, 1179664, 2, 1, 1179665, 2, 1, 1179666, 2, 1, 1179667, 2, 1, 1179668, 2, 1, 1179669, 2, 1, 1179670, 2, 1, 1179671, 2, 1, 1179672, 2, 1, 1179673, 2, 1, 1179674, 2, 1, 1179675, 2, 1, 1179676, 2, 1, 1179677, 2, 1, 1179678, 2, 1, 1179679, 2, 1, 1179680, 2, 1, 1179681, 2, 1, 1179682, 2, 1, 1179683, 2, 2, 1310715, 2, 131072, 1310716, 2, 131073, 1310717, 2, 131073, 1310718, 2, 131073, 1310719, 2, 131073, 1245184, 2, 131073, 1245185, 2, 131073, 1245186, 2, 131073, 1245187, 2, 131073, 1245188, 2, 131073, 1245189, 2, 131073, 1245190, 2, 131073, 1245191, 2, 131073, 1245192, 2, 131073, 1245193, 2, 131073, 1245194, 2, 131073, 1245195, 2, 131073, 1245196, 2, 131073, 1245197, 2, 131073, 1245198, 2, 131073, 1245199, 2, 131073, 1245200, 2, 131073, 1245201, 2, 131073, 1245202, 2, 131073, 1245203, 2, 131073, 1245204, 2, 131073, 1245205, 2, 131073, 1245206, 2, 131073, 1245207, 2, 131073, 1245208, 2, 131073, 1245209, 2, 131073, 1245210, 2, 131073, 1245211, 2, 131073, 1245212, 2, 131073, 1245213, 2, 131073, 1245214, 2, 131073, 1245215, 2, 131073, 1245216, 2, 131073, 1245217, 2, 131073, 1245218, 2, 131073, 1245219, 2, 131074 )
+
+[node name="ExitDoor" parent="LevelMapA" instance=ExtResource( 4 )]
+unique_name_in_owner = true
+position = Vector2( 3431, 1605 )
+
+[node name="EntryDoor" parent="LevelMapA" instance=ExtResource( 5 )]
+unique_name_in_owner = true
+position = Vector2( 447, 1815 )
+
+[node name="Spawn1" type="Position2D" parent="LevelMapA"]
+unique_name_in_owner = true
+
+[node name="Ladder" parent="LevelMapA" instance=ExtResource( 8 )]
+unique_name_in_owner = true
+margin_left = -6157.0
+margin_top = 263.0
+margin_right = -6040.0
+margin_bottom = 583.0
+
+[node name="Shelf" parent="LevelMapA" instance=ExtResource( 6 )]
+unique_name_in_owner = true
+margin_left = 2906.0
+margin_top = 1693.0
+margin_right = 3136.0
+margin_bottom = 1913.0
+object_text = "the holde"
+shelf_item = "the pen"
+
+[node name="Sign" parent="LevelMapA" instance=ExtResource( 7 )]
+unique_name_in_owner = true
+margin_left = 2931.0
+margin_top = 1560.0
+margin_right = 3092.0
+margin_bottom = 1630.0
+sign_text = "I can show you the moon in the blink of an eye."
+
+[node name="PlayerGirl" parent="." instance=ExtResource( 2 )]
+unique_name_in_owner = true
+position = Vector2( 937, 1835 )
+
+[node name="Drone" parent="." instance=ExtResource( 1 )]
+unique_name_in_owner = true
+visible = false
+position = Vector2( -3934, -1679 )
+
+[node name="music" type="AudioStreamPlayer2D" parent="."]
+unique_name_in_owner = true
+stream = ExtResource( 9 )
+volume_db = -10.0
+autoplay = true
+max_distance = 5000.0
+
+[node name="clicker" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = ExtResource( 11 )
+volume_db = -10.0
+
+[node name="collector" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = ExtResource( 10 )
+volume_db = -10.0
+
+[node name="LadderDrop" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = ExtResource( 12 )
+volume_db = -10.0
+
+[node name="speak_player" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+
+[node name="SpeakRemove" type="Timer" parent="."]
+unique_name_in_owner = true
+
+[node name="DeathArea" type="Area2D" parent="."]
+position = Vector2( -29, 2297 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DeathArea"]
+position = Vector2( 2562, 210 )
+shape = SubResource( 1 )
+
+[node name="Spawn1Area" type="Area2D" parent="."]
+position = Vector2( 1847, 1873 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Spawn1Area"]
+position = Vector2( 22, -8.5 )
+shape = SubResource( 2 )

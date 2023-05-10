@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/weak_wall_could_break.mp3-56e5942318bbcaa6771145bf3355e89b.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/weak_wall_could_break.mp3"
+dest_files=[ "res://.import/weak_wall_could_break.mp3-56e5942318bbcaa6771145bf3355e89b.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

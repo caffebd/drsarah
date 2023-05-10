@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/boy_has_taken.mp3-0612721890f8cba33ffd6b85e9588bce.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/boy_has_taken.mp3"
+dest_files=[ "res://.import/boy_has_taken.mp3-0612721890f8cba33ffd6b85e9588bce.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

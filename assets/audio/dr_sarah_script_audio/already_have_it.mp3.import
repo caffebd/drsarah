@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/already_have_it.mp3-558f9239c6c73305871e52fc7a733005.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/already_have_it.mp3"
+dest_files=[ "res://.import/already_have_it.mp3-558f9239c6c73305871e52fc7a733005.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

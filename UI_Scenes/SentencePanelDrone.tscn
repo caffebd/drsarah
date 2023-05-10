@@ -1,0 +1,49 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://assets/fonts/Comfortaa/Comfortaa-VariableFont_wght.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://UI_Scenes/SentencePanelDrone.gd" type="Script" id=2]
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0.905882, 0.901961, 0.941176, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="Theme" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 60
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=4]
+bg_color = Color( 0.905882, 0.901961, 0.941176, 1 )
+
+[node name="SentencePanelDrone" type="Panel"]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -165.0
+margin_bottom = -59.0
+custom_styles/panel = SubResource( 2 )
+script = ExtResource( 2 )
+
+[node name="SentenceLabel" type="LineEdit" parent="."]
+margin_left = 40.0
+margin_top = 21.0
+margin_right = 1309.0
+margin_bottom = 89.0
+theme = SubResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+custom_styles/normal = SubResource( 4 )
+
+[connection signal="mouse_entered" from="." to="." method="_on_SentencePanel_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_SentencePanel_mouse_exited"]

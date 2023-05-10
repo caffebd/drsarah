@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/thermometer_cold_hot.mp3-06d37c910f05a934a469be3e0f5ad5e8.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/riddles/thermometer_cold_hot.mp3"
+dest_files=[ "res://.import/thermometer_cold_hot.mp3-06d37c910f05a934a469be3e0f5ad5e8.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

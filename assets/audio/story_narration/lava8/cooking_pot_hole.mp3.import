@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/cooking_pot_hole.mp3-f6b48e37b17a0977291d19147ac65923.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/lava8/cooking_pot_hole.mp3"
+dest_files=[ "res://.import/cooking_pot_hole.mp3-f6b48e37b17a0977291d19147ac65923.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

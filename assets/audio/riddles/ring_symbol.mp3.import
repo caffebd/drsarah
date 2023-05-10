@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/ring_symbol.mp3-d994f3c3bbc0997e22de913123df1b01.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/riddles/ring_symbol.mp3"
+dest_files=[ "res://.import/ring_symbol.mp3-d994f3c3bbc0997e22de913123df1b01.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

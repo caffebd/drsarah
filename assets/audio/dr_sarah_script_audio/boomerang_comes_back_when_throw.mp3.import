@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/boomerang_comes_back_when_throw.mp3-c3d6a548a17672f01940b4f59bd84897.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/boomerang_comes_back_when_throw.mp3"
+dest_files=[ "res://.import/boomerang_comes_back_when_throw.mp3-c3d6a548a17672f01940b4f59bd84897.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

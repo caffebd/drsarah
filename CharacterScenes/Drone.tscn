@@ -1,0 +1,89 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://assets/platformer/drone.png" type="Texture" id=1]
+[ext_resource path="res://CharacterScenes/Drone.gd" type="Script" id=2]
+[ext_resource path="res://UI_Scenes/VocabPanelDrone.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes_two/SpeakBG.tscn" type="PackedScene" id=4]
+[ext_resource path="res://UI_Scenes/InventoryPanelDrone.tscn" type="PackedScene" id=5]
+[ext_resource path="res://UI_Scenes/SentencePanelDrone.tscn" type="PackedScene" id=6]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 1 ), ExtResource( 1 ) ],
+"loop": true,
+"name": "fly",
+"speed": 5.0
+} ]
+
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 23.8502
+height = 48.3173
+
+[node name="Drone" type="KinematicBody2D"]
+collision_layer = 2
+collision_mask = 2
+script = ExtResource( 2 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 1 )
+animation = "fly"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0, -10 )
+rotation = 1.57547
+shape = SubResource( 2 )
+
+[node name="DroneTween" type="Tween" parent="."]
+
+[node name="DroneCam" type="Camera2D" parent="."]
+unique_name_in_owner = true
+zoom = Vector2( 1.25, 1.25 )
+
+[node name="SentencePanelDrone" parent="DroneCam" instance=ExtResource( 6 )]
+unique_name_in_owner = true
+margin_left = -1200.0
+margin_top = 320.0
+margin_right = 1200.0
+margin_bottom = 443.0
+
+[node name="SentenceLabel" parent="DroneCam/SentencePanelDrone" index="0"]
+margin_left = 64.0
+margin_top = 32.0
+margin_right = 2360.0
+margin_bottom = 93.0
+
+[node name="InventoryPanelDrone" parent="DroneCam" instance=ExtResource( 5 )]
+unique_name_in_owner = true
+margin_left = 0.0
+margin_top = 440.0
+margin_right = 1200.0
+margin_bottom = 672.0
+
+[node name="TextureRect" parent="DroneCam/InventoryPanelDrone/Node2D" index="0"]
+margin_right = 1200.0
+margin_bottom = 238.0
+
+[node name="SpeakBG" parent="DroneCam" instance=ExtResource( 4 )]
+visible = false
+margin_left = -532.0
+margin_top = 191.0
+margin_right = 534.0
+margin_bottom = 263.0
+
+[node name="CoverScreen" type="ColorRect" parent="DroneCam"]
+unique_name_in_owner = true
+visible = false
+margin_left = -976.0
+margin_top = -552.0
+margin_right = 976.0
+margin_bottom = 552.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="VocabPanelDrone" parent="DroneCam" instance=ExtResource( 3 )]
+margin_left = -1200.0
+margin_top = 440.0
+margin_right = 0.0
+margin_bottom = 678.0
+
+[editable path="DroneCam/SentencePanelDrone"]
+[editable path="DroneCam/InventoryPanelDrone"]

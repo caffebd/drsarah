@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/mirro_see_twin.mp3-4f6630e644380c7bb46d29e821155afb.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/riddle_solves/mirro_see_twin.mp3"
+dest_files=[ "res://.import/mirro_see_twin.mp3-4f6630e644380c7bb46d29e821155afb.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

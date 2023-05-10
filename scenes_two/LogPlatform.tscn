@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://assets/platformer/Log.png" type="Texture" id=1]
+[ext_resource path="res://scenes_two/Log.gd" type="Script" id=2]
+[ext_resource path="res://assets/audio/log_descend_mech_sound.mp3" type="AudioStream" id=3]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 272, 48 )
+
+[node name="Log" type="TextureButton"]
+margin_left = -56.0
+margin_top = -656.0
+margin_right = 504.0
+margin_bottom = 149.0
+rect_pivot_offset = Vector2( 296, 808 )
+texture_normal = ExtResource( 1 )
+script = ExtResource( 2 )
+
+[node name="RigidBody2D" type="KinematicBody2D" parent="."]
+position = Vector2( 8, 688 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
+position = Vector2( 272, 56 )
+shape = SubResource( 1 )
+
+[node name="LogDescendSound" type="AudioStreamPlayer2D" parent="."]
+unique_name_in_owner = true
+stream = ExtResource( 3 )
+volume_db = -15.333

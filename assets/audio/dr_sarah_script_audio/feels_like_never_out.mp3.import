@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/feels_like_never_out.mp3-d17e21a33342d9741f568fb19847c303.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/feels_like_never_out.mp3"
+dest_files=[ "res://.import/feels_like_never_out.mp3-d17e21a33342d9741f568fb19847c303.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

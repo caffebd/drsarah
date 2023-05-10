@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/something_hole_already.mp3-89205bb1d502bd45f77387628d53ba3d.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/something_hole_already.mp3"
+dest_files=[ "res://.import/something_hole_already.mp3-89205bb1d502bd45f77387628d53ba3d.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

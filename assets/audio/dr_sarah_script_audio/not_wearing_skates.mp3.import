@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/not_wearing_skates.mp3-d4b5f2c986ef80ce2d4868176d79dc22.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/not_wearing_skates.mp3"
+dest_files=[ "res://.import/not_wearing_skates.mp3-d4b5f2c986ef80ce2d4868176d79dc22.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

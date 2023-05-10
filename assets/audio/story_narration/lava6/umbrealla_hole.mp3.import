@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/umbrealla_hole.mp3-960c40a336366f7de25858b00c1cb148.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/lava6/umbrealla_hole.mp3"
+dest_files=[ "res://.import/umbrealla_hole.mp3-960c40a336366f7de25858b00c1cb148.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

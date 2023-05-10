@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/click_one_girl.mp3-4a01c9e333160862a264d7f47a7437ad.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/narrator_audio_script/click_one_girl.mp3"
+dest_files=[ "res://.import/click_one_girl.mp3-4a01c9e333160862a264d7f47a7437ad.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

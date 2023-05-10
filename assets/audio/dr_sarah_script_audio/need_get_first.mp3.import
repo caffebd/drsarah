@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/need_get_first.mp3-74ee78c489b708a1663f0ea6d59927cc.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/need_get_first.mp3"
+dest_files=[ "res://.import/need_get_first.mp3-74ee78c489b708a1663f0ea6d59927cc.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

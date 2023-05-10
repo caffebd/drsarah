@@ -1,0 +1,82 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://assets/platformer/Lever On.png" type="Texture" id=1]
+[ext_resource path="res://assets/platformer/Lever Off.png" type="Texture" id=2]
+[ext_resource path="res://scenes_two/Lever.gd" type="Script" id=3]
+[ext_resource path="res://assets/fonts/Comfortaa/Comfortaa-VariableFont_wght.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://UI_Scenes/ObjectLabel.tscn" type="PackedScene" id=5]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 1 ), ExtResource( 2 ) ],
+"loop": false,
+"name": "no_power",
+"speed": 3.0
+}, {
+"frames": [ ExtResource( 1 ), ExtResource( 2 ) ],
+"loop": false,
+"name": "off",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 2 ), ExtResource( 1 ) ],
+"loop": false,
+"name": "on",
+"speed": 5.0
+} ]
+
+[sub_resource type="DynamicFont" id=2]
+size = 32
+font_data = ExtResource( 4 )
+
+[node name="Lever" type="TextureButton"]
+margin_left = -40.0
+margin_top = -40.0
+margin_right = 80.0
+margin_bottom = 72.0
+script = ExtResource( 3 )
+
+[node name="LevelAnim" type="AnimatedSprite" parent="."]
+position = Vector2( 40, 104 )
+frames = SubResource( 1 )
+animation = "no_power"
+centered = false
+offset = Vector2( -40, -104 )
+
+[node name="Clicks" type="ColorRect" parent="."]
+unique_name_in_owner = true
+visible = false
+margin_left = -48.0
+margin_top = -88.0
+margin_right = 176.0
+margin_bottom = -16.0
+color = Color( 0.270588, 0.192157, 0.192157, 1 )
+
+[node name="ColorRect" type="ColorRect" parent="Clicks"]
+margin_left = 6.0
+margin_top = 6.0
+margin_right = 219.0
+margin_bottom = 68.0
+
+[node name="ClicksLabel" type="Label" parent="Clicks"]
+unique_name_in_owner = true
+margin_left = 22.0
+margin_top = 18.0
+margin_right = 197.0
+margin_bottom = 55.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "Clicked = 0"
+
+[node name="ObjectInfo" parent="." instance=ExtResource( 5 )]
+unique_name_in_owner = true
+margin_left = -49.0
+margin_top = -73.0
+margin_right = -9.0
+margin_bottom = -33.0
+
+[node name="Reminder" type="Timer" parent="."]
+unique_name_in_owner = true
+wait_time = 5.0
+one_shot = true
+
+[connection signal="timeout" from="Reminder" to="." method="_on_Reminder_timeout"]

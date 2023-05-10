@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/lamp_in_hole.mp3-fbbe4b346b204931503011b14306c36f.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/lava8/lamp_in_hole.mp3"
+dest_files=[ "res://.import/lamp_in_hole.mp3-fbbe4b346b204931503011b14306c36f.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

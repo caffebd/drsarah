@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/look_sign.mp3-8fd87e9de49afcae1c93925459ee629f.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/lava7/look_sign.mp3"
+dest_files=[ "res://.import/look_sign.mp3-8fd87e9de49afcae1c93925459ee629f.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

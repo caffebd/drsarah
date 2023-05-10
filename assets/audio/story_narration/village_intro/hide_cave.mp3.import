@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/hide_cave.mp3-77b7fb7f604412d49289d48e07a9e5f4.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/village_intro/hide_cave.mp3"
+dest_files=[ "res://.import/hide_cave.mp3-77b7fb7f604412d49289d48e07a9e5f4.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/cant_get_fire.mp3-2f0e525c5b6d9ccc8ed88285ab2cfeb1.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/cant_get_fire.mp3"
+dest_files=[ "res://.import/cant_get_fire.mp3-2f0e525c5b6d9ccc8ed88285ab2cfeb1.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/help_move_quick.mp3-35664b56aed8f988dccf9e7b451d5626.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/help_move_quick.mp3"
+dest_files=[ "res://.import/help_move_quick.mp3-35664b56aed8f988dccf9e7b451d5626.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

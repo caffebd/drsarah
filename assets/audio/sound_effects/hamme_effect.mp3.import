@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/hamme_effect.mp3-266f22907d2ce78c34d3092f6a7472a8.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sound_effects/hamme_effect.mp3"
+dest_files=[ "res://.import/hamme_effect.mp3-266f22907d2ce78c34d3092f6a7472a8.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

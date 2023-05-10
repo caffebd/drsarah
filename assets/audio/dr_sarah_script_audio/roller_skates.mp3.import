@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/roller_skates.mp3-9bae3c6e664b87c19ac50d726e07621a.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/roller_skates.mp3"
+dest_files=[ "res://.import/roller_skates.mp3-9bae3c6e664b87c19ac50d726e07621a.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

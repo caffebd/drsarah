@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/door_open.mp3-7e87bc1fec288cd95512617c522db766.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/door_open.mp3"
+dest_files=[ "res://.import/door_open.mp3-7e87bc1fec288cd95512617c522db766.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

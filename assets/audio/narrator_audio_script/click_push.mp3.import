@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/click_push.mp3-09f58b87a06b8ce546dbeb824bd75d95.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/narrator_audio_script/click_push.mp3"
+dest_files=[ "res://.import/click_push.mp3-09f58b87a06b8ce546dbeb824bd75d95.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

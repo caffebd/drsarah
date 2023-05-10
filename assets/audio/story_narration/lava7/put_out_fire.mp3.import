@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/put_out_fire.mp3-ef8fd7369b9b68d1d06e62d2c19a3af5.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/lava7/put_out_fire.mp3"
+dest_files=[ "res://.import/put_out_fire.mp3-ef8fd7369b9b68d1d06e62d2c19a3af5.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

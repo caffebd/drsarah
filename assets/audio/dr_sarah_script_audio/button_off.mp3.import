@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/button_off.mp3-96cc96cc8dd902281e22f8907cae5c4b.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/button_off.mp3"
+dest_files=[ "res://.import/button_off.mp3-96cc96cc8dd902281e22f8907cae5c4b.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

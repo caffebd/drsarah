@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/found_bell.mp3-e62f686d3cdcd745cc27405ccf8044b8.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/lower3/found_bell.mp3"
+dest_files=[ "res://.import/found_bell.mp3-e62f686d3cdcd745cc27405ccf8044b8.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

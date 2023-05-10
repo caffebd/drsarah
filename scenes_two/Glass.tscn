@@ -1,0 +1,39 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://scenes_two/Glass.gd" type="Script" id=1]
+[ext_resource path="res://assets/platformer/glass_water.png" type="Texture" id=2]
+[ext_resource path="res://UI_Scenes/ObjectLabel.tscn" type="PackedScene" id=3]
+[ext_resource path="res://assets/fonts/Comfortaa/Comfortaa-VariableFont_wght.ttf" type="DynamicFontData" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+size = 40
+outline_size = 1
+font_data = ExtResource( 4 )
+
+[node name="Glass" type="TextureButton"]
+margin_left = -25.0
+margin_top = -80.0
+margin_right = 24.0
+rect_pivot_offset = Vector2( 25, 80 )
+texture_normal = ExtResource( 2 )
+script = ExtResource( 1 )
+
+[node name="ObjectInfo" parent="." instance=ExtResource( 3 )]
+unique_name_in_owner = true
+margin_left = -80.0
+margin_top = -79.0
+margin_right = -40.0
+margin_bottom = -39.0
+
+[node name="count" type="Label" parent="."]
+unique_name_in_owner = true
+visible = false
+margin_left = -30.0
+margin_top = -40.0
+margin_right = 10.0
+margin_bottom = 6.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "2"
+align = 1
+valign = 1

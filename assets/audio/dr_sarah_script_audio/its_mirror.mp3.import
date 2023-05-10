@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/its_mirror.mp3-bae8722f438bd0e21a84e45902dad225.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/its_mirror.mp3"
+dest_files=[ "res://.import/its_mirror.mp3-bae8722f438bd0e21a84e45902dad225.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

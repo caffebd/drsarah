@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/compass_show_way.mp3-6aeefa40544d2a1cd33a2d43ef8d0120.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/riddles/compass_show_way.mp3"
+dest_files=[ "res://.import/compass_show_way.mp3-6aeefa40544d2a1cd33a2d43ef8d0120.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

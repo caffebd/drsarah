@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/its_telescope.mp3-4be7e10a3472526322958b2f8b5fa395.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/its_telescope.mp3"
+dest_files=[ "res://.import/its_telescope.mp3-4be7e10a3472526322958b2f8b5fa395.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

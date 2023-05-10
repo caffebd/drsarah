@@ -1,0 +1,15 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+path="res://.import/rope_click_mask_big.png-f9c03a60949acee78024afe101086160.res"
+
+[deps]
+
+source_file="res://assets/platformer/rope_click_mask_big.png"
+dest_files=[ "res://.import/rope_click_mask_big.png-f9c03a60949acee78024afe101086160.res" ]
+
+[params]
+
+create_from=0
+threshold=0.5

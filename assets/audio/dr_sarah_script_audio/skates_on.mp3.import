@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/skates_on.mp3-d023313e2873b6c9f14ed3e79796a5c5.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/skates_on.mp3"
+dest_files=[ "res://.import/skates_on.mp3-d023313e2873b6c9f14ed3e79796a5c5.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

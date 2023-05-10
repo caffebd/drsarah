@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/look_crate.mp3-1b642790cb81b52c9d8b42bffefe4d03.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/look_crate.mp3"
+dest_files=[ "res://.import/look_crate.mp3-1b642790cb81b52c9d8b42bffefe4d03.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

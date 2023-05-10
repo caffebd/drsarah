@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/look_sign_clue.mp3-e41c781cf67140ecbaa962c2d9abc88f.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/look_sign_clue.mp3"
+dest_files=[ "res://.import/look_sign_clue.mp3-e41c781cf67140ecbaa962c2d9abc88f.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

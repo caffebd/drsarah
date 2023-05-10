@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/ran_jumped.mp3-8d70ffbf3c1afe9e22ed9103444ac03b.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/village_intro/ran_jumped.mp3"
+dest_files=[ "res://.import/ran_jumped.mp3-8d70ffbf3c1afe9e22ed9103444ac03b.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

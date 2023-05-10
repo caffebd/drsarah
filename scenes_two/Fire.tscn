@@ -1,0 +1,61 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://assets/medieval/Objects/Fire1_1.png" type="Texture" id=1]
+[ext_resource path="res://assets/medieval/Objects/Fire1_5.png" type="Texture" id=2]
+[ext_resource path="res://assets/medieval/Objects/Fire1_2.png" type="Texture" id=3]
+[ext_resource path="res://assets/medieval/Objects/Fire1_3.png" type="Texture" id=4]
+[ext_resource path="res://assets/medieval/Objects/Fire1_4.png" type="Texture" id=5]
+[ext_resource path="res://scenes_two/Fire.gd" type="Script" id=6]
+[ext_resource path="res://assets/audio/sound_effects/water_fire.mp3" type="AudioStream" id=7]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 5 ), ExtResource( 2 ), ExtResource( 1 ), ExtResource( 3 ), ExtResource( 4 ) ],
+"loop": true,
+"name": "burn",
+"speed": 12.0
+} ]
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 2 ), ExtResource( 1 ) ],
+"loop": true,
+"name": "burn",
+"speed": 15.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 67.5, 144 )
+
+[node name="FireBtn" type="TextureButton"]
+margin_right = 79.0
+margin_bottom = 64.0
+rect_min_size = Vector2( 80, 65 )
+script = ExtResource( 6 )
+
+[node name="burn1" type="AnimatedSprite" parent="."]
+position = Vector2( 19, 14 )
+scale = Vector2( 3, 3 )
+frames = SubResource( 1 )
+animation = "burn"
+frame = 3
+playing = true
+
+[node name="burn2" type="AnimatedSprite" parent="burn1"]
+position = Vector2( 17, 0 )
+frames = SubResource( 2 )
+animation = "burn"
+frame = 3
+playing = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="FireBody" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 38.5, -82 )
+shape = SubResource( 3 )
+
+[node name="Extinguish" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = ExtResource( 7 )
+
+[connection signal="finished" from="Extinguish" to="." method="_on_Extinguish_finished"]

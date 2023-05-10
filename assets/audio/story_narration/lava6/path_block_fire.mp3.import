@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/path_block_fire.mp3-5a83145f0bc99c6d56d42cb0d03ee1c3.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/lava6/path_block_fire.mp3"
+dest_files=[ "res://.import/path_block_fire.mp3-5a83145f0bc99c6d56d42cb0d03ee1c3.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

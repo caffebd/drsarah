@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/fireproof_coat.mp3-c278d743690da63f54f044bf417f23e2.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/fireproof_coat.mp3"
+dest_files=[ "res://.import/fireproof_coat.mp3-c278d743690da63f54f044bf417f23e2.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

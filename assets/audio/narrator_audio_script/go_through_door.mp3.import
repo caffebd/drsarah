@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/go_through_door.mp3-10c14048db709443ca7c15949a52aa26.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/narrator_audio_script/go_through_door.mp3"
+dest_files=[ "res://.import/go_through_door.mp3-10c14048db709443ca7c15949a52aa26.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

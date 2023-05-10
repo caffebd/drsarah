@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/click_on_the_lever.mp3-008b477274a536ffb2447e84362617c7.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/narrator_audio_script/click_on_the_lever.mp3"
+dest_files=[ "res://.import/click_on_the_lever.mp3-008b477274a536ffb2447e84362617c7.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

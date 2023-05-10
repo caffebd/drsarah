@@ -1,0 +1,38 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://assets/ui/book_save/book_save_1.png" type="Texture" id=1]
+[ext_resource path="res://assets/ui/book_save/book_save_3.png" type="Texture" id=2]
+[ext_resource path="res://assets/ui/book_save/book_save_2.png" type="Texture" id=3]
+[ext_resource path="res://UI_Scenes/SavingBook.gd" type="Script" id=4]
+[ext_resource path="res://assets/audio/sound_effects/book_write.mp3" type="AudioStream" id=5]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 1 ), ExtResource( 3 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 1 ) ],
+"loop": true,
+"name": "saving",
+"speed": 6.0
+} ]
+
+[node name="SavingBook" type="Node2D"]
+script = ExtResource( 4 )
+
+[node name="save_book_anim" type="AnimatedSprite" parent="."]
+unique_name_in_owner = true
+scale = Vector2( 0.75, 0.75 )
+frames = SubResource( 1 )
+animation = "saving"
+frame = 3
+
+[node name="SaveTimer" type="Timer" parent="."]
+unique_name_in_owner = true
+wait_time = 3.0
+one_shot = true
+
+[node name="save_chime" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = ExtResource( 5 )
+volume_db = -15.0
+
+[connection signal="timeout" from="SaveTimer" to="." method="_on_SaveTimer_timeout"]
+[connection signal="finished" from="save_chime" to="." method="_on_save_chime_finished"]

@@ -1,0 +1,59 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://assets/ui/default_comic_panel.png" type="Texture" id=1]
+[ext_resource path="res://assets/fonts/Comfortaa/Comfortaa-VariableFont_wght.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://UI_Scenes/ComicPanel.gd" type="Script" id=3]
+[ext_resource path="res://assets/ui/comic_book_ui/Text_Panel_new.png" type="Texture" id=4]
+[ext_resource path="res://assets/ui/comic_book_ui/Image_Panel_new.png" type="Texture" id=5]
+[ext_resource path="res://assets/ui/comic_book_ui/TTS Button.png" type="Texture" id=6]
+
+[sub_resource type="DynamicFont" id=1]
+size = 32
+extra_spacing_top = 8
+font_data = ExtResource( 2 )
+
+[node name="ComicPanel" type="Control"]
+margin_right = 600.0
+margin_bottom = 600.0
+rect_min_size = Vector2( 600, 600 )
+script = ExtResource( 3 )
+
+[node name="ComicImage" type="TextureButton" parent="."]
+unique_name_in_owner = true
+margin_right = 533.0
+margin_bottom = 300.0
+rect_min_size = Vector2( 533, 300 )
+texture_normal = ExtResource( 1 )
+expand = true
+
+[node name="ColorRect" type="TextureRect" parent="ComicImage"]
+margin_right = 533.0
+margin_bottom = 300.0
+texture = ExtResource( 5 )
+
+[node name="voice" type="TextureButton" parent="."]
+unique_name_in_owner = true
+margin_left = 419.0
+margin_top = 19.0
+margin_right = 510.0
+margin_bottom = 96.0
+texture_normal = ExtResource( 6 )
+
+[node name="TextPanel" type="TextureRect" parent="."]
+margin_top = 295.0
+margin_right = 533.0
+margin_bottom = 555.0
+texture = ExtResource( 4 )
+
+[node name="Sentence" type="Label" parent="TextPanel"]
+unique_name_in_owner = true
+margin_left = 30.0
+margin_top = 25.0
+margin_right = 510.0
+margin_bottom = 235.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "Play this level to create your story."
+autowrap = true
+
+[connection signal="pressed" from="voice" to="." method="_on_voice_pressed"]

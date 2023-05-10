@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/swim_push_btn.mp3-9ea83760ef399b75d3828d245db3c8c0.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/water9/swim_push_btn.mp3"
+dest_files=[ "res://.import/swim_push_btn.mp3-9ea83760ef399b75d3828d245db3c8c0.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

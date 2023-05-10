@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/click_again_clock.mp3-c86374852ed162b4a31e9bfc077664a5.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/narrator_audio_script/click_again_clock.mp3"
+dest_files=[ "res://.import/click_again_clock.mp3-c86374852ed162b4a31e9bfc077664a5.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

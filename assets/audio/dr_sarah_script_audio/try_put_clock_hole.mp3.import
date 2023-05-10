@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/try_put_clock_hole.mp3-7f3bf5fc47e6b598b11e36c16f8825c1.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/try_put_clock_hole.mp3"
+dest_files=[ "res://.import/try_put_clock_hole.mp3-7f3bf5fc47e6b598b11e36c16f8825c1.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

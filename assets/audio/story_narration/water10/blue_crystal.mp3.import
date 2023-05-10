@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/blue_crystal.mp3-91c7d11875ccf51573595dad0badd669.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/water10/blue_crystal.mp3"
+dest_files=[ "res://.import/blue_crystal.mp3-91c7d11875ccf51573595dad0badd669.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

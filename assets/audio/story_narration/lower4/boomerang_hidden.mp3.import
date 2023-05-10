@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/boomerang_hidden.mp3-718064842cc0bd516783fecd13800f6c.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/lower4/boomerang_hidden.mp3"
+dest_files=[ "res://.import/boomerang_hidden.mp3-718064842cc0bd516783fecd13800f6c.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

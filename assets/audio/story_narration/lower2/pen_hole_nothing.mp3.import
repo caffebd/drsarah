@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/pen_hole_nothing.mp3-4aeb5dbe239aa3ed361dce24a642660d.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/lower2/pen_hole_nothing.mp3"
+dest_files=[ "res://.import/pen_hole_nothing.mp3-4aeb5dbe239aa3ed361dce24a642660d.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

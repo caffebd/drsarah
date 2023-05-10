@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/woman2.mp3-680fa3a8139f5cc8cafac23a20ce572b.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/village_intro/woman2.mp3"
+dest_files=[ "res://.import/woman2.mp3-680fa3a8139f5cc8cafac23a20ce572b.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

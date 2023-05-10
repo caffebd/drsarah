@@ -1,0 +1,103 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://assets/medieval/Objects/Fire1_4.png" type="Texture" id=1]
+[ext_resource path="res://assets/medieval/Objects/Fire1_5.png" type="Texture" id=2]
+[ext_resource path="res://assets/medieval/Objects/Fire1_1.png" type="Texture" id=3]
+[ext_resource path="res://assets/medieval/Objects/Fire1_2.png" type="Texture" id=4]
+[ext_resource path="res://assets/medieval/Objects/Fire1_3.png" type="Texture" id=5]
+[ext_resource path="res://End/LargeFire.gd" type="Script" id=6]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 1 ), ExtResource( 2 ) ],
+"loop": true,
+"name": "burn",
+"speed": 20.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 233.5, 56.5 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 346, 34.5 )
+
+[node name="LargeFire" type="TextureButton"]
+margin_left = -13.0
+margin_top = -57.0
+margin_right = 439.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 452, 97 )
+script = ExtResource( 6 )
+
+[node name="burn" type="AnimatedSprite" parent="."]
+position = Vector2( 36, 48 )
+scale = Vector2( 4, 4 )
+frames = SubResource( 1 )
+animation = "burn"
+frame = 2
+playing = true
+
+[node name="burn2" type="AnimatedSprite" parent="."]
+position = Vector2( 103, 48 )
+scale = Vector2( 4, 4 )
+frames = SubResource( 1 )
+animation = "burn"
+frame = 2
+playing = true
+
+[node name="burn3" type="AnimatedSprite" parent="."]
+position = Vector2( 166, 48 )
+scale = Vector2( 4, 4 )
+frames = SubResource( 1 )
+animation = "burn"
+frame = 1
+playing = true
+
+[node name="burn4" type="AnimatedSprite" parent="."]
+position = Vector2( 235, 48 )
+scale = Vector2( 4, 4 )
+frames = SubResource( 1 )
+animation = "burn"
+playing = true
+
+[node name="burn5" type="AnimatedSprite" parent="."]
+position = Vector2( 309, 46 )
+scale = Vector2( 4, 4 )
+frames = SubResource( 1 )
+animation = "burn"
+frame = 4
+playing = true
+
+[node name="burn6" type="AnimatedSprite" parent="."]
+position = Vector2( 379, 46 )
+scale = Vector2( 4, 4 )
+frames = SubResource( 1 )
+animation = "burn"
+frame = 4
+playing = true
+
+[node name="burn7" type="AnimatedSprite" parent="."]
+position = Vector2( 453, 48 )
+scale = Vector2( 4, 4 )
+frames = SubResource( 1 )
+animation = "burn"
+frame = 4
+playing = true
+
+[node name="FireBody" type="StaticBody2D" parent="."]
+position = Vector2( 28, 60 )
+
+[node name="FireCol" type="CollisionShape2D" parent="FireBody"]
+unique_name_in_owner = true
+position = Vector2( 214.5, -4.5 )
+shape = SubResource( 2 )
+disabled = true
+
+[node name="TooHot" type="Area2D" parent="."]
+
+[node name="fire_detect" type="CollisionShape2D" parent="TooHot"]
+unique_name_in_owner = true
+position = Vector2( 241, 64.5 )
+shape = SubResource( 3 )
+
+[connection signal="body_entered" from="TooHot" to="." method="_on_TooHot_body_entered"]

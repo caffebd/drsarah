@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/found_diving_mask.mp3-ec5fc98caa01cf38b1a1f2e3024393c9.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/water9/found_diving_mask.mp3"
+dest_files=[ "res://.import/found_diving_mask.mp3-ec5fc98caa01cf38b1a1f2e3024393c9.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://assets/platformer/Hammer.png" type="Texture" id=1]
+[ext_resource path="res://scenes_two/Hammer.gd" type="Script" id=2]
+[ext_resource path="res://UI_Scenes/ObjectLabel.tscn" type="PackedScene" id=3]
+[ext_resource path="res://assets/audio/sound_effects/hamme_effect.mp3" type="AudioStream" id=4]
+
+[node name="Hammer" type="TextureButton"]
+margin_right = 112.0
+margin_bottom = 112.0
+rect_pivot_offset = Vector2( 56, 112 )
+texture_normal = ExtResource( 1 )
+script = ExtResource( 2 )
+
+[node name="ObjectInfo" parent="." instance=ExtResource( 3 )]
+unique_name_in_owner = true
+margin_left = -75.0
+margin_top = -81.0
+margin_right = -35.0
+margin_bottom = -41.0
+
+[node name="hammer_effect" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = ExtResource( 4 )
+volume_db = -5.0

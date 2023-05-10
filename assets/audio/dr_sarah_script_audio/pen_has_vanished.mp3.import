@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/pen_has_vanished.mp3-5e927173e076934581a6f1b0b25cf54a.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/pen_has_vanished.mp3"
+dest_files=[ "res://.import/pen_has_vanished.mp3-5e927173e076934581a6f1b0b25cf54a.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

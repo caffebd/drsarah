@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/get_medicine_kit.mp3-11b34dc81207f3e0d5addcfb95c09eab.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/get_medicine_kit.mp3"
+dest_files=[ "res://.import/get_medicine_kit.mp3-11b34dc81207f3e0d5addcfb95c09eab.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

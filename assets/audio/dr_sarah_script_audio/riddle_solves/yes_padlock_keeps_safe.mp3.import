@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/yes_padlock_keeps_safe.mp3-9691394d0e3155bfd5d3b8ea4b2176ff.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/riddle_solves/yes_padlock_keeps_safe.mp3"
+dest_files=[ "res://.import/yes_padlock_keeps_safe.mp3-9691394d0e3155bfd5d3b8ea4b2176ff.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

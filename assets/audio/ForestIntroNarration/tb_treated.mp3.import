@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/tb_treated.mp3-5beb8fb6f3d081c6500a29ff5a0a78f3.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/ForestIntroNarration/tb_treated.mp3"
+dest_files=[ "res://.import/tb_treated.mp3-5beb8fb6f3d081c6500a29ff5a0a78f3.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

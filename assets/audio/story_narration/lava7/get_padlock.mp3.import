@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/get_padlock.mp3-fd3ab68d3bfbe80e6fe0ccfa46086030.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/lava7/get_padlock.mp3"
+dest_files=[ "res://.import/get_padlock.mp3-fd3ab68d3bfbe80e6fe0ccfa46086030.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

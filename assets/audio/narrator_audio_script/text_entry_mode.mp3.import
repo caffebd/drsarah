@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/text_entry_mode.mp3-4d97fdd24632ce3717228cd214103048.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/narrator_audio_script/text_entry_mode.mp3"
+dest_files=[ "res://.import/text_entry_mode.mp3-4d97fdd24632ce3717228cd214103048.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

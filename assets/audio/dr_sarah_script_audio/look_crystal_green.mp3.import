@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/look_crystal_green.mp3-d4e1dd6c14b5a5a1f2401bb57f112a7f.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/look_crystal_green.mp3"
+dest_files=[ "res://.import/look_crystal_green.mp3-d4e1dd6c14b5a5a1f2401bb57f112a7f.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/climbing_gloves.mp3-fb01fc3529a722acd62f2e49e1928184.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/climbing_gloves.mp3"
+dest_files=[ "res://.import/climbing_gloves.mp3-fb01fc3529a722acd62f2e49e1928184.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

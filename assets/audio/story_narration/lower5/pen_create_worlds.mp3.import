@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/pen_create_worlds.mp3-e415ba1add51ddf0ec36508b0772594e.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/lower5/pen_create_worlds.mp3"
+dest_files=[ "res://.import/pen_create_worlds.mp3-e415ba1add51ddf0ec36508b0772594e.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

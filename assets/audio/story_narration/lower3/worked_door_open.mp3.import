@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/worked_door_open.mp3-9a41b8d68a9d90a1f8a59b20f04e1dc1.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/lower3/worked_door_open.mp3"
+dest_files=[ "res://.import/worked_door_open.mp3-9a41b8d68a9d90a1f8a59b20f04e1dc1.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

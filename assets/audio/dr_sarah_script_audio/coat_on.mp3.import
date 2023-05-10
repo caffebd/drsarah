@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/coat_on.mp3-655670ec7bdf68024330b54742c78a7b.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/coat_on.mp3"
+dest_files=[ "res://.import/coat_on.mp3-655670ec7bdf68024330b54742c78a7b.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

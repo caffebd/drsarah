@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/go_back_get_ladder.mp3-65c27ac97d6d1d52cbcde58194ddd17e.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/go_back_get_ladder.mp3"
+dest_files=[ "res://.import/go_back_get_ladder.mp3-65c27ac97d6d1d52cbcde58194ddd17e.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

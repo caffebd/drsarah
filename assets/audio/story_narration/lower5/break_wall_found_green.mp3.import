@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/break_wall_found_green.mp3-02bb0990679d3d6181cf7d0fad6f3d68.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/lower5/break_wall_found_green.mp3"
+dest_files=[ "res://.import/break_wall_found_green.mp3-02bb0990679d3d6181cf7d0fad6f3d68.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

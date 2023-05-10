@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/click_mirror_get_back.mp3-5d0134feba908433d5be3294772312d3.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/narrator_audio_script/click_mirror_get_back.mp3"
+dest_files=[ "res://.import/click_mirror_get_back.mp3-5d0134feba908433d5be3294772312d3.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

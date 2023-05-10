@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/girl_click_2.mp3-9d74d4dd202ae21f7a4a81d916669bcf.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/narrator_audio_script/girl_click_2.mp3"
+dest_files=[ "res://.import/girl_click_2.mp3-9d74d4dd202ae21f7a4a81d916669bcf.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/need_for_children.mp3-34a7c0c65bd806070349927bfd6f5210.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/need_for_children.mp3"
+dest_files=[ "res://.import/need_for_children.mp3-34a7c0c65bd806070349927bfd6f5210.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/i_think_could_break.mp3-27502a652c8ccf30d7bf167ffe54193d.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/i_think_could_break.mp3"
+dest_files=[ "res://.import/i_think_could_break.mp3-27502a652c8ccf30d7bf167ffe54193d.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

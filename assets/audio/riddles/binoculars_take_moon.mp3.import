@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/binoculars_take_moon.mp3-8e1cba6ad9612b7351b7681849ec720e.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/riddles/binoculars_take_moon.mp3"
+dest_files=[ "res://.import/binoculars_take_moon.mp3-8e1cba6ad9612b7351b7681849ec720e.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

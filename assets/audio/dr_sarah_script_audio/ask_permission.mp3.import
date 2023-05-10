@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/ask_permission.mp3-3153f6d8f3ce04be2caf835e99f63b91.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/ask_permission.mp3"
+dest_files=[ "res://.import/ask_permission.mp3-3153f6d8f3ce04be2caf835e99f63b91.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

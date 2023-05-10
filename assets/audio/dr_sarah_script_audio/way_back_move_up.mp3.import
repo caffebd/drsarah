@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/way_back_move_up.mp3-af9d20f2dc8b78d8e9460967ed7cd053.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/way_back_move_up.mp3"
+dest_files=[ "res://.import/way_back_move_up.mp3-af9d20f2dc8b78d8e9460967ed7cd053.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

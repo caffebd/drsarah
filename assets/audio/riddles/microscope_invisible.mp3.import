@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/microscope_invisible.mp3-5a825249891421a9d61241875ad65246.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/riddles/microscope_invisible.mp3"
+dest_files=[ "res://.import/microscope_invisible.mp3-5a825249891421a9d61241875ad65246.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

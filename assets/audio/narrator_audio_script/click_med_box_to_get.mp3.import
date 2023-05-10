@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/click_med_box_to_get.mp3-18c4a8b6e062a1a550e528ce2524510d.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/narrator_audio_script/click_med_box_to_get.mp3"
+dest_files=[ "res://.import/click_med_box_to_get.mp3-18c4a8b6e062a1a550e528ce2524510d.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/sudden_noise.mp3-23b80f0648e582c8f03935c1492c054f.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/village_intro/sudden_noise.mp3"
+dest_files=[ "res://.import/sudden_noise.mp3-23b80f0648e582c8f03935c1492c054f.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

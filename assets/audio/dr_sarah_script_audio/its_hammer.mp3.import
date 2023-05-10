@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/its_hammer.mp3-0a19df3312dcde6366cc4eb4fa701f21.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/its_hammer.mp3"
+dest_files=[ "res://.import/its_hammer.mp3-0a19df3312dcde6366cc4eb4fa701f21.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/compass_didnt_work.mp3-17ee9cde787058d233977d1e7953a37f.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/lower4/compass_didnt_work.mp3"
+dest_files=[ "res://.import/compass_didnt_work.mp3-17ee9cde787058d233977d1e7953a37f.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

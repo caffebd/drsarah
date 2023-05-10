@@ -1,0 +1,13 @@
+[remap]
+
+importer="image"
+type="Image"
+path="res://.import/rope_click_mask.png-ec613e7241f980975093243d50a441ca.image"
+
+[deps]
+
+source_file="res://assets/platformer/rope_click_mask.png"
+dest_files=[ "res://.import/rope_click_mask.png-ec613e7241f980975093243d50a441ca.image" ]
+
+[params]
+

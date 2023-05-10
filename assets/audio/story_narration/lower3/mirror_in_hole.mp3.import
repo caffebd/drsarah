@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/mirror_in_hole.mp3-afdb30bc9db882cd3791b3c891a3308e.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/lower3/mirror_in_hole.mp3"
+dest_files=[ "res://.import/mirror_in_hole.mp3-afdb30bc9db882cd3791b3c891a3308e.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

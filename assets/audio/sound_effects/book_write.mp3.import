@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/book_write.mp3-c93b5f92bf7bb1528c5928909d239ca1.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/sound_effects/book_write.mp3"
+dest_files=[ "res://.import/book_write.mp3-c93b5f92bf7bb1528c5928909d239ca1.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

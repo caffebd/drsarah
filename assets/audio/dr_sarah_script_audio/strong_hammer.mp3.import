@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/strong_hammer.mp3-4590611b2b16d3aa1a4b04fc7c636a95.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/strong_hammer.mp3"
+dest_files=[ "res://.import/strong_hammer.mp3-4590611b2b16d3aa1a4b04fc7c636a95.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

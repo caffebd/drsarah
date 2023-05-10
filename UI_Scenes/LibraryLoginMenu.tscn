@@ -1,0 +1,185 @@
+[gd_scene load_steps=32 format=2]
+
+[ext_resource path="res://assets/fonts/Comfortaa/Comfortaa-VariableFont_wght.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://UI_Scenes/LibraryLoginMenu.gd" type="Script" id=2]
+[ext_resource path="res://assets/ui/loading_crystal/Loading Animation1.png" type="Texture" id=3]
+[ext_resource path="res://assets/fonts/alagard.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://assets/ui/Loginpage/Login Page Text Field.png" type="Texture" id=5]
+[ext_resource path="res://assets/ui/Loginpage/Login Page BG.png" type="Texture" id=6]
+[ext_resource path="res://assets/ui/loading_crystal/Loading Animation5.png" type="Texture" id=7]
+[ext_resource path="res://assets/ui/loading_crystal/Loading Animation6.png" type="Texture" id=8]
+[ext_resource path="res://assets/ui/loading_crystal/Loading Animation7.png" type="Texture" id=9]
+[ext_resource path="res://assets/ui/loading_crystal/Loading Animation8.png" type="Texture" id=10]
+[ext_resource path="res://assets/ui/loading_crystal/Loading Animation9.png" type="Texture" id=11]
+[ext_resource path="res://assets/ui/loading_crystal/Loading Animation10.png" type="Texture" id=12]
+[ext_resource path="res://assets/ui/loading_crystal/Loading Animation14.png" type="Texture" id=13]
+[ext_resource path="res://assets/ui/button_latest.png" type="Texture" id=14]
+[ext_resource path="res://assets/ui/loading_crystal/Loading Animation15.png" type="Texture" id=15]
+[ext_resource path="res://assets/ui/loading_crystal/Loading Animation11.png" type="Texture" id=16]
+[ext_resource path="res://assets/ui/loading_crystal/Loading Animation2.png" type="Texture" id=17]
+[ext_resource path="res://assets/ui/loading_crystal/Loading Animation12.png" type="Texture" id=18]
+[ext_resource path="res://assets/ui/loading_crystal/Loading Animation13.png" type="Texture" id=19]
+[ext_resource path="res://assets/ui/loading_crystal/Loading Animation3.png" type="Texture" id=20]
+[ext_resource path="res://assets/ui/loading_crystal/Loading Animation4.png" type="Texture" id=21]
+
+[sub_resource type="DynamicFont" id=1]
+size = 75
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=8]
+size = 45
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=9]
+size = 36
+font_data = ExtResource( 1 )
+
+[sub_resource type="Theme" id=4]
+
+[sub_resource type="DynamicFont" id=3]
+size = 60
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxEmpty" id=12]
+
+[sub_resource type="StyleBoxEmpty" id=11]
+
+[sub_resource type="DynamicFont" id=6]
+size = 70
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=7]
+size = 30
+font_data = ExtResource( 1 )
+
+[sub_resource type="SpriteFrames" id=10]
+animations = [ {
+"frames": [ ExtResource( 3 ), ExtResource( 17 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 16 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 13 ), ExtResource( 15 ) ],
+"loop": true,
+"name": "loading",
+"speed": 10.0
+} ]
+
+[node name="LibraryLoginMenu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+
+[node name="touch_trigger" type="TextureButton" parent="."]
+margin_left = 624.0
+margin_top = 541.0
+margin_right = 1354.0
+margin_bottom = 661.0
+rect_min_size = Vector2( 730, 120 )
+disabled = true
+
+[node name="bg" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 6 )
+
+[node name="LibraryName" type="Label" parent="."]
+unique_name_in_owner = true
+margin_left = 574.0
+margin_top = 139.0
+margin_right = 1398.0
+margin_bottom = 218.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "Welcome 'Demo Version'"
+
+[node name="temp_login" type="Label" parent="."]
+unique_name_in_owner = true
+margin_left = 507.0
+margin_top = 273.0
+margin_right = 1495.0
+margin_bottom = 324.0
+custom_colors/font_color = Color( 0.611765, 0.00784314, 0.00784314, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "Use any 6 digit number to login e.g. 123456"
+
+[node name="remember" type="Label" parent="."]
+unique_name_in_owner = true
+margin_left = 429.0
+margin_top = 363.0
+margin_right = 1520.0
+margin_bottom = 460.0
+custom_colors/font_color = Color( 0.611765, 0.00784314, 0.00784314, 1 )
+custom_fonts/font = SubResource( 9 )
+text = "Remember your chosen number to login again
+and continue playing"
+align = 1
+
+[node name="card_field" type="TextureRect" parent="."]
+margin_left = 579.0
+margin_top = 490.0
+margin_right = 1398.0
+margin_bottom = 700.0
+texture = ExtResource( 5 )
+
+[node name="LibraryCard" type="LineEdit" parent="card_field"]
+unique_name_in_owner = true
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -346.5
+margin_top = -54.0
+margin_right = 347.5
+margin_bottom = 53.0
+theme = SubResource( 4 )
+custom_colors/cursor_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 3 )
+custom_styles/focus = SubResource( 12 )
+custom_styles/normal = SubResource( 11 )
+align = 1
+max_length = 6
+context_menu_enabled = false
+placeholder_text = "enter library number"
+placeholder_alpha = 0.586
+caret_blink = true
+
+[node name="Submit" type="TextureButton" parent="."]
+unique_name_in_owner = true
+margin_left = 806.0
+margin_top = 787.0
+margin_right = 1212.0
+margin_bottom = 920.0
+texture_normal = ExtResource( 14 )
+
+[node name="Label" type="Label" parent="Submit"]
+margin_left = 72.0
+margin_top = 20.0
+margin_right = 321.0
+margin_bottom = 87.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "SUBMIT"
+
+[node name="error" type="Label" parent="."]
+unique_name_in_owner = true
+visible = false
+margin_left = 626.0
+margin_top = 728.0
+margin_right = 1353.0
+margin_bottom = 763.0
+custom_colors/font_color = Color( 0.611765, 0.00784314, 0.00784314, 1 )
+custom_fonts/font = SubResource( 7 )
+text = "The number is not correct, please check again."
+
+[node name="LoadingAnim" type="AnimatedSprite" parent="."]
+unique_name_in_owner = true
+visible = false
+position = Vector2( 1400, 867 )
+scale = Vector2( 0.7, 0.7 )
+frames = SubResource( 10 )
+animation = "loading"
+
+[node name="LoadTimer" type="Timer" parent="."]
+unique_name_in_owner = true
+one_shot = true
+
+[connection signal="pressed" from="touch_trigger" to="." method="_on_touch_trigger_pressed"]
+[connection signal="pressed" from="Submit" to="." method="_on_Submit_pressed"]
+[connection signal="timeout" from="LoadTimer" to="." method="_on_LoadTimer_timeout"]

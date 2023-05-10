@@ -1,0 +1,90 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://assets/fonts/Comfortaa/Comfortaa-VariableFont_wght.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://UI_Scenes/ObjectLabel.gd" type="Script" id=2]
+[ext_resource path="res://assets/ui/star_animation/Star_animated-1.png" type="Texture" id=3]
+[ext_resource path="res://assets/ui/star_animation/Star_animated-3.png" type="Texture" id=4]
+[ext_resource path="res://assets/ui/star_animation/Star_animated-5.png" type="Texture" id=5]
+[ext_resource path="res://assets/ui/star_animation/Star_animated-4.png" type="Texture" id=6]
+[ext_resource path="res://assets/ui/star_animation/Star_animated-0.png" type="Texture" id=7]
+[ext_resource path="res://assets/ui/star_animation/Star_animated-2.png" type="Texture" id=8]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.894118, 0.882353, 0.105882, 1 )
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 1, 1, 1, 1 )
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[sub_resource type="DynamicFont" id=3]
+size = 42
+font_data = ExtResource( 1 )
+
+[sub_resource type="SpriteFrames" id=4]
+animations = [ {
+"frames": [ ExtResource( 7 ), ExtResource( 3 ), ExtResource( 8 ), ExtResource( 4 ), ExtResource( 6 ), ExtResource( 5 ) ],
+"loop": true,
+"name": "flash",
+"speed": 8.0
+} ]
+
+[node name="ObjectInfo" type="Control"]
+margin_right = 40.0
+margin_bottom = 40.0
+script = ExtResource( 2 )
+
+[node name="ObjectLabel" type="Panel" parent="."]
+unique_name_in_owner = true
+margin_right = 215.0
+margin_bottom = 58.0
+grow_horizontal = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+custom_styles/panel = SubResource( 1 )
+
+[node name="inside_panel" type="Panel" parent="ObjectLabel"]
+unique_name_in_owner = true
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -102.5
+margin_top = -24.0
+margin_right = 102.5
+margin_bottom = 24.0
+grow_horizontal = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+custom_styles/panel = SubResource( 2 )
+
+[node name="object_text" type="Label" parent="ObjectLabel/inside_panel"]
+unique_name_in_owner = true
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -94.5
+margin_top = -23.5
+margin_right = 94.5
+margin_bottom = 23.5
+grow_horizontal = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 3 )
+text = "the "
+align = 1
+valign = 1
+
+[node name="Star" type="AnimatedSprite" parent="."]
+unique_name_in_owner = true
+position = Vector2( 105, 27 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 4 )
+animation = "flash"
+frame = 1
+playing = true

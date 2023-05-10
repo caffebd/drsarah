@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/look_sign_pen.mp3-de8af1c6093c48aed8b7c11916ce7144.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/lower5/look_sign_pen.mp3"
+dest_files=[ "res://.import/look_sign_pen.mp3-de8af1c6093c48aed8b7c11916ce7144.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

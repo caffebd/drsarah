@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/girl_has_taken.mp3-67dc6454262f0b7de263841c5b65ef70.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/girl_has_taken.mp3"
+dest_files=[ "res://.import/girl_has_taken.mp3-67dc6454262f0b7de263841c5b65ef70.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/first_glass_found.mp3-5d24450d8a31f6ad32785183433d7ff6.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/lava8/first_glass_found.mp3"
+dest_files=[ "res://.import/first_glass_found.mp3-5d24450d8a31f6ad32785183433d7ff6.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

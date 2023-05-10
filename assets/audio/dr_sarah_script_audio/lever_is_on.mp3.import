@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/lever_is_on.mp3-0b1e673dd6834ea059328b13105ddd4c.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/lever_is_on.mp3"
+dest_files=[ "res://.import/lever_is_on.mp3-0b1e673dd6834ea059328b13105ddd4c.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

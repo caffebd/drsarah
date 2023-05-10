@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/speak_woman.mp3-2fc04aa2e8ef2b836a2251b4a5e10b34.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/village_intro/speak_woman.mp3"
+dest_files=[ "res://.import/speak_woman.mp3-2fc04aa2e8ef2b836a2251b4a5e10b34.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

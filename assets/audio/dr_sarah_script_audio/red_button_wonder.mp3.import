@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/red_button_wonder.mp3-7b22a9f51be768acac6afd9e0003791e.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/red_button_wonder.mp3"
+dest_files=[ "res://.import/red_button_wonder.mp3-7b22a9f51be768acac6afd9e0003791e.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

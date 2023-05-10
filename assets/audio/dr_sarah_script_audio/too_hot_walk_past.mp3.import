@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/too_hot_walk_past.mp3-7ada30967e5389ead285d9754af5155d.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/too_hot_walk_past.mp3"
+dest_files=[ "res://.import/too_hot_walk_past.mp3-7ada30967e5389ead285d9754af5155d.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

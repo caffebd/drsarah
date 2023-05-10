@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/sarah4.mp3-5cb2cf8098abe9485a0c926c5882f962.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/village_intro/sarah4.mp3"
+dest_files=[ "res://.import/sarah4.mp3-5cb2cf8098abe9485a0c926c5882f962.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

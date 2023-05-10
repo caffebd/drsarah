@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/telescope_hole.mp3-80c55ddf32f5abe16840fbc10fd36fff.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/water9/telescope_hole.mp3"
+dest_files=[ "res://.import/telescope_hole.mp3-80c55ddf32f5abe16840fbc10fd36fff.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

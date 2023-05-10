@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/made_it_through_jungle.mp3-d1a1a2245b332f17870df1e990ae3383.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/made_it_through_jungle.mp3"
+dest_files=[ "res://.import/made_it_through_jungle.mp3-d1a1a2245b332f17870df1e990ae3383.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/compass_has_vanished.mp3-747ef14a9db515f1b3483a6640755ec2.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/compass_has_vanished.mp3"
+dest_files=[ "res://.import/compass_has_vanished.mp3-747ef14a9db515f1b3483a6640755ec2.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

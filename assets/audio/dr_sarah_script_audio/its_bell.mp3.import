@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/its_bell.mp3-90de65c62061560325f7d84c68addce4.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/its_bell.mp3"
+dest_files=[ "res://.import/its_bell.mp3-90de65c62061560325f7d84c68addce4.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

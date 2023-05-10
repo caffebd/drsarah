@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/fire_lever.mp3-b560a59e1e9048ff18ac78897bb90924.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/lava7/fire_lever.mp3"
+dest_files=[ "res://.import/fire_lever.mp3-b560a59e1e9048ff18ac78897bb90924.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

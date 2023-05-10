@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/cant_mask_off_diving.mp3-2b1a6ab7cee3b3a34d25d036db019407.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/cant_mask_off_diving.mp3"
+dest_files=[ "res://.import/cant_mask_off_diving.mp3-2b1a6ab7cee3b3a34d25d036db019407.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

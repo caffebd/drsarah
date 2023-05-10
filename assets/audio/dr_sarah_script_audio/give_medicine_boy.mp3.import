@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/give_medicine_boy.mp3-356f10d00e87f00bd377e6c8a61a6e2c.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/give_medicine_boy.mp3"
+dest_files=[ "res://.import/give_medicine_boy.mp3-356f10d00e87f00bd377e6c8a61a6e2c.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

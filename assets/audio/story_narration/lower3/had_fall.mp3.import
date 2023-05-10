@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/had_fall.mp3-ecb0b4c81481531dc0d3361342de4973.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/lower3/had_fall.mp3"
+dest_files=[ "res://.import/had_fall.mp3-ecb0b4c81481531dc0d3361342de4973.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

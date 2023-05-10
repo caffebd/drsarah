@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/take_feel_better.mp3-dbffc6ca11074d6d002d8be6d68974a9.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/take_feel_better.mp3"
+dest_files=[ "res://.import/take_feel_better.mp3-dbffc6ca11074d6d002d8be6d68974a9.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

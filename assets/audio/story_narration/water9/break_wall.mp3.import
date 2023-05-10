@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/break_wall.mp3-f3d8e4c72b531ef05033f064d45df894.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/water9/break_wall.mp3"
+dest_files=[ "res://.import/break_wall.mp3-f3d8e4c72b531ef05033f064d45df894.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

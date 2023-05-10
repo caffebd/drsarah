@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/hard_lever_log_bridge.mp3-83d410601665d80becec48dc674af9c3.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/lower4/hard_lever_log_bridge.mp3"
+dest_files=[ "res://.import/hard_lever_log_bridge.mp3-83d410601665d80becec48dc674af9c3.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

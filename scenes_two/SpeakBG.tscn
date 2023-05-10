@@ -1,0 +1,50 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/fonts/Comfortaa/Comfortaa-VariableFont_wght.ttf" type="DynamicFontData" id=1]
+
+[sub_resource type="DynamicFont" id=1]
+size = 40
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 1 )
+
+[node name="SpeakBG" type="ColorRect"]
+unique_name_in_owner = true
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -580.0
+margin_top = 130.0
+margin_right = 583.0
+margin_bottom = 261.0
+color = Color( 0.332031, 0.245785, 0.162857, 0.784314 )
+
+[node name="SpeakFill" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.921569, 0.882353, 0.745098, 0.901961 )
+
+[node name="Margin" type="MarginContainer" parent="SpeakFill"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -578.5
+margin_top = -64.5
+margin_right = 577.5
+margin_bottom = 65.5
+
+[node name="Speak" type="Label" parent="SpeakFill/Margin"]
+unique_name_in_owner = true
+margin_top = 42.0
+margin_right = 1156.0
+margin_bottom = 88.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 1243, -485.5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+align = 1
+valign = 1
+autowrap = true

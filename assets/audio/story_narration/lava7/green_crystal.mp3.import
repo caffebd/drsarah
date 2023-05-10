@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/green_crystal.mp3-7e23cbd27d579439a1b17a699293eced.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/lava7/green_crystal.mp3"
+dest_files=[ "res://.import/green_crystal.mp3-7e23cbd27d579439a1b17a699293eced.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

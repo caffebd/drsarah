@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/boomerang_come_back.mp3-d48e59d9517a40d6e990bfd11ec5a87c.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/riddles/boomerang_come_back.mp3"
+dest_files=[ "res://.import/boomerang_come_back.mp3-d48e59d9517a40d6e990bfd11ec5a87c.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

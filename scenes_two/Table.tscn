@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/temp_room/table.png" type="Texture" id=1]
+[ext_resource path="res://scenes_two/Table.gd" type="Script" id=2]
+
+[node name="Table" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="TableBtn" type="TextureButton" parent="."]
+margin_right = 233.0
+margin_bottom = 140.0
+rect_pivot_offset = Vector2( 124, 130 )
+texture_normal = ExtResource( 1 )

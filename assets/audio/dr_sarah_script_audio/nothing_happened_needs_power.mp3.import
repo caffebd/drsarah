@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/nothing_happened_needs_power.mp3-cec33733a4b9446ea9245c468981aef0.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/nothing_happened_needs_power.mp3"
+dest_files=[ "res://.import/nothing_happened_needs_power.mp3-cec33733a4b9446ea9245c468981aef0.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

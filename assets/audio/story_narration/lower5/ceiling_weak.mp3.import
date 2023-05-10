@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/ceiling_weak.mp3-b6eee7bf8d4975eccde684222bf690b4.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/lower5/ceiling_weak.mp3"
+dest_files=[ "res://.import/ceiling_weak.mp3-b6eee7bf8d4975eccde684222bf690b4.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/weak_wall_break.mp3-32e0e8ce627b8637195116cb58358b17.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/lower5/weak_wall_break.mp3"
+dest_files=[ "res://.import/weak_wall_break.mp3-32e0e8ce627b8637195116cb58358b17.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

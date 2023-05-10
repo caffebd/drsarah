@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/water_fire_out_bridge.mp3-d1d94a0ef4eb137f62c0dab638472f24.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/lava8/water_fire_out_bridge.mp3"
+dest_files=[ "res://.import/water_fire_out_bridge.mp3-d1d94a0ef4eb137f62c0dab638472f24.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

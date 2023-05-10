@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/mirror_vanished_magic.mp3-60b2de461e3dc75da0a4b8784809134c.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/mirror_vanished_magic.mp3"
+dest_files=[ "res://.import/mirror_vanished_magic.mp3-60b2de461e3dc75da0a4b8784809134c.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

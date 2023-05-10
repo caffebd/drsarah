@@ -1,0 +1,50 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://assets/characters/bad_guy/bad_guy.png" type="Texture" id=1]
+[ext_resource path="res://CharacterScenes/BadGuy.gd" type="Script" id=2]
+[ext_resource path="res://assets/fonts/Comfortaa/Comfortaa-VariableFont_wght.ttf" type="DynamicFontData" id=3]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 1 ), ExtResource( 1 ) ],
+"loop": true,
+"name": "walk",
+"speed": 5.0
+} ]
+
+[sub_resource type="DynamicFont" id=2]
+size = 40
+font_data = ExtResource( 3 )
+
+[node name="BadGuy" type="TextureButton"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -1740.0
+margin_bottom = -872.0
+rect_min_size = Vector2( 180, 210 )
+script = ExtResource( 2 )
+
+[node name="BadGuyAnim" type="AnimatedSprite" parent="."]
+position = Vector2( 91, 101 )
+frames = SubResource( 1 )
+animation = "walk"
+
+[node name="SpeakBox" type="ColorRect" parent="."]
+unique_name_in_owner = true
+margin_left = -139.0
+margin_top = -451.0
+margin_right = 343.0
+margin_bottom = -61.0
+color = Color( 0.109804, 0.101961, 0.101961, 1 )
+
+[node name="BadGuySpeak" type="RichTextLabel" parent="SpeakBox"]
+unique_name_in_owner = true
+margin_left = 21.0
+margin_top = 15.0
+margin_right = 459.0
+margin_bottom = 368.0
+custom_colors/default_color = Color( 1, 1, 1, 1 )
+custom_fonts/normal_font = SubResource( 2 )
+text = "So you thought you could escape? Think again!
+
+No living creature can pass through my forcefield!"
