@@ -280,10 +280,10 @@ margin_bottom = -2759.0
 
 [node name="BlueCrystal" parent="Water10MapA" instance=ExtResource( 25 )]
 unique_name_in_owner = true
-margin_left = 3796.0
-margin_top = 1462.0
-margin_right = 3908.0
-margin_bottom = 1574.0
+margin_left = 5354.0
+margin_top = 508.0
+margin_right = 5466.0
+margin_bottom = 620.0
 
 [node name="GreenCystal" parent="Water10MapA" instance=ExtResource( 26 )]
 unique_name_in_owner = true
@@ -305,7 +305,7 @@ activate_object_path = NodePath("../Log2")
 position = Vector2( 781, 1862 )
 
 [node name="AnimatedSprite" parent="PlayerGirl" index="1"]
-frame = 2
+frame = 1
 
 [node name="PlayerCam" parent="PlayerGirl" index="5"]
 current = true
