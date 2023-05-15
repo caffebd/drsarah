@@ -60,9 +60,11 @@ y_pos_change = 1000.0
 log_speed = 4.0
 
 [node name="PlayerGirl" parent="Lower1MapA/Log" instance=ExtResource( 3 )]
-unique_name_in_owner = true
 position = Vector2( 290, 590 )
 z_index = 100
+
+[node name="AnimatedSprite" parent="Lower1MapA/Log/PlayerGirl" index="1"]
+frame = 2
 
 [node name="PlayerCam" parent="Lower1MapA/Log/PlayerGirl" index="5"]
 current = true
@@ -84,7 +86,6 @@ margin_left = 3290.0
 margin_top = -830.0
 margin_right = 3520.0
 margin_bottom = -610.0
-object_text = "the hole"
 shelf_item = "the clock"
 
 [node name="Spawn1" type="Position2D" parent="Lower1MapA"]
@@ -149,7 +150,5 @@ unique_name_in_owner = true
 [connection signal="body_entered" from="Lower1MapA/crystal trigger" to="." method="_on_crystal_trigger_body_entered"]
 
 [editable path="Lower1MapA/Log/PlayerGirl"]
-[editable path="Lower1MapA/Log/PlayerGirl/PlayerCam/SpeakBG"]
-[editable path="Lower1MapA/Log/PlayerGirl/PlayerCam/InventoryPanel"]
-[editable path="Lower1MapA/Log/PlayerGirl/PlayerCam/VocabPanel"]
-[editable path="Lower1MapA/Log/PlayerGirl/PlayerCam/SentencePanel"]
+[editable path="Lower1MapA/Log/PlayerGirl/UIControl/SentencePanel"]
+[editable path="Lower1MapA/Log/PlayerGirl/UIControl/SpeakBG"]
