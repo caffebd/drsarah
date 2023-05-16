@@ -252,6 +252,18 @@ var inventory_items = {
 		"text":"The fuse",
 		"label": "fuse"
 	},
+	"the beta key": {
+		"scene":"res://scenes_two/DoorKey.tscn",
+		"image":"res://assets/game_objects/bravo_key.png",
+		"text":"The beta key",
+		"label": "beta key"
+	},
+	"the delta key": {
+		"scene":"res://scenes_two/DoorKey.tscn",
+		"image":"res://assets/game_objects/delta_key.png",
+		"text":"The delta key",
+		"label": "delta key"
+	},
 	"the old key": {
 		"scene":"res://scenes_two/DoorKey.tscn",
 		"image":"res://assets/platformer/alpha_key.png",
@@ -405,6 +417,11 @@ var level_menu_data = {
 		"image":"res://assets/level_panels/water10_level_panel.png",
 		"label":"Water Cave 10",
 		"scene": "res://cave_scenes/Water10.tscn"
+		},
+	"Water11":{
+		"image":"res://assets/level_panels/water10_level_panel.png",
+		"label":"Water Cave 11",
+		"scene": "res://cave_scenes/Water11.tscn"
 		},
 #	"Demo1":{
 #		"image":"res://assets/comic/village_intro/arrive_village.png",
@@ -1067,6 +1084,88 @@ var comic_events = {
 			"label":"I put the lamp in the hole and the door opened. The lamp was the answer to the riddle.",
 			"voice":"res://assets/audio/story_narration/water10/lamp_hole.mp3"		
 			},
+			},
+	"Water11":{
+		"get the alpha key":{
+			"image":"res://assets/comic/water11/get_alpha_key.png",
+			"label":"I found a key. I guessed it might help me open a door somewhere.",
+			"voice":"res://assets/audio/story_narration/water11/found_key_one.mp3"	
+			},
+		"the alpha door opened":{
+			"image":"res://assets/comic/water11/alpha_door_open.png",
+			"label":"I was right about that key. It opened this door.",
+			"voice":"res://assets/audio/story_narration/water11/right_about_key.mp3"
+			},
+		"get the cooking pot":{
+			"image":"res://assets/comic/water11/get_pot.png",
+			"label":"I found a cooking pot. It was heavy but I took it because it could have been useful.",
+			"voice":"res://assets/audio/story_narration/water11/found_pot.mp3"	
+			},
+		"get the beta key":{
+			"image":"res://assets/comic/water11/get_beta_key.png",
+			"label":"I found another key. It was labelled, “The Beta Key”.",
+			"voice":"res://assets/audio/story_narration/water11/found_beta_key.mp3"	
+			},
+		"the beta door opened":{
+			"image":"res://assets/comic/water11/use_beta_key.png",
+			"label":"I noticed the shape of the key matched the shape on the door.",
+			"voice":"res://assets/audio/story_narration/water11/key_shape_match.mp3"	
+			},
+		"push button on":{
+			"image":"res://assets/comic/water11/push_btn_log.png",
+			"label":"I pushed this button so I could ride down with the log.",
+			"voice":"res://assets/audio/story_narration/water11/push_btn_ride_log.mp3"	
+			},
+		"get the delta key":{
+			"image":"res://assets/comic/water11/get_delta_key.png",
+			"label":"I found another key underwater.",
+			"voice":"res://assets/audio/story_narration/water11/key_underwater.mp3"	
+			},
+		"look at the sign":{
+			"image":"res://assets/comic/water11/look_sign.png",
+			"label":"The sign told me I was looking for something to keep me dry.",
+			"voice":"res://assets/audio/story_narration/water11/look_sign.mp3"	
+			},
+		"get the umbrella":{
+			"image":"res://assets/comic/water11/get_umbrella.png",
+			"label":"I found an umbrella. It seemed like it would be useful.",
+			"voice":"res://assets/audio/story_narration/water11/found_umbrella.mp3"	
+			},
+		"the delta door opened":{
+			"image":"res://assets/comic/water11/use_delta_key.png",
+			"label":"I used the key to get through the delta door.",
+			"voice":"res://assets/audio/story_narration/water11/used_key_delta.mp3"	
+			},
+		"the lever moved on":{
+			"image":"res://assets/comic/water11/use_lever_log.png",
+			"label":"This lever lowered the log so I could get across.",
+			"voice":"res://assets/audio/story_narration/water11/lever_lower_log.mp3"	
+			},
+		"get the green crystal":{
+			"image":"res://assets/comic/water11/get_green_crystal.png",
+			"label":"I found a green crystal hidden beneath the log.",
+			"voice":"res://assets/audio/story_narration/water11/green_crystal.mp3"	
+			},
+		"the second lever moved on":{
+			"image":"res://assets/comic/water11/lever_raise_log.png",
+			"label":"I pulled this lever and it raised the log.",
+			"voice":"res://assets/audio/story_narration/water11/lever_raise_log.mp3"	
+			},
+		"get the red crystal":{
+			"image":"res://assets/comic/water11/get_red_crystal.png",
+			"label":"I found a red crystal. It was very well hidden.",
+			"voice":"res://assets/audio/story_narration/water11/red_crystal.mp3"	
+			},
+		"use the cooking pot in the hole":{
+			"image":"res://assets/comic/water11/pot_in_hole.png",
+			"label":"I put the cooking pot in the hole but nothing happened.",
+			"voice":"res://assets/audio/story_narration/water11/pot_hole.mp3"	
+			},
+		"use the umbrella in the hole":{
+			"image":"res://assets/comic/water11/umbrella_hole.png",
+			"label":"The umbrella was the answer to the riddle. It sacrifices itself so I can stay dry.",
+			"voice":"res://assets/audio/story_narration/water11/umbrella_hole.mp3"	
+			},
 			}
 
 }
@@ -1085,7 +1184,8 @@ var unlocked_levels = [
 	"Lava7",
 	"Lava8",
 	"Water9",
-	'Water10'
+	"Water10",
+	"Water11"
 ]
 #	"TheVillage",
 #	"Lower1",
@@ -1102,7 +1202,8 @@ var all_puzzle_items = [
 	"the umbrella",
 	"the ring",
 	"the padlock",
-	"the glasses"
+	"the glasses",
+	"the cooking pot"
 ]
 
 var single_inventory_items = [

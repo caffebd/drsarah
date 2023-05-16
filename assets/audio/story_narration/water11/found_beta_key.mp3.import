@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/found_beta_key.mp3-2db10f69fbd1726fb76d3098cbb2e233.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/water11/found_beta_key.mp3"
+dest_files=[ "res://.import/found_beta_key.mp3-2db10f69fbd1726fb76d3098cbb2e233.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

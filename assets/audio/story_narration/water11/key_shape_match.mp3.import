@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/key_shape_match.mp3-30487b0534cb7f02b5533e6a2a66e91b.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/water11/key_shape_match.mp3"
+dest_files=[ "res://.import/key_shape_match.mp3-30487b0534cb7f02b5533e6a2a66e91b.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

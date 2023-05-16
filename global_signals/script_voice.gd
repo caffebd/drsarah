@@ -28,10 +28,10 @@ var script_voice = {
 	"Maybe I can break it open?":"res://assets/audio/dr_sarah_script_audio/maybe_break_open.mp3",
 	" I cannot get this.": "res://assets/audio/dr_sarah_script_audio/cant_get.mp3",
 	"It says the alpha key.":"res://assets/audio/dr_sarah_script_audio/key_alpha.mp3",
-	"It says the bravo key.":"res://assets/audio/dr_sarah_script_audio/key_bravo.mp3",
+	"It says the beta key.":"res://assets/audio/dr_sarah_script_audio/key_beta.mp3",
 	"It says the delta key.":"res://assets/audio/dr_sarah_script_audio/key_delta.mp3",
 	"It says the alpha door.":"res://assets/audio/dr_sarah_script_audio/door_alpha.mp3",
-	"It says the bravo door.":"res://assets/audio/dr_sarah_script_audio/door_bravo.mp3",
+	"It says the beta door.":"res://assets/audio/dr_sarah_script_audio/door_beta.mp3",
 	"It says the delta door.":"res://assets/audio/dr_sarah_script_audio/door_delta.mp3",
 	"The fuse box is off. It needs a fuse.":"res://assets/audio/dr_sarah_script_audio/fuse_box_off.mp3",
 	"The fuse box is on.":"res://assets/audio/dr_sarah_script_audio/fuse_box_on.mp3",
@@ -203,6 +203,9 @@ var script_voice = {
 	"It’s a pair of glasses.":"res://assets/audio/dr_sarah_script_audio/its_glasses.mp3",
 	"Get the rope and use it to climb.":"res://assets/audio/narrator_audio_script/get_rope.mp3",
 	"I chase away the darkness.":"res://assets/audio/riddles/lamp_chase_darkness.mp3",
+	"I sacrifice myself so you stay dry.":"res://assets/audio/riddles/umbrella_sacrifice.mp3",
+	"Yes! An umbrella gets wet so I can stay dry.":"res://assets/audio/dr_sarah_script_audio/yes_umbrella_solution.mp3",
+	"The pot I was carrying has vanished.":"res://assets/audio/dr_sarah_script_audio/pot_vanished.mp3"
 
 #	"I am already wearing the diving mask":"res://assets/audio/dr_sarah_script_audio/already_wearing_mask.mp3",
 	

@@ -321,9 +321,6 @@ margin_bottom = 2240.0
 position = Vector2( 756, 1874 )
 z_index = 105
 
-[node name="AnimatedSprite" parent="PlayerGirl" index="1"]
-frame = 1
-
 [node name="PlayerCam" parent="PlayerGirl" index="5"]
 current = true
 

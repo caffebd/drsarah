@@ -163,7 +163,6 @@ x_pos_change = 1460.0
 log_speed = 8.0
 
 [node name="Water10MapA2" type="TileMap" parent="Water10MapA"]
-unique_name_in_owner = true
 tile_set = ExtResource( 3 )
 cell_size = Vector2( 112, 112 )
 cell_custom_transform = Transform2D( 112, 0, 0, 112, 0, 0 )
@@ -177,6 +176,7 @@ position = Vector2( 7592, -2202 )
 [node name="EntryDoor" parent="Water10MapA" instance=ExtResource( 5 )]
 unique_name_in_owner = true
 position = Vector2( 447, 1815 )
+to_level = "res://cave_scenes/Water9.tscn"
 
 [node name="Spawn1" type="Position2D" parent="Water10MapA"]
 unique_name_in_owner = true
@@ -221,7 +221,6 @@ margin_right = 3318.0
 margin_bottom = 1849.0
 
 [node name="WaterBody" parent="Water10MapA" instance=ExtResource( 14 )]
-visible = false
 position = Vector2( 1350, 2424 )
 script = SubResource( 9 )
 
@@ -347,6 +346,9 @@ activate_object_path = NodePath("../Log2")
 [node name="PlayerGirl" parent="." instance=ExtResource( 2 )]
 position = Vector2( 781, 1862 )
 
+[node name="AnimatedSprite" parent="PlayerGirl" index="1"]
+frame = 2
+
 [node name="PlayerCam" parent="PlayerGirl" index="5"]
 current = true
 
@@ -386,7 +388,7 @@ wait_time = 5.0
 one_shot = true
 
 [node name="DeathArea" type="Area2D" parent="."]
-position = Vector2( 4541, 2281 )
+position = Vector2( 5242, 2519 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DeathArea"]
 position = Vector2( 3414, 210 )
@@ -407,7 +409,7 @@ position = Vector2( 22, -69.5 )
 shape = SubResource( 3 )
 
 [node name="Spawn3Area" type="Area2D" parent="."]
-position = Vector2( 8460, 30 )
+position = Vector2( 8660, 28 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Spawn3Area"]
 position = Vector2( 22, -69.5 )

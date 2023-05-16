@@ -1,12 +1,12 @@
 extends Node
 
 #CAFFE Firestore
-#const API_KEY := "AIzaSyD3b20kkQc4Y4xF_og0i1cfZbw--Ae6l3k"
-#const PROJECT_ID := "englishquest-7aec6"
+const API_KEY := "AIzaSyD3b20kkQc4Y4xF_og0i1cfZbw--Ae6l3k"
+const PROJECT_ID := "englishquest-7aec6"
 
 #DrSarahFirestore
-const API_KEY := "AIzaSyC3wut7sb8Qy8a_3pX5ctdsG9XsACYVogo"
-const PROJECT_ID := "village-of-mystery"
+#const API_KEY := "AIzaSyC3wut7sb8Qy8a_3pX5ctdsG9XsACYVogo"
+#const PROJECT_ID := "village-of-mystery"
 
 const REGISTER_URL := "https://www.googleapis.com/identitytoolkit/v3/relyingparty/signupNewUser?key=%s" % API_KEY
 const LOGIN_URL := "https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=%s" % API_KEY

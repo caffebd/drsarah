@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/push_btn_ride_log.mp3-c4d576d15463f61da515d8fe9e100ba9.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/water11/push_btn_ride_log.mp3"
+dest_files=[ "res://.import/push_btn_ride_log.mp3-c4d576d15463f61da515d8fe9e100ba9.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

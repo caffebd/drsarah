@@ -182,6 +182,7 @@ func _water_entered():
 func _water_exited():
 	gravity = 4500.0
 	swimming = false
+	print ("stop swim")
 
 func _update_player_pos(player_pos):
 	print ("Player pos load is "+str(player_pos))

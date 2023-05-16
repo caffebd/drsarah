@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/found_pot.mp3-460327b5a1082fb5d6bd9408bf50a6e7.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/water11/found_pot.mp3"
+dest_files=[ "res://.import/found_pot.mp3-460327b5a1082fb5d6bd9408bf50a6e7.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

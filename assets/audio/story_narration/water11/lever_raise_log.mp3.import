@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/lever_raise_log.mp3-f51b8d1ffbe8ecad4ed4953e4347a200.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/water11/lever_raise_log.mp3"
+dest_files=[ "res://.import/lever_raise_log.mp3-f51b8d1ffbe8ecad4ed4953e4347a200.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

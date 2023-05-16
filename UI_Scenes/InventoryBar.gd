@@ -27,8 +27,9 @@ func _add_to_bar(item: String):
 			return
 		var new_item = load(GlobalVars.inventory_items[item]["scene"])
 		var to_add =  new_item.instance()
-		to_add.set_inventory_image()
 		to_add.object_text = item
+		to_add.set_inventory_image()
+		
 		to_add.is_inventory_item = true
 		grid.add_child(to_add)
 		grid.move_child(to_add, 0)

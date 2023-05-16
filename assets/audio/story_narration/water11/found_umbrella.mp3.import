@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/found_umbrella.mp3-ed8cbc9592aebcd8fff97c1165ab6c30.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/water11/found_umbrella.mp3"
+dest_files=[ "res://.import/found_umbrella.mp3-ed8cbc9592aebcd8fff97c1165ab6c30.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

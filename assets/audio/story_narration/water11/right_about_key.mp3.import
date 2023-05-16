@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/right_about_key.mp3-1a8f8b2a662a85cfcd18c559f12693cb.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/water11/right_about_key.mp3"
+dest_files=[ "res://.import/right_about_key.mp3-1a8f8b2a662a85cfcd18c559f12693cb.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

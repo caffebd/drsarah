@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/umbrella_hole.mp3-2419ca15f0b9df77bee515b6735ffea0.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/water11/umbrella_hole.mp3"
+dest_files=[ "res://.import/umbrella_hole.mp3-2419ca15f0b9df77bee515b6735ffea0.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

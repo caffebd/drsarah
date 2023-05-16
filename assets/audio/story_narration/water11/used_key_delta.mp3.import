@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/used_key_delta.mp3-865882d4c0164d29929e8254f718eb75.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/water11/used_key_delta.mp3"
+dest_files=[ "res://.import/used_key_delta.mp3-865882d4c0164d29929e8254f718eb75.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

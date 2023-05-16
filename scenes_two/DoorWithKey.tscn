@@ -1,19 +1,58 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=18 format=2]
 
-[ext_resource path="res://assets/platformer/door_locked.png" type="Texture" id=1]
+[ext_resource path="res://assets/game_objects/Barrier Animated/Barrier Animated1.png" type="Texture" id=1]
 [ext_resource path="res://scenes_two/DoorWithKey.gd" type="Script" id=2]
+[ext_resource path="res://assets/game_objects/Barrier Animated/Barrier Animated5.png" type="Texture" id=3]
+[ext_resource path="res://assets/game_objects/Keys/Key 1 Small.png" type="Texture" id=4]
+[ext_resource path="res://assets/game_objects/Barrier Animated/Barrier Animated8.png" type="Texture" id=5]
+[ext_resource path="res://assets/game_objects/Barrier Animated/Barrier Animated12.png" type="Texture" id=6]
+[ext_resource path="res://assets/game_objects/Barrier Animated/Barrier Animated4.png" type="Texture" id=7]
+[ext_resource path="res://assets/game_objects/Barrier Animated/Barrier Animated6.png" type="Texture" id=8]
+[ext_resource path="res://assets/game_objects/Barrier Animated/Barrier Animated7.png" type="Texture" id=9]
+[ext_resource path="res://assets/game_objects/Barrier Animated/Barrier Animated10.png" type="Texture" id=10]
+[ext_resource path="res://assets/game_objects/Barrier Animated/Barrier Animated2.png" type="Texture" id=11]
+[ext_resource path="res://assets/game_objects/Barrier Animated/Barrier Animated3.png" type="Texture" id=12]
+[ext_resource path="res://assets/game_objects/Barrier Animated/Barrier Animated9.png" type="Texture" id=13]
+[ext_resource path="res://assets/game_objects/Barrier Animated/Barrier Animated11.png" type="Texture" id=14]
+[ext_resource path="res://assets/game_objects/Barrier Animated/Barrier Animated13.png" type="Texture" id=15]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 77, 132 )
+extents = Vector2( 77.5, 229 )
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 1 ) ],
+"loop": true,
+"name": "closed",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 1 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 7 ), ExtResource( 3 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 5 ), ExtResource( 13 ), ExtResource( 10 ), ExtResource( 14 ), ExtResource( 6 ), ExtResource( 15 ) ],
+"loop": false,
+"name": "open",
+"speed": 12.0
+} ]
 
 [node name="DoorWithKey" type="TextureButton"]
 margin_right = 40.0
 margin_bottom = 40.0
-texture_normal = ExtResource( 1 )
+rect_min_size = Vector2( 112, 448 )
 script = ExtResource( 2 )
 
 [node name="DoorArea" type="StaticBody2D" parent="."]
 
 [node name="DoorCollision" type="CollisionShape2D" parent="DoorArea"]
-position = Vector2( 67, 36 )
+position = Vector2( 56, 226 )
 shape = SubResource( 1 )
+
+[node name="DoorAnim" type="AnimatedSprite" parent="."]
+unique_name_in_owner = true
+position = Vector2( 53, 227 )
+frames = SubResource( 2 )
+animation = "closed"
+playing = true
+
+[node name="KeyType" type="Sprite" parent="."]
+unique_name_in_owner = true
+position = Vector2( 54, 57 )
+scale = Vector2( 1.13214, 1.13214 )
+texture = ExtResource( 4 )

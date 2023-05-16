@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/yes_umbrella_solution.mp3-903e44475d484f2496bab6774fbeaa1d.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/yes_umbrella_solution.mp3"
+dest_files=[ "res://.import/yes_umbrella_solution.mp3-903e44475d484f2496bab6774fbeaa1d.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0
