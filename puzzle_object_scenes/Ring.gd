@@ -14,7 +14,7 @@ var is_active = true
 
 var state := "null"
 
-var inventory_alt := "res://assets/inventory_images/inventory_pen.png"
+var inventory_alt := "res://assets/inventory_images/inventory_ring.png"
 
 func _ready():
 	connect("pressed", self, "_on_pressed")
@@ -72,7 +72,7 @@ func _sentence_check(sentence):
 	var look := "look at "+object_text
 	var use := "use "+object_text
 	var use_on := "use "+object_text+" in"
-	var give := "give "+object_text
+	var give := "give "+object_text+" to dr. sarah"	
 	var get_from_hole := "get from hole "+object_text
 	var give_elder := "give "+object_text+ " to the village elder"
 	var on_shelf_1 := "use "+object_text+" in the hole"

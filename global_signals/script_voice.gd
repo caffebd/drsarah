@@ -205,8 +205,11 @@ var script_voice = {
 	"I chase away the darkness.":"res://assets/audio/riddles/lamp_chase_darkness.mp3",
 	"I sacrifice myself so you stay dry.":"res://assets/audio/riddles/umbrella_sacrifice.mp3",
 	"Yes! An umbrella gets wet so I can stay dry.":"res://assets/audio/dr_sarah_script_audio/yes_umbrella_solution.mp3",
-	"The pot I was carrying has vanished.":"res://assets/audio/dr_sarah_script_audio/pot_vanished.mp3"
-
+	"The pot I was carrying has vanished.":"res://assets/audio/dr_sarah_script_audio/pot_vanished.mp3",
+	"I have no beginning and no end.":"res://assets/audio/riddles/ring_no_end.mp3",
+	"It’s a drone. Use the drone to fly places that Dr. Sarah cannot go.":"res://assets/audio/narrator_audio_script/drone_inst_a.mp3",
+	"The drone can use levers and buttons. It can collect items and bring them to Dr. Sarah.":"res://assets/audio/narrator_audio_script/drone_inst_b.mp3",
+	"Yes, a ring has no beginning and no end. It just goes round and round forever.":"res://assets/audio/dr_sarah_script_audio/yes_ring_no_end.mp3"
 #	"I am already wearing the diving mask":"res://assets/audio/dr_sarah_script_audio/already_wearing_mask.mp3",
 	
 }

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/found_ring.mp3-ef6323b3bf0694bc0632372c5852a7fb.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/water12/found_ring.mp3"
+dest_files=[ "res://.import/found_ring.mp3-ef6323b3bf0694bc0632372c5852a7fb.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

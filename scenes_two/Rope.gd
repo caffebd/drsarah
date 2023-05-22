@@ -138,7 +138,7 @@ func _on_pressed():
 
 func _sentence_check(sentence):
 	sentence = sentence.to_lower().strip_edges(true, true)
-	var give := "give "+object_text	
+	var give := "give "+object_text+" to dr. sarah"		
 	if not object_text in sentence:
 		return
 	print ("ROPE SENTENE CHECK SENTE ROPE ROPE")

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/look_sign.mp3-5b92fe93cec5913dca9b5532834b197b.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/water12/look_sign.mp3"
+dest_files=[ "res://.import/look_sign.mp3-5b92fe93cec5913dca9b5532834b197b.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

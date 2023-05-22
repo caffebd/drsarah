@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/yellow_crystal.mp3-ee40aa7652ea06dbf94f1fe6827e0db6.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/water12/yellow_crystal.mp3"
+dest_files=[ "res://.import/yellow_crystal.mp3-ee40aa7652ea06dbf94f1fe6827e0db6.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

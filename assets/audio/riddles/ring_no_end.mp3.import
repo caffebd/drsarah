@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/ring_no_end.mp3-2c36ceffff7773ba561f008b442ec7e4.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/riddles/ring_no_end.mp3"
+dest_files=[ "res://.import/ring_no_end.mp3-2c36ceffff7773ba561f008b442ec7e4.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

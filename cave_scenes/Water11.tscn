@@ -210,10 +210,10 @@ my_door = "the delta door"
 [node name="PlayerGirl" parent="Water11MapA" instance=ExtResource( 2 )]
 position = Vector2( 926, 1859 )
 
-[node name="AnimatedSprite" parent="Water11MapA/PlayerGirl" index="1"]
-frame = 0
+[node name="AnimatedSprite" parent="Water11MapA/PlayerGirl" index="2"]
+frame = 1
 
-[node name="PlayerCam" parent="Water11MapA/PlayerGirl" index="5"]
+[node name="PlayerCam" parent="Water11MapA/PlayerGirl" index="6"]
 current = true
 
 [node name="WaterMap" type="TileMap" parent="Water11MapA"]

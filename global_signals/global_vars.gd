@@ -423,6 +423,11 @@ var level_menu_data = {
 		"label":"Water Cave 11",
 		"scene": "res://cave_scenes/Water11.tscn"
 		},
+	"Water12":{
+		"image":"res://assets/level_panels/water10_level_panel.png",
+		"label":"Water Cave 12",
+		"scene": "res://cave_scenes/Water12.tscn"
+		},
 #	"Demo1":{
 #		"image":"res://assets/comic/village_intro/arrive_village.png",
 #		"label":"Demo 1",
@@ -1166,6 +1171,63 @@ var comic_events = {
 			"label":"The umbrella was the answer to the riddle. It sacrifices itself so I can stay dry.",
 			"voice":"res://assets/audio/story_narration/water11/umbrella_hole.mp3"	
 			},
+			},
+	"Water12":{
+		"get the drone":{
+			"image":"res://assets/comic/water12/found_drone.png",
+			"label":"I found a drone. I knew this was going to be really useful.",
+			"voice":"res://assets/audio/story_narration/water12/found_drone.mp3"					
+			},
+		"the lever moved on":{
+			"image":"res://assets/comic/water12/drone_lever.png",
+			"label":"I used the drone to turn on this lever so I could get across the log bridge.",
+			"voice":"res://assets/audio/story_narration/water12/drone_lever.mp3"					
+			},
+		"look at the sign":{
+			"image":"res://assets/comic/water12/look_sign.png",
+			"label":"This clue said I needed something that had no beginning and no end.",
+			"voice":"res://assets/audio/story_narration/water12/look_sign.mp3"					
+			},
+		"push button on":{
+			"image":"res://assets/comic/water12/push_button.png",
+			"label":"I couldn’t reach this button so I sent the drone. It worked and the bridge lowered.",
+			"voice":"res://assets/audio/story_narration/water12/push_btn_drone.mp3"					
+			},
+		"get the green crystal":{
+			"image":"res://assets/comic/water12/get_green_crystal.png",
+			"label":"I used the drone to get the green crystal from under the water.",
+			"voice":"res://assets/audio/story_narration/water12/green_crystal.mp3"					
+			},
+		"get the yellow crystal":{
+			"image":"res://assets/comic/water12/yellow_crystal.png",
+			"label":"The drone flew through a maze to find this yellow crystal and bring it back to me.",
+			"voice":"res://assets/audio/story_narration/water12/yellow_crystal.mp3"					
+			},
+		"get the red crystal":{
+			"image":"res://assets/comic/water12/red_crystal.png",
+			"label":"I would not have been able to reach the red crystal. Luckily, I was able to send the drone to get it.",
+			"voice":"res://assets/audio/story_narration/water12/red_crystal.mp3"					
+			},
+		"get the boomerang":{
+			"image":"res://assets/comic/water12/get_boomerang.png",
+			"label":"I found another boomerang. I took it, in case it might be useful.",
+			"voice":"res://assets/audio/story_narration/water12/found_boomerang.mp3"					
+			},
+		"get the ring":{
+			"image":"res://assets/comic/water12/get_ring.png",
+			"label":"I found a ring. It looked like it might have been made of gold.",
+			"voice":"res://assets/audio/story_narration/water12/found_ring.mp3"					
+			},
+		"use the boomerang in the hole":{
+			"image":"res://assets/comic/water12/boomerang_hole.png",
+			"label":"I tried the boomerang in the hole but nothing happened.",
+			"voice":"res://assets/audio/story_narration/water12/boomerang_hole.mp3"					
+			},
+		"use the ring in the hole":{
+			"image":"res://assets/comic/water12/ring_hole.png",
+			"label":"Yes! The ring was the answer to the riddle. A ring is a circle and has no beginning and no end.",
+			"voice":"res://assets/audio/story_narration/water12/boomerang_hole.mp3"					
+			},
 			}
 
 }
@@ -1185,7 +1247,8 @@ var unlocked_levels = [
 	"Lava8",
 	"Water9",
 	"Water10",
-	"Water11"
+	"Water11",
+	"Water12"
 ]
 #	"TheVillage",
 #	"Lower1",

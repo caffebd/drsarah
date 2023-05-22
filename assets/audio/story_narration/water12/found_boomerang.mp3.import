@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/found_boomerang.mp3-9921bc9b859bb4b94416b3b28b1e5058.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/water12/found_boomerang.mp3"
+dest_files=[ "res://.import/found_boomerang.mp3-9921bc9b859bb4b94416b3b28b1e5058.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

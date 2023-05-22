@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/drone_lever.mp3-350ac9b4442d71407cacd067db67c3b3.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/water12/drone_lever.mp3"
+dest_files=[ "res://.import/drone_lever.mp3-350ac9b4442d71407cacd067db67c3b3.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

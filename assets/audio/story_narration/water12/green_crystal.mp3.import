@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/green_crystal.mp3-5f3dde8c0180516bc4635baf4cffd475.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/water12/green_crystal.mp3"
+dest_files=[ "res://.import/green_crystal.mp3-5f3dde8c0180516bc4635baf4cffd475.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

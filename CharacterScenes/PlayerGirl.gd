@@ -246,7 +246,12 @@ func _physics_process(delta: float) -> void:
 		if $AnimatedSprite.animation != "idle":
 				$AnimatedSprite.set_animation("idle")
 				print ("Player is Paused "+str(player_pause))	
-				print ("Player is Talking "+str(i_am_talking))	
+				print ("Player is Talking "+str(i_am_talking))
+		if GlobalVars.using_drone:
+			_velocity.y += gravity * delta * gravity_dir
+			_velocity.x = 0
+			_velocity = move_and_slide(_velocity, UP_DIRECTION, true)
+	
 		return
 	
 
@@ -731,3 +736,15 @@ func _on_ZoomBtn_toggled(button_pressed):
 		print ("Zoom IN")
 		tween.tween_property($"%PlayerCam", "zoom", Vector2(1.25, 1.25), 1.5 )
 
+
+
+func _on_PlayerBtn_pressed():
+	print ("click me")
+	GlobalVars.last_clicked = "Dr. Sarah"
+	if !GlobalVars.text_typing:
+		if "Dr. Sarah" in GlobalVars.current_sentence:
+			GlobalSignals.emit_signal("object_button_pressed")
+			return
+		else:
+			GlobalSignals.emit_signal("update_on_hover", "Dr. Sarah")
+			GlobalSignals.emit_signal("object_button_pressed")

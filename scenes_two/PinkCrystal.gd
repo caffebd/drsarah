@@ -71,7 +71,7 @@ func _sentence_check(sentence):
 	var look := "look at "+object_text
 	var use := "use "+object_text
 	var use_on := "use "+object_text+" in"
-	var give := "give "+object_text	
+	var give := "give "+object_text+" to dr. sarah"	
 	var give_elder := "give "+object_text+ " to the village elder"
 	var on_shelf_1 := "use "+object_text+" in the hole"
 	var on_shelf_2 := "use "+object_text+" in the second hole"

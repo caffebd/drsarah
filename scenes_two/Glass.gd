@@ -56,7 +56,7 @@ func _sentence_check(sentence):
 	var look := "look at "+object_text
 	var use := "use "+object_text
 	var use_on := "use "+object_text+" in"
-	var give := "give "+object_text	
+	var give := "give "+object_text+" to dr. sarah"	
 	if "use "+object_text+" on" in sentence:
 		fire_check(sentence)
 		return

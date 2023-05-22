@@ -44,24 +44,19 @@ custom_constants/hseparation = 45
 columns = 4
 
 [node name="VocabButton" parent="MarginContainer/VocabGridDrone" instance=ExtResource( 2 )]
-margin_right = 145.0
-margin_bottom = 74.0
 my_word = "Look at"
 
 [node name="VocabButton2" parent="MarginContainer/VocabGridDrone" instance=ExtResource( 2 )]
-margin_left = 190.0
-margin_right = 335.0
-margin_bottom = 74.0
+margin_left = 235.0
+margin_right = 425.0
 my_word = "Get"
 
 [node name="VocabButton3" parent="MarginContainer/VocabGridDrone" instance=ExtResource( 2 )]
-margin_left = 380.0
-margin_right = 525.0
-margin_bottom = 74.0
+margin_left = 470.0
+margin_right = 660.0
 my_word = "Use"
 
 [node name="VocabButton4" parent="MarginContainer/VocabGridDrone" instance=ExtResource( 2 )]
-margin_left = 570.0
-margin_right = 715.0
-margin_bottom = 74.0
+margin_left = 705.0
+margin_right = 895.0
 my_word = "Shutdown"

@@ -72,7 +72,7 @@ func _sentence_check(sentence):
 	var look := "look at "+object_text
 	var use := "use "+object_text
 	var use_on := "use "+object_text+" in"
-	var give := "give "+object_text	
+	var give := "give "+object_text+" to dr. sarah"	
 	var give_elder := "give "+object_text+ " to the village elder"
 	var on_shelf_1 := "use "+object_text+" in the hole"
 	var on_shelf_2 := "use "+object_text+" in the second hole"
@@ -129,8 +129,7 @@ func get_item(sentence):
 		GlobalSignals.emit_signal("remove_from_game_objects", object_text)
 		GlobalSignals.emit_signal("save_sentence", sentence)
 		queue_free()
-	else:
-		GlobalSignals.emit_signal("speak", "You already have it.")
+
 		
 func get_item_from_hole(sentence):
 	GlobalSignals.emit_signal("add_to_inventory_bar", object_text)

@@ -48,15 +48,41 @@ func _add_rope():
 	GlobalSignals.emit_signal("add_to_inventory_list", "the rope")
 	
 
+#func _add_to_bar_from_drone(item):
+#	var new_item = load(GlobalVars.inventory_items[item]["scene"])
+#	var to_add =  new_item.instance()
+#	to_add.object_text = item
+#	to_add.set_inventory_image()
+#	to_add.is_inventory_item = true
+#	grid.add_child(to_add)
+#	grid.move_child(to_add, 0)
+#	GlobalSignals.emit_signal("add_to_inventory_list_from_drone", item)
+
 func _add_to_bar_from_drone(item):
-	var new_item = load(GlobalVars.inventory_items[item]["scene"])
-	var to_add =  new_item.instance()
-	to_add.object_text = item
-	to_add.set_inventory_image()
-	to_add.is_inventory_item = true
-	grid.add_child(to_add)
-	grid.move_child(to_add, 0)
-	GlobalSignals.emit_signal("add_to_inventory_list_from_drone", item)
+	GlobalSignals.emit_signal("remove_all_inventory_drone")
+	if check_for_doubles(item):
+		if item == "the rope":
+			_add_rope()
+			return
+		var object_count = count_items(item)
+		if object_count>1:
+			return
+		var new_item = load(GlobalVars.inventory_items[item]["scene"])
+		var to_add =  new_item.instance()
+		to_add.object_text = item
+		to_add.set_inventory_image()
+		
+		to_add.is_inventory_item = true
+		grid.add_child(to_add)
+		grid.move_child(to_add, 0)
+		
+		GlobalSignals.emit_signal("add_to_inventory_list", item)
+		print (to_add.is_inventory_item)
+		GlobalSignals.emit_signal("add_to_inventory_list_from_drone", item)
+	else:
+		print ("you got a double")
+	GlobalSignals.emit_signal("save_game")
+		
 
 func _add_to_bar_load(item: String):
 	print ("to inv from load "+item)

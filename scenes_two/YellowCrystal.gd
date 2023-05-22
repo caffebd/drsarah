@@ -71,13 +71,15 @@ func _sentence_check(sentence):
 	var look := "look at "+object_text
 	var use := "use "+object_text
 	var use_on := "use "+object_text+" in"
-	var give := "give "+object_text	
+	var give := "give "+object_text+" to dr. sarah"	
 	var give_elder := "give "+object_text+ " to the village elder"
 	var on_shelf_1 := "use "+object_text+" in the hole"
 	var on_shelf_2 := "use "+object_text+" in the second hole"
 	var on_shelf_3 := "use "+object_text+" in the third hole"
 	if not object_text in sentence or state == "off":
 		return
+	print (give)
+	print (sentence)
 	match sentence:
 		get:
 			get_item(sentence)
@@ -141,8 +143,7 @@ func get_item(sentence):
 		GlobalSignals.emit_signal("save_sentence", sentence)
 		GlobalSignals.emit_signal("collector")
 		queue_free()
-	else:
-		GlobalSignals.emit_signal("speak", "You already have it.")
+	
 func _get_closer():
 	print ("GET CLOSER")
 	GlobalSignals.emit_signal("speak", "I need to get closer.")

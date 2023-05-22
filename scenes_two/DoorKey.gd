@@ -98,7 +98,7 @@ func _sentence_check(sentence):
 	var on_shelf_1 := "use "+object_text+" on the first shelf"
 	var on_shelf_2 := "use "+object_text+" on the second shelf"
 	var on_shelf_3 := "use "+object_text+" on the third shelf"
-	var give := "give "+object_text +" to"	
+	var give := "give "+object_text+" to dr. sarah"		
 	var get := "get "+object_text
 	var take := "take "+object_text
 	var pick_up := "pick up "+object_text

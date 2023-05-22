@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/drone_inst_a.mp3-b303bbc52c78478d1dc82d9b09720954.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/narrator_audio_script/drone_inst_a.mp3"
+dest_files=[ "res://.import/drone_inst_a.mp3-b303bbc52c78478d1dc82d9b09720954.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -17,18 +17,20 @@ var inventory_alt := "res://assets/inventory_images/inventory_drone.png"
 func _ready():
 	connect("pressed", self, "_on_pressed")
 	GlobalSignals.connect("sentence_checker", self, "_sentence_check")
+	$"%ObjectInfo".setup_label(object_text)
 #	connect("mouse_entered", self, "_on_entered")
 #	connect("mouse_exited", self, "_on_exit")
 
 
 func _on_pressed():
-	if GlobalVars.last_clicked == object_text:
+	GlobalVars.last_clicked = object_text
+	if object_text in GlobalVars.current_sentence:
 		GlobalSignals.emit_signal("object_button_pressed")
-	else:
-		GlobalVars.last_clicked = object_text
-		if object_text in GlobalVars.current_sentence:
-			return
-		GlobalSignals.emit_signal("update_on_hover", object_text)		
+		return
+#	$"%Reminder".start()
+	GlobalSignals.emit_signal("clicker")
+	GlobalSignals.emit_signal("update_on_hover", object_text)
+	GlobalSignals.emit_signal("object_button_pressed")		
 
 func set_inventory_image():
 	texture_normal = load(inventory_alt)
@@ -57,6 +59,8 @@ func _sentence_check(sentence):
 				if is_on_shelf:
 					GlobalSignals.emit_signal("remove_from_shelf", object_text)
 				GlobalSignals.emit_signal("remove_from_game_objects", object_text)
+				GlobalSignals.emit_signal("save_sentence", sentence)
+				GlobalSignals.emit_signal("collector")
 				queue_free()
 			else:
 				GlobalSignals.emit_signal("speak", "You already have it.")

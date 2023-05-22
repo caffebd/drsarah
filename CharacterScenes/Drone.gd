@@ -53,8 +53,15 @@ func _physics_process(delta: float) -> void:
 
 	if _horizontal_direction != 0:
 		_velocity.x = lerp(_velocity.x, _horizontal_direction * speed, acceleration)
+		if _velocity.x < 0:
+			rotation_degrees = -5
+		elif _velocity.x > 0:
+			rotation_degrees = 5
+			
+			
 	else:
 		_velocity.x = lerp(_velocity.x, 0, friction)
+		rotation_degrees = 0
 		
 	if _vertical_direction != 0:
 		_velocity.y = lerp(_velocity.y, _vertical_direction * speed, acceleration)

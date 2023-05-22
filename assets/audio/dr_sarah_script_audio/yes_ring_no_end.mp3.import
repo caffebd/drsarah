@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/yes_ring_no_end.mp3-d6b32bb130d4e851336bcabe819a680e.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/yes_ring_no_end.mp3"
+dest_files=[ "res://.import/yes_ring_no_end.mp3-d6b32bb130d4e851336bcabe819a680e.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

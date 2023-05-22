@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/red_crystal.mp3-9a6501eaf7c57d7d0de4dfa936788b65.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/water12/red_crystal.mp3"
+dest_files=[ "res://.import/red_crystal.mp3-9a6501eaf7c57d7d0de4dfa936788b65.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

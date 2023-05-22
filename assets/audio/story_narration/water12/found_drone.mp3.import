@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/found_drone.mp3-869d7326d434ba98dd87ed22466b962f.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/water12/found_drone.mp3"
+dest_files=[ "res://.import/found_drone.mp3-869d7326d434ba98dd87ed22466b962f.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

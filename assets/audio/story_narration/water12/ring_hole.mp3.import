@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/ring_hole.mp3-e11ce3d26ce722d980e4d0af1578bf6f.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/water12/ring_hole.mp3"
+dest_files=[ "res://.import/ring_hole.mp3-e11ce3d26ce722d980e4d0af1578bf6f.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

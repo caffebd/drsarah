@@ -69,6 +69,13 @@ font_data = ExtResource( 16 )
 unique_name_in_owner = true
 script = ExtResource( 2 )
 
+[node name="PlayerBtn" type="TextureButton" parent="."]
+margin_left = -47.0
+margin_top = -87.0
+margin_right = 65.0
+margin_bottom = 113.0
+rect_min_size = Vector2( 60, 200 )
+
 [node name="Sprite" type="Sprite" parent="."]
 visible = false
 position = Vector2( 9.4487, -9.95304 )
@@ -78,7 +85,7 @@ texture = ExtResource( 22 )
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = ExtResource( 1 )
 animation = "idle"
-frame = 3
+frame = 2
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -361,6 +368,7 @@ margin_top = 800.0
 margin_right = 1935.0
 margin_bottom = 1088.0
 
+[connection signal="pressed" from="PlayerBtn" to="." method="_on_PlayerBtn_pressed"]
 [connection signal="timeout" from="JumpTimer" to="." method="_on_JumpTimer_timeout"]
 [connection signal="timeout" from="CoyoteTimer" to="." method="_on_CoyoteTimer_timeout"]
 [connection signal="finished" from="GirlAudio" to="." method="_on_GirlAudio_finished"]

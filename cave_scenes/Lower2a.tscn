@@ -104,7 +104,6 @@ margin_left = 6815.0
 margin_top = 1278.0
 margin_right = 7045.0
 margin_bottom = 1498.0
-object_text = "the hole"
 shelf_item = "the bell"
 
 [node name="Sign" parent="Lower2aMapA" instance=ExtResource( 8 )]
@@ -167,14 +166,10 @@ margin_right = -2177.0
 margin_bottom = -2204.0
 
 [node name="PlayerGirl" parent="." instance=ExtResource( 3 )]
-unique_name_in_owner = true
 position = Vector2( 800, 2519 )
 z_index = 105
 
-[node name="AnimatedSprite" parent="PlayerGirl" index="1"]
-frame = 0
-
-[node name="PlayerCam" parent="PlayerGirl" index="5"]
+[node name="PlayerCam" parent="PlayerGirl" index="6"]
 current = true
 
 [node name="DeathArea" type="Area2D" parent="."]
@@ -257,7 +252,5 @@ stream = ExtResource( 19 )
 [connection signal="body_entered" from="SignRemind" to="." method="_on_SignRemind_body_entered"]
 
 [editable path="PlayerGirl"]
-[editable path="PlayerGirl/PlayerCam/SpeakBG"]
-[editable path="PlayerGirl/PlayerCam/InventoryPanel"]
-[editable path="PlayerGirl/PlayerCam/VocabPanel"]
-[editable path="PlayerGirl/PlayerCam/SentencePanel"]
+[editable path="PlayerGirl/UIControl/SentencePanel"]
+[editable path="PlayerGirl/UIControl/SpeakBG"]
