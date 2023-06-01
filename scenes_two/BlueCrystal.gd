@@ -14,6 +14,8 @@ var state := "null"
 
 var a_text = "a blue crystal."
 
+var inventory_count := 1
+
 var inventory_alt := "res://assets/inventory_images/Inventory Blue Crystal.png"
 
 func _ready():
@@ -119,7 +121,7 @@ func _sentence_check(sentence):
 		look:
 			GlobalSignals.emit_signal("speak", "It’s a beautiful blue crystal.")
 		_:
-			if not "shelf" in sentence:
+			if not "shelf" in sentence or not "hole" in sentence:
 				GlobalSignals.emit_signal("speak", "I can't do that with it.")
 
 func get_item(sentence):
@@ -177,5 +179,6 @@ func inventory_count(counter):
 	if counter > 1:
 		$"%count".text = str(counter)
 		$"%count".visible = true
+		inventory_count = counter
 	else:
 		$"%count".visible = false

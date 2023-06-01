@@ -435,7 +435,7 @@ func _build_sentence(word):
 	match word:
 		"Look":
 			sentence_starter = "Look at"
-		"Shutdown":
+		"Return":
 			GlobalSignals.emit_signal("sentence_checker", word)
 		_:
 			sentence_starter = word

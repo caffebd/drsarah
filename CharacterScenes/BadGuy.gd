@@ -43,9 +43,13 @@ func _on_pressed():
 		else:
 			GlobalSignals.emit_signal("update_on_hover", object_text)		
 
-func _bad_guy_speak(text):
+func _bad_guy_speak():
 	speak_box.visible = true
-	speak.text = text
+	$"%BadGuyAnim".play("walk")
+	$"%BadGuyVoice".play()
+
+func i_will_get_you():
+	$"%BadGuyGetYou".play()
 
 #func _on_entered():
 #	if object_text in GlobalVars.current_sentence:
@@ -133,3 +137,8 @@ func _placed_on_shelf(the_item):
 func set_state(new_state):
 	state = new_state
 	
+
+
+func _on_BadGuyAnim_animation_finished():
+	if $"%BadGuyAnim".animation=="walk":
+		$"%BadGuyAnim".play("wave")

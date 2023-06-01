@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/locked_in_here.mp3-f4dc9db50112028ef9a7a9ab941d5956.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/village_end/village_elder/locked_in_here.mp3"
+dest_files=[ "res://.import/locked_in_here.mp3-f4dc9db50112028ef9a7a9ab941d5956.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

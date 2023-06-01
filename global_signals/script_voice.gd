@@ -209,7 +209,13 @@ var script_voice = {
 	"I have no beginning and no end.":"res://assets/audio/riddles/ring_no_end.mp3",
 	"It’s a drone. Use the drone to fly places that Dr. Sarah cannot go.":"res://assets/audio/narrator_audio_script/drone_inst_a.mp3",
 	"The drone can use levers and buttons. It can collect items and bring them to Dr. Sarah.":"res://assets/audio/narrator_audio_script/drone_inst_b.mp3",
-	"Yes, a ring has no beginning and no end. It just goes round and round forever.":"res://assets/audio/dr_sarah_script_audio/yes_ring_no_end.mp3"
+	"Yes, a ring has no beginning and no end. It just goes round and round forever.":"res://assets/audio/dr_sarah_script_audio/yes_ring_no_end.mp3",
+	"More levels coming soon.":"res://assets/audio/riddles/more_levels_sign.mp3",
+	"It shows how many more crystals I need to find.":"res://assets/audio/dr_sarah_script_audio/how_many_crystals.mp3",
+	"It’s the alpha key":"res://assets/audio/dr_sarah_script_audio/alpha_key.mp3",
+	"It’s the beta key":"res://assets/audio/dr_sarah_script_audio/beta_key.mp3",
+	"It’s the delta key":"res://assets/audio/dr_sarah_script_audio/delta_key.mp3"
+	
 #	"I am already wearing the diving mask":"res://assets/audio/dr_sarah_script_audio/already_wearing_mask.mp3",
 	
 }

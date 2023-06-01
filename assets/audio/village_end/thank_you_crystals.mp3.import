@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/thank_you_crystals.mp3-4b15717a2786167e7e6d9755773488bb.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/village_end/thank_you_crystals.mp3"
+dest_files=[ "res://.import/thank_you_crystals.mp3-4b15717a2786167e7e6d9755773488bb.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

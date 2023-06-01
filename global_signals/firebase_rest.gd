@@ -201,6 +201,18 @@ func save_document_new_panels(path: String, fields) -> void:
 	print (result[1])
 	http_new_panels.queue_free()
 
+func save_document_crystals(path: String, fields) -> void:
+	var document :=  {"fields": fields }
+	var body := to_json(document)
+	var url := FIRESTORE_URL + path
+	var	http_crystals = HTTPRequest.new()
+	add_child(http_crystals)
+	http_crystals.set_timeout(30.0)
+	http_crystals.request(url, _get_request_headers(), false, HTTPClient.METHOD_POST, body)
+	var result := yield(http_crystals, "request_completed") as Array
+	print (result[1])
+	http_crystals.queue_free()
+
 #func save_document_level(path: String, fields) -> void:
 #	var document :=  {"fields": fields }
 #	var body := to_json(document)
@@ -259,7 +271,7 @@ func get_document_level(path: String) -> Dictionary:
 		var result_body := JSON.parse(result[3].get_string_from_ascii()).result as Dictionary
 		var db_path = result_body.name
 		print ("db path is "+db_path)
-		if "Level" in db_path or "Demo" in db_path or "Village" in db_path or "Rock" in db_path or "Lava" in db_path or "Water" in db_path:
+		if "Level" in db_path or "Demo" in db_path or "Village" in db_path or "Rock" in db_path or "Lava" in db_path or "Water" or "TheReturn" in db_path:
 			print ("loading for update room items")
 			http_level.queue_free()
 			return (update_my_room_items(result_body.fields))
@@ -295,6 +307,34 @@ func get_document_player(path: String) -> Dictionary:
 			return
 	else:
 		http_player.queue_free()
+		return
+
+func get_document_crystals(path: String) -> Dictionary:
+	var empty = {}
+	var	http_crystals = HTTPRequest.new()
+	add_child(http_crystals)
+	http_crystals.set_timeout(30.0)
+	var url := FIRESTORE_URL + path
+	print ("crystal "+url)
+	http_crystals.request(url, _get_request_headers(), false, HTTPClient.METHOD_GET)
+	var result := yield(http_crystals, "request_completed") as Array
+	print ("Get crystals result is "+str(result[1]))
+	if result[1] == 404:
+		http_crystals.queue_free()
+		yield(update_collected_crystals(),"completed")
+		return 
+	if result[1] == 200:
+		var result_body := JSON.parse(result[3].get_string_from_ascii()).result as Dictionary
+		var db_path = result_body.name
+		print ("db path is "+db_path)
+		if "Crystals" in db_path:
+			http_crystals.queue_free()
+			return (update_crystals(result_body.fields))
+		else:
+			http_crystals.queue_free()
+			return
+	else:
+		http_crystals.queue_free()
 		return
 
 func get_document_drone(path: String) -> Dictionary:
@@ -487,6 +527,25 @@ func update_document_active(path: String, fields) -> void:
 		print ("update save active")
 		http_active.queue_free()
 
+func update_document_crystals(path: String, fields) -> void:
+	var document := { "fields": fields }
+	var body := to_json(document)
+	var	http_crystals = HTTPRequest.new()
+	add_child(http_crystals)
+	http_crystals.set_timeout(30.0)
+	var url := FIRESTORE_URL + path
+	print (body)
+	http_crystals.request(url, _get_request_headers(), false, HTTPClient.METHOD_PATCH, body)
+	var result := yield(http_crystals, "request_completed") as Array
+	print (result[1])
+	if result[1] == 400:
+		save_document_crystals(path, fields)
+		print ("first time crystals save")
+		http_crystals.queue_free()
+	else:
+		print ("update save crystals")
+		http_crystals.queue_free()
+
 func update_document_new_panels(path: String, fields) -> void:
 	var document := { "fields": fields }
 	var body := to_json(document)
@@ -579,7 +638,21 @@ func update_new_panels():
 	print (panels_data)
 	
 	yield(update_document_new_panels("EnglishAdventure/"+user_info.id+"/Game/NewPanels", panels_data), "completed")
+
+
+func update_collected_crystals():
+	var crystals_data = {}
+
+	crystals_data["yellow_crystals"] = {"integerValue":GlobalVars.collected_yellow_crystals}
+	crystals_data["green_crystals"] = {"integerValue":GlobalVars.collected_green_crystals}
+	crystals_data["blue_crystals"] = {"integerValue":GlobalVars.collected_blue_crystals}
+	crystals_data["red_crystals"] = {"integerValue":GlobalVars.collected_red_crystals}
 	
+	print ("NEW CRYSTAL DATA")
+	print (crystals_data)
+	
+	yield(update_document_crystals("EnglishAdventure/"+user_info.id+"/Game/Crystals", crystals_data), "completed")
+	GlobalSignals.emit_signal("show_saving_status", false)
 
 func update_level(room_items_game: Dictionary, player_pos: Vector2, drone_pos: Vector2, player_inventory, drone_inventory):
 	room_items = {
@@ -828,6 +901,16 @@ func update_player_items(data):
 	print ("FIREBASE temp inv "+str(GlobalVars.temp_inventory))
 #
 
+func update_crystals(data):
+	var yellow = data["yellow_crystals"]["integerValue"]
+	var green = data["green_crystals"]["integerValue"]
+	var blue = data["blue_crystals"]["integerValue"]
+	var red = data["red_crystals"]["integerValue"]
+	GlobalVars.collected_yellow_crystals = yellow
+	GlobalVars.collected_green_crystals = green
+	GlobalVars.collected_blue_crystals = blue
+	GlobalVars.collected_red_crystals = red
+	
 
 
 func update_drone_items(data):

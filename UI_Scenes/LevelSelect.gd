@@ -29,7 +29,8 @@ func _ready():
 	print ("unlcoked levels is "+str(GlobalVars.unlocked_levels))
 	
 	print ("new panels in "+str(GlobalVars.new_panels))
-	
+	yield(FirebaseRest.get_document_crystals("EnglishAdventure/"+user_id+"/Game/Crystals"), "completed")
+#	print ("yellow "+str(GlobalVars.collected_green_crystals))
 
 	
 	$"%LoadTimer".stop()

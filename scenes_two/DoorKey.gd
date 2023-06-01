@@ -123,7 +123,7 @@ func _sentence_check(sentence):
 			return
 		give:
 			var dist_player = GlobalVars.the_drone.position.distance_to(GlobalVars.the_player.position)
-			if dist_player > 200:
+			if dist_player > 300:
 				_get_closer_to_player()
 				return
 			GlobalSignals.emit_signal("add_to_inventory_bar_from_drone", object_text)
@@ -145,8 +145,8 @@ func get_item(sentence):
 		if !GlobalVars.check_drone_inventory():
 			return
 		var dist = rect_position.distance_to(GlobalVars.current_player.position)
-		print (dist)
-		if dist > GlobalVars.pick_up:
+		print ("key distance is " +str(dist))
+		if dist > 400:
 			_get_closer()
 			return
 		

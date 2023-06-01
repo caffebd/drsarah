@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/villagers_trapped.mp3-3a5d3cac76502db02ff8c38618e3674e.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/thereturn/villagers_trapped.mp3"
+dest_files=[ "res://.import/villagers_trapped.mp3-3a5d3cac76502db02ff8c38618e3674e.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/found_beta_key.mp3-a4a80739558808489458a7d016cbbded.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/thereturn/found_beta_key.mp3"
+dest_files=[ "res://.import/found_beta_key.mp3-a4a80739558808489458a7d016cbbded.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

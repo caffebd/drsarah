@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/beta_door_open.mp3-9e9fd7605f419c09a5438346c822472e.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/thereturn/beta_door_open.mp3"
+dest_files=[ "res://.import/beta_door_open.mp3-9e9fd7605f419c09a5438346c822472e.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

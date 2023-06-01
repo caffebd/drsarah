@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/delta_key.mp3-335dcefdff37de6f8bc4dc2fa6797796.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/delta_key.mp3"
+dest_files=[ "res://.import/delta_key.mp3-335dcefdff37de6f8bc4dc2fa6797796.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

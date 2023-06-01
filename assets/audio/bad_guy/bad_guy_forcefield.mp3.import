@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/bad_guy_forcefield.mp3-06c0fa3cfd5051d6ce9a6aabdc10747e.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/bad_guy/bad_guy_forcefield.mp3"
+dest_files=[ "res://.import/bad_guy_forcefield.mp3-06c0fa3cfd5051d6ce9a6aabdc10747e.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

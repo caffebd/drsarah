@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/defeat_bad_guy.mp3-91d3702d50aff987fc8a9450d154c1b5.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/thereturn/defeat_bad_guy.mp3"
+dest_files=[ "res://.import/defeat_bad_guy.mp3-91d3702d50aff987fc8a9450d154c1b5.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

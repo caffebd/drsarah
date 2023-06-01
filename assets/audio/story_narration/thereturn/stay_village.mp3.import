@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/stay_village.mp3-adfc49c6b17062eda5daee48f53ea126.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/thereturn/stay_village.mp3"
+dest_files=[ "res://.import/stay_village.mp3-adfc49c6b17062eda5daee48f53ea126.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

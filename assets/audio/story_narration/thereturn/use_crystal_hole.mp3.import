@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/use_crystal_hole.mp3-947e96499eab8424ab90ada8418a001f.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/thereturn/use_crystal_hole.mp3"
+dest_files=[ "res://.import/use_crystal_hole.mp3-947e96499eab8424ab90ada8418a001f.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

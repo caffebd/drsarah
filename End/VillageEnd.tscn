@@ -222,10 +222,12 @@ shape = SubResource( 6 )
 stream = ExtResource( 8 )
 
 [node name="PlayerGirl" parent="." instance=ExtResource( 2 )]
-unique_name_in_owner = true
 position = Vector2( 7038, 658 )
 
-[node name="PlayerCam" parent="PlayerGirl" index="5"]
+[node name="AnimatedSprite" parent="PlayerGirl" index="2"]
+frame = 1
+
+[node name="PlayerCam" parent="PlayerGirl" index="6"]
 current = true
 
 [node name="LockOpen" type="AudioStreamPlayer" parent="."]
@@ -250,7 +252,5 @@ unique_name_in_owner = true
 [connection signal="body_entered" from="DeathArea" to="." method="_on_DeathArea_body_entered"]
 
 [editable path="PlayerGirl"]
-[editable path="PlayerGirl/PlayerCam/SpeakBG"]
-[editable path="PlayerGirl/PlayerCam/InventoryPanel"]
-[editable path="PlayerGirl/PlayerCam/VocabPanel"]
-[editable path="PlayerGirl/PlayerCam/SentencePanel"]
+[editable path="PlayerGirl/UIControl/SentencePanel"]
+[editable path="PlayerGirl/UIControl/SpeakBG"]

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/how_many_crystals.mp3-35230dc40b2a47084ab38f216515f9c1.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/dr_sarah_script_audio/how_many_crystals.mp3"
+dest_files=[ "res://.import/how_many_crystals.mp3-35230dc40b2a47084ab38f216515f9c1.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

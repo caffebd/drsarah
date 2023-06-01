@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/bad_guy_no.mp3-3af29f82b69b1ecdb82c6fd403a8a0de.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/bad_guy/bad_guy_no.mp3"
+dest_files=[ "res://.import/bad_guy_no.mp3-3af29f82b69b1ecdb82c6fd403a8a0de.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

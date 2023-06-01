@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/more_levels_sign.mp3-b9dd433578483bc697e3638225369afe.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/riddles/more_levels_sign.mp3"
+dest_files=[ "res://.import/more_levels_sign.mp3-b9dd433578483bc697e3638225369afe.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

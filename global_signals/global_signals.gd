@@ -155,7 +155,7 @@ signal start_countdown(time)
 
 signal crate_box_broken()
 
-signal bad_guy_speak(text)
+signal bad_guy_speak()
 
 signal lever_broken(broken)
 
@@ -204,3 +204,13 @@ signal pogo()
 
 signal to_click_mode()
 signal to_text_mode()
+
+signal yellow_crystal_final_hole()
+
+signal remove_crystal(color)
+
+signal update_to_collect()
+
+signal village_saved()
+
+signal remove_temp_wall()

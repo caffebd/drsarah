@@ -10,6 +10,7 @@ func _ready():
 	GlobalSignals.connect("add_to_inventory_bar_load", self, "_add_to_bar_load")
 	GlobalSignals.connect("add_to_inventory_bar_from_drone", self, "_add_to_bar_from_drone")
 	GlobalSignals.connect("remove_all_inventory", self, "_remove_all_inventory")
+	GlobalSignals.connect("remove_crystal", self, "_remove_crystal")
 	scroll_container.get_v_scrollbar().modulate = Color(0, 0, 0, 0)
 
 
@@ -135,9 +136,28 @@ func check_for_doubles(item):
 func count_items(item)->int:
 	var counter = 1
 	for check_item in $"%InventoryGrid".get_children():
-		print ("couning "+check_item.object_text+"  "+item)
+		print ("COUNTING "+check_item.object_text+"  "+item)
 		if check_item.object_text == item:
 			counter += 1
 			if counter>1:
 				check_item.inventory_count(counter)
+#				GlobalVars.crystal_count(item, counter)				
 	return counter
+
+
+func _remove_crystal(color: String):
+	var count = 0
+	for check_item in $"%InventoryGrid".get_children():
+		if color in  check_item.object_text:
+			print ("Remove "+color+" "+check_item.object_text)
+			count = int(check_item.inventory_count)
+			check_item.queue_free()
+	var temp_inv = 	GlobalVars.carried_inventory.duplicate()
+	for i in range(GlobalVars.carried_inventory.size()-1,-1,-1):
+		if color in GlobalVars.carried_inventory[i]:
+			GlobalVars.carried_inventory.remove(i)
+	print (GlobalVars.carried_inventory)
+	GlobalVars.crystal_count(color, count)
+	GlobalSignals.emit_signal("save_game")
+	FirebaseRest.update_collected_crystals()
+	GlobalSignals.emit_signal("update_to_collect")

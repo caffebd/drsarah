@@ -85,7 +85,7 @@ func _sentence_check(sentence):
 	sentence = sentence.to_lower().strip_edges(true, true)
 	if !visible:
 		return
-	var shutdown := "shutdown"
+	var shutdown := "return"
 
 	match sentence:
 		shutdown:			

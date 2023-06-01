@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/trapped_forcefield.mp3-50b9283af32d2330ebc6028bd0bd1da4.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/story_narration/thereturn/trapped_forcefield.mp3"
+dest_files=[ "res://.import/trapped_forcefield.mp3-50b9283af32d2330ebc6028bd0bd1da4.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

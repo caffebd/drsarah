@@ -1,20 +1,33 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=12 format=2]
 
-[ext_resource path="res://assets/characters/bad_guy/bad_guy.png" type="Texture" id=1]
+[ext_resource path="res://assets/characters/big_bad/bad_2.png" type="Texture" id=1]
 [ext_resource path="res://CharacterScenes/BadGuy.gd" type="Script" id=2]
 [ext_resource path="res://assets/fonts/Comfortaa/Comfortaa-VariableFont_wght.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://assets/characters/big_bad/bad_1.png" type="Texture" id=4]
+[ext_resource path="res://assets/characters/big_bad/bad_3.png" type="Texture" id=5]
+[ext_resource path="res://assets/characters/big_bad/bad_4.png" type="Texture" id=6]
+[ext_resource path="res://assets/audio/bad_guy/bad_guy_forcefield.mp3" type="AudioStream" id=7]
+[ext_resource path="res://assets/audio/bad_guy/bad_guy_no.mp3" type="AudioStream" id=8]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
-"frames": [ ExtResource( 1 ), ExtResource( 1 ) ],
-"loop": true,
+"frames": [ ExtResource( 4 ), ExtResource( 1 ), ExtResource( 5 ), ExtResource( 6 ) ],
+"loop": false,
 "name": "walk",
-"speed": 5.0
+"speed": 4.0
+}, {
+"frames": [ ExtResource( 6 ), ExtResource( 5 ) ],
+"loop": true,
+"name": "wave",
+"speed": 3.0
 } ]
 
 [sub_resource type="DynamicFont" id=2]
 size = 40
 font_data = ExtResource( 3 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 253.5, 48.5 )
 
 [node name="BadGuy" type="TextureButton"]
 anchor_right = 1.0
@@ -25,7 +38,9 @@ rect_min_size = Vector2( 180, 210 )
 script = ExtResource( 2 )
 
 [node name="BadGuyAnim" type="AnimatedSprite" parent="."]
+unique_name_in_owner = true
 position = Vector2( 91, 101 )
+scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 1 )
 animation = "walk"
 
@@ -48,3 +63,19 @@ custom_fonts/normal_font = SubResource( 2 )
 text = "So you thought you could escape? Think again!
 
 No living creature can pass through my forcefield!"
+
+[node name="BadGuyArea" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BadGuyArea"]
+position = Vector2( 51.5, 122.5 )
+shape = SubResource( 3 )
+
+[node name="BadGuyVoice" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = ExtResource( 7 )
+
+[node name="BadGuyGetYou" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = ExtResource( 8 )
+
+[connection signal="animation_finished" from="BadGuyAnim" to="." method="_on_BadGuyAnim_animation_finished"]

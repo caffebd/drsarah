@@ -128,6 +128,8 @@ func set_state(fuse_state):
 		$"%DoorAnim".play("open")
 		door_body.disabled = true
 		GlobalSignals.emit_signal("save_sentence", object_text+" opened")
+		if object_text == "the alpha door" and GlobalVars.current_level == "TheReturn":
+			GlobalSignals.emit_signal("village_saved")
 	else:
 #		texture_normal = load(off_image)
 		door_body.disabled = false

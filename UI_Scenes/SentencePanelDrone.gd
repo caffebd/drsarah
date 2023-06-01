@@ -18,7 +18,7 @@ func _input(event):
 			GlobalSignals.emit_signal("object_button_pressed")
 
 func start_sentence(word: String):
-	if word == "Shutdown":
+	if word == "Return":
 		GlobalSignals.emit_signal("object_button_pressed")
 		sentence_label.text = word
 		GlobalSignals.emit_signal("sentence_checker", GlobalVars.current_sentence)

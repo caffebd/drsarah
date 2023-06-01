@@ -9,7 +9,7 @@ const vocab_button = preload("res://UI_Scenes/VocabButton.tscn")
 
 onready var the_panel = $VocabPanel
 
-var vocab_word_list = ["Use", "Get", "Give", "Shutdown"]
+var vocab_word_list = ["Use", "Get", "Give", "Return"]
 
 func _ready():
 	for word in vocab_word_list:

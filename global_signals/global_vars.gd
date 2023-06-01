@@ -68,7 +68,7 @@ var can_exit := true
 
 var new_panels := []
 
-var pick_up := 400.00
+var pick_up := 600.00
 
 var inventory_items = {
 	"watch": {
@@ -419,14 +419,19 @@ var level_menu_data = {
 		"scene": "res://cave_scenes/Water10.tscn"
 		},
 	"Water11":{
-		"image":"res://assets/level_panels/water10_level_panel.png",
+		"image":"res://assets/level_panels/water11_level_panel.png",
 		"label":"Water Cave 11",
 		"scene": "res://cave_scenes/Water11.tscn"
 		},
 	"Water12":{
-		"image":"res://assets/level_panels/water10_level_panel.png",
+		"image":"res://assets/level_panels/water12_level_panel.png",
 		"label":"Water Cave 12",
 		"scene": "res://cave_scenes/Water12.tscn"
+		},
+	"TheReturn":{
+		"image":"res://assets/level_panels/the_return_panel.png",
+		"label":"The Return",
+		"scene": "res://end_scenes/VillageEnding.tscn"
 		},
 #	"Demo1":{
 #		"image":"res://assets/comic/village_intro/arrive_village.png",
@@ -1228,8 +1233,59 @@ var comic_events = {
 			"label":"Yes! The ring was the answer to the riddle. A ring is a circle and has no beginning and no end.",
 			"voice":"res://assets/audio/story_narration/water12/boomerang_hole.mp3"					
 			},
-			}
-
+			},
+	"TheReturn":{
+		"villagers trapped":{
+			"image":"res://assets/comic/thereturn/villagers_trapped.png",
+			"label":"I found the village elder I met earlier. She had been locked up with the other villagers. I had to find a way to help them.",
+			"voice":"res://assets/audio/story_narration/thereturn/villagers_trapped.mp3"					
+			},
+		"villagers rescued":{
+			"image":"res://assets/comic/thereturn/villagers_rescued.png",
+			"label":"Yes! I had found the right key and was able to free the villagers. They told me that they had hidden their crystals in the caves to keep them safe. I wanted to see if I could get all the crystals back for them.",
+			"voice":"res://assets/audio/story_narration/thereturn/villagers_rescued.mp3"					
+			},
+		"use crystal hole":{
+			"image":"res://assets/comic/thereturn/crystal_holes.png",
+			"label":"I found the place where I needed to put those crystals. The number showed me that there were more crystals to find.",
+			"voice":"res://assets/audio/story_narration/thereturn/use_crystal_hole.mp3"					
+			},
+		"get the beta key":{
+			"image":"res://assets/comic/thereturn/beta_key.png",
+			"label":"I found a key but I didn’t think it was the right key to rescue the villagers.",
+			"voice":"res://assets/audio/story_narration/thereturn/found_beta_key.mp3"					
+			},
+		"the beta door opened":{
+			"image":"res://assets/comic/thereturn/beta_door_open.png",
+			"label":"The key I found opened a door. I had to see what else I could find in the village to help rescue everyone.",
+			"voice":"res://assets/audio/story_narration/thereturn/beta_door_open.mp3"					
+			},
+		"trapped in force field":{
+			"image":"res://assets/comic/thereturn/forcefield.png",
+			"label":"Suddenly, I found my self trapped in some kind of forcefield. A scary looking man appeared and told me no living creature could escape.",
+			"voice":"res://assets/audio/story_narration/thereturn/trapped_forcefield.mp3"					
+			},
+		"bad guy defeated":{
+			"image":"res://assets/comic/thereturn/defeat_bad_guy.png",
+			"label":"I realised I could use the drone to escape the forcefield as the drone is not a living creature. I used it to pull a lever and sent the man flying back up into the air on a log. I was free!",
+			"voice":"res://assets/audio/story_narration/thereturn/defeat_bad_guy.mp3"					
+			},
+		"get the alpha key":{
+			"image":"res://assets/comic/thereturn/alpha_key_found.png",
+			"label":"I found another key. I was sure this key would help me free the villagers.",
+			"voice":"res://assets/audio/story_narration/thereturn/found_alpha_key.mp3"					
+			},
+		"look at the sign":{
+			"image":"res://assets/comic/thereturn/look_sign.png",
+			"label":"After recovering all the crystals, I found a door with a sign. The sign said that more levels were coming soon. I didn’t understand what that meant.",
+			"voice":"res://assets/audio/story_narration/thereturn/look_sign.mp3"					
+			},
+		"stay village":{
+			"image":"res://assets/comic/thereturn/stay_with_village.png",
+			"label":"I decided to stay with the villagers a while longer just in case I could help them if that man ever came back.",
+			"voice":"res://assets/audio/story_narration/thereturn/stay_village.mp3"					
+			},
+}
 }
 
 var temp_sentences=[]
@@ -1248,7 +1304,8 @@ var unlocked_levels = [
 	"Water9",
 	"Water10",
 	"Water11",
-	"Water12"
+	"Water12",
+	"TheReturn"
 ]
 #	"TheVillage",
 #	"Lower1",
@@ -1292,6 +1349,52 @@ var button_never_pushed := true
 
 var clicked_fire: TextureButton
 
+var collected_yellow_crystals := 0
+var collected_green_crystals := 0
+var collected_blue_crystals := 0
+var collected_red_crystals := 0
+
+
+var total_yellow_crystals = 1
+var total_green_crystals = 0
+var total_blue_crystals = 1
+var total_red_crystals = 0
+
+func crystal_count(crystal:String, count:int):
+	print (crystal +"   "+str(count))
+	match crystal:
+		"yellow":
+			collected_yellow_crystals += count
+		"green":
+			collected_green_crystals += count
+		"blue":
+			collected_blue_crystals += count
+		"red":
+			collected_red_crystals += count
+
+func remove_crystal(color: String):
+	match color:
+		"yellow":
+			collected_yellow_crystals = 0
+		"green":
+			collected_green_crystals = 0
+		"blue":
+			collected_blue_crystals = 0
+		"red":
+			collected_red_crystals = 0
+
+func check_all_crystal_holes()->bool:
+	var yellows = total_yellow_crystals - collected_yellow_crystals
+	var blues = total_blue_crystals - collected_blue_crystals
+	var greens = total_green_crystals - collected_green_crystals
+	var reds = total_red_crystals - collected_red_crystals
+	if yellows == 0 and blues == 0 and greens == 0 and reds == 0:
+		print ("ALL CRSYTALS DEPOSITED")
+		GlobalSignals.emit_signal("remove_temp_wall")
+		return true
+	else:
+		return false
+		
 func remove_worn_items() -> bool:
 	if wearing_mask:
 		if the_player.swimming:

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/thank_you.mp3-1efc3189e0f56acd5b6c7b0bcbe62665.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/village_end/village_elder/thank_you.mp3"
+dest_files=[ "res://.import/thank_you.mp3-1efc3189e0f56acd5b6c7b0bcbe62665.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0
